@@ -1,5 +1,7 @@
 [
   "obsidian-git",
   "obsidian-custom-attachment-location",
-  "obsidian-hover-editor"
+  "obsidian-hover-editor",
+  "omnisearch",
+  "execute-code"
 ]
