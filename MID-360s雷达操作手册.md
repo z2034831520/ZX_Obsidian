@@ -83,8 +83,7 @@ ros2 launch livox_ros_driver2 msg_MID360s_launch.py
 
 在这里我们还需要注意的一点是如果想要在`WSL`中观察到对应的建图结果的话需要修改启动脚本文件，图中白框中的内容需要将值从原来的1改成0，不然在`WSL`上启动的`RVIZ`软件中就无法看到对应的建图结果
 
-![Snipaste_2026-04-18_17-32-42](D:\Snipaste Picture\Snipaste_2026-04-18_17-32-42.png)
-
+![](assets/MID-360s雷达操作手册/file-20260502203707801.png)
 ## `WSL`操作
 
 每次开启新的`WSL`终端需要执行以下三条指令防止
@@ -96,14 +95,13 @@ ros2 daemon stop  # 强制刷新后台进程
 ```
 
 执行完对应操作之后需要执行`ros2 topic list`指令确保上位机能够接收到对应的话题信息，雷达模块对应的话题信息名称为`/livox/imu`和`/livox/lidar`，如果能够看到这两个话题就说明上位机和开发板之间能够正常通信
-
-![Snipaste_2026-04-18_17-48-18](D:\Snipaste Picture\Snipaste_2026-04-18_17-48-18.png)
+![](assets/MID-360s雷达操作手册/file-20260502203738397.png)
 
 最后我们直接在`wsl`中执行`rviz2`命令即可调出对应的图形化界面
 
 ## `RViz`软件配置
 
-![Snipaste_2026-04-18_17-54-48](D:\Snipaste Picture\Snipaste_2026-04-18_17-54-48.png)
+![](assets/MID-360s雷达操作手册/file-20260502203755292.png)
 
 首先将`Fixed Frame`后面对应的`map`手动更改为`livox_frame`
 
