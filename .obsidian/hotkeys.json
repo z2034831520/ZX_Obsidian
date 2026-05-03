@@ -1,5 +1,5 @@
 {
-  "omnisearch:show-modal-infile": [
+  "obsidian-linter:lint-file": [
     {
       "modifiers": [
         "Alt",
@@ -15,6 +15,15 @@
         "Shift"
       ],
       "key": "G"
+    }
+  ],
+  "omnisearch:show-modal-infile": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Q"
     }
   ]
 }

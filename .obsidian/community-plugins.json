@@ -3,5 +3,7 @@
   "obsidian-custom-attachment-location",
   "obsidian-hover-editor",
   "omnisearch",
-  "execute-code"
+  "execute-code",
+  "note-refactor-obsidian",
+  "obsidian-linter"
 ]
