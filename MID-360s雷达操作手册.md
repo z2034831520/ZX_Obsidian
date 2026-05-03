@@ -222,7 +222,7 @@ rviz2
 
 
 
-## 软件端
+## RVIZ2软件端
 
 将 **`Fixed Frame`** 的值从 `map` 手动输入（或下拉选择）改为 **`livox_frame`**
 
@@ -311,3 +311,7 @@ ros2 topic list
 sudo sysctl -w net.core.rmem_max=2147483647
 ```
 
+
+## 点云图录制与回放
+
+参照[MID-360s点云图录制](MID-360s点云图录制.md)文章进行操作即可
