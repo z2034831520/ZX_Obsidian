@@ -1,12 +1,80 @@
 {
   "recentFiles": [
     {
-      "basename": "C++线程编程",
-      "path": "C++线程编程.md"
+      "basename": "盖尔定律",
+      "path": "盖尔定律.md"
+    },
+    {
+      "basename": "代码的复用性",
+      "path": "代码的复用性.md"
+    },
+    {
+      "basename": "串口烧录流程解析",
+      "path": "串口烧录流程解析.md"
+    },
+    {
+      "basename": "代码复用",
+      "path": "代码复用.md"
     },
     {
       "basename": "小龙虾使用手册",
       "path": "小龙虾使用手册.md"
+    },
+    {
+      "basename": "类与对象",
+      "path": "类与对象.md"
+    },
+    {
+      "basename": "多态",
+      "path": "多态.md"
+    },
+    {
+      "basename": "继承",
+      "path": "继承.md"
+    },
+    {
+      "basename": "思想的坟墓",
+      "path": "思想的坟墓.md"
+    },
+    {
+      "basename": "封装",
+      "path": "封装.md"
+    },
+    {
+      "basename": "AI飞书操作手册",
+      "path": "AI飞书操作手册.md"
+    },
+    {
+      "basename": "MID-360s点云图录制",
+      "path": "MID-360s点云图录制.md"
+    },
+    {
+      "basename": "开闭原则",
+      "path": "开闭原则.md"
+    },
+    {
+      "basename": "面向过程",
+      "path": "面向过程.md"
+    },
+    {
+      "basename": "虚函数",
+      "path": "虚函数.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "中间件",
+      "path": "中间件.md"
+    },
+    {
+      "basename": "面向对象",
+      "path": "面向对象.md"
+    },
+    {
+      "basename": "C++线程编程",
+      "path": "C++线程编程.md"
     },
     {
       "basename": "鲁棒性",
