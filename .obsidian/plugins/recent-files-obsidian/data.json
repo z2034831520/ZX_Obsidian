@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Python版本节点创建",
+      "path": "ROS2/Python版本节点创建.md"
+    },
+    {
+      "basename": "节点",
+      "path": "ROS2/节点.md"
+    },
+    {
       "basename": "动作",
       "path": "ROS2/动作.md"
+    },
+    {
+      "basename": "服务",
+      "path": "ROS2/服务.md"
     },
     {
       "basename": "ROS2",
@@ -19,18 +31,6 @@
     {
       "basename": "CMake起手式",
       "path": "CMake/CMake起手式.md"
-    },
-    {
-      "basename": "Python版本节点创建",
-      "path": "ROS2/Python版本节点创建.md"
-    },
-    {
-      "basename": "节点",
-      "path": "ROS2/节点.md"
-    },
-    {
-      "basename": "服务",
-      "path": "ROS2/服务.md"
     },
     {
       "basename": "话题",
