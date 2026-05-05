@@ -5,6 +5,14 @@
       "path": "ROS2/colcon构建冗余问题.md"
     },
     {
+      "basename": "软链接",
+      "path": "软链接.md"
+    },
+    {
+      "basename": "服务",
+      "path": "ROS2/服务.md"
+    },
+    {
       "basename": "创建Python版本功能包",
       "path": "ROS2/创建Python版本功能包.md"
     },
@@ -27,10 +35,6 @@
     {
       "basename": "动作",
       "path": "ROS2/动作.md"
-    },
-    {
-      "basename": "服务",
-      "path": "ROS2/服务.md"
     },
     {
       "basename": "ROS发展史",
