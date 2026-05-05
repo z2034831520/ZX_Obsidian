@@ -17,5 +17,5 @@ ros2 pkg create --build-type ament_python --license Apache-2.0 demo_python_pkg
 	这个选项是在指定功能包的证书
 ## 创建结果
 命令执行后的输出结果如下
-![](assets/Python版本节点创建/file-20260505111914374.png)
+![](assets/编写Python版本节点/file-20260505141817298.png)
 从输出结果中我们可以清晰的看到在创建包的过程中产生了哪些新文件
