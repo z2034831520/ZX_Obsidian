@@ -65,3 +65,6 @@ entry_points={
     },
 ```
 主要增加了`'python_node = demo_python_pkg.python_node:main'`部分代码，这部分代码的结构为:**生成的可执行文件名 = 当前的功能包名.节点文件名:调用的函数名**
+
+## 添加依赖信息
+我们只需要修改对应的`package.xml`文件即可，在
