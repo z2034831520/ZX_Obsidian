@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "ROS2",
+      "path": "ROS2/ROS2.md"
+    },
+    {
       "basename": "ROS发展史",
       "path": "Excalidraw/ROS发展史.md"
     },
     {
-      "basename": "ROS2",
-      "path": "ROS2/ROS2.md"
+      "basename": "MID-360s雷达操作手册",
+      "path": "MID-360s/MID-360s雷达操作手册.md"
     },
     {
       "basename": "CMake",
