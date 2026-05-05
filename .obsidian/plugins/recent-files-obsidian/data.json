@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "创建Python版本功能包",
+      "path": "ROS2/创建Python版本功能包.md"
+    },
+    {
       "basename": "colcon构建冗余问题",
       "path": "ROS2/colcon构建冗余问题.md"
+    },
+    {
+      "basename": "ROS发展史",
+      "path": "Excalidraw/ROS发展史.md"
     },
     {
       "basename": "软链接",
@@ -11,10 +19,6 @@
     {
       "basename": "服务",
       "path": "ROS2/服务.md"
-    },
-    {
-      "basename": "创建Python版本功能包",
-      "path": "ROS2/创建Python版本功能包.md"
     },
     {
       "basename": "编写Python版本节点",
@@ -35,10 +39,6 @@
     {
       "basename": "动作",
       "path": "ROS2/动作.md"
-    },
-    {
-      "basename": "ROS发展史",
-      "path": "Excalidraw/ROS发展史.md"
     },
     {
       "basename": "CMake",
