@@ -5,6 +5,14 @@
       "path": "CMake/CMake.md"
     },
     {
+      "basename": "CMake起手式",
+      "path": "CMake/CMake起手式.md"
+    },
+    {
+      "basename": "C++线程编程",
+      "path": "C++线程编程.md"
+    },
+    {
       "basename": "错失恐惧症",
       "path": "错失恐惧症.md"
     },
@@ -18,7 +26,7 @@
     },
     {
       "basename": "串口烧录流程解析",
-      "path": "串口烧录流程解析.md"
+      "path": "单片机/串口烧录流程解析.md"
     },
     {
       "basename": "代码复用",
@@ -54,7 +62,7 @@
     },
     {
       "basename": "MID-360s点云图录制",
-      "path": "MID-360s点云图录制.md"
+      "path": "MID-360s/MID-360s点云图录制.md"
     },
     {
       "basename": "开闭原则",
@@ -79,10 +87,6 @@
     {
       "basename": "面向对象",
       "path": "面向对象.md"
-    },
-    {
-      "basename": "C++线程编程",
-      "path": "C++线程编程.md"
     },
     {
       "basename": "鲁棒性",
