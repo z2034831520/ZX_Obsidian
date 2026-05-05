@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "创建Python版本功能包",
+      "path": "ROS2/创建Python版本功能包.md"
+    },
+    {
       "basename": "环境变量",
       "path": "计算机基本概念/环境变量.md"
+    },
+    {
+      "basename": "开闭原则",
+      "path": "计算机基本概念/开闭原则.md"
     },
     {
       "basename": "键值对",
@@ -59,10 +67,6 @@
     {
       "basename": "代码的复用性",
       "path": "计算机基本概念/代码的复用性.md"
-    },
-    {
-      "basename": "创建Python版本功能包",
-      "path": "ROS2/创建Python版本功能包.md"
     },
     {
       "basename": "colcon构建冗余问题",
@@ -143,10 +147,6 @@
     {
       "basename": "MID-360s点云图录制",
       "path": "MID-360s/MID-360s点云图录制.md"
-    },
-    {
-      "basename": "开闭原则",
-      "path": "计算机基本概念/开闭原则.md"
     },
     {
       "basename": "中间件",
