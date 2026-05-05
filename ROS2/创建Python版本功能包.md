@@ -20,4 +20,29 @@ ros2 pkg create --build-type ament_python --license Apache-2.0 demo_python_pkg
 ![](assets/编写Python版本节点/file-20260505141817298.png)
 从输出结果中我们可以清晰的看到在创建包的过程中产生了哪些新文件
 
+## 添加节点
+使用命令创建对应的功能包之后我们可以直接在其中添加对应的节点文件，这里拿[编写Python版本节点](编写Python版本节点.md)中的最小化节点代码作为演示，我们只需要右键新创建的功能包文件创建新的`python`节点文件即可
 
+![](assets/创建Python版本功能包/file-20260505143459471.png)
+
+我们可以直接复用最小化`python`节点中的代码，将其中的代码复用过来之后稍作修改即可，文件中的代码如下
+```python
+import rclpy
+
+from rclpy.node import Node
+
+def main():
+
+    rclpy.init();
+
+    node = Node('python_node')
+
+    node.get_logger().info('你好 Python 节点')
+
+    node.get_logger().warn('你好 Python 节点')
+
+    rclpy.spin(node)
+
+    rclpy.shutdown()
+```
+和之前的最小化节点文件中的代码相比去除了调用`main`函数的部分
