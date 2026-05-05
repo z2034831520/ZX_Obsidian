@@ -56,3 +56,12 @@ def main():
         ],
     },
 ```
+我们对该部分代码修改之后的结果为
+```python
+entry_points={
+        'console_scripts': [
+        'python_node = demo_python_pkg.python_node:main'
+        ],
+    },
+```
+主要增加了`'python_node = demo_python_pkg.python_node:main'`部分代码，这部分代码的结构为:**生成的可执行文件名 = 当前的功能包名.节点文件名:调用的函数名**
