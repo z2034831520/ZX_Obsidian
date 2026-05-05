@@ -3,3 +3,6 @@
 
 ## ROS的发展史
 [ROS发展史](../Excalidraw/ROS发展史.md)
+
+## ROS2系统架构
+![](assets/ROS2/file-20260505100048740.png)
