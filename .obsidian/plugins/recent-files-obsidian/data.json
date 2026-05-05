@@ -1,8 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "话题",
-      "path": "ROS2/话题.md"
+      "basename": "节点",
+      "path": "ROS2/节点.md"
     },
     {
       "basename": "ROS2",
@@ -15,6 +15,10 @@
     {
       "basename": "服务",
       "path": "ROS2/服务.md"
+    },
+    {
+      "basename": "话题",
+      "path": "ROS2/话题.md"
     },
     {
       "basename": "ROS发展史",
