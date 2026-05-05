@@ -5,6 +5,10 @@
       "path": "ROS2/ROS2.md"
     },
     {
+      "basename": "话题",
+      "path": "ROS2/话题.md"
+    },
+    {
       "basename": "ROS发展史",
       "path": "Excalidraw/ROS发展史.md"
     },
