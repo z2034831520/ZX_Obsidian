@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "colcon构建冗余问题",
+      "path": "ROS2/colcon构建冗余问题.md"
+    },
+    {
       "basename": "创建Python版本功能包",
       "path": "ROS2/创建Python版本功能包.md"
+    },
+    {
+      "basename": "编写Python版本节点",
+      "path": "ROS2/编写Python版本节点.md"
     },
     {
       "basename": "环境变量",
@@ -69,20 +77,12 @@
       "path": "计算机基本概念/代码的复用性.md"
     },
     {
-      "basename": "colcon构建冗余问题",
-      "path": "ROS2/colcon构建冗余问题.md"
-    },
-    {
       "basename": "ROS发展史",
       "path": "Excalidraw/ROS发展史.md"
     },
     {
       "basename": "服务",
       "path": "ROS2/服务.md"
-    },
-    {
-      "basename": "编写Python版本节点",
-      "path": "ROS2/编写Python版本节点.md"
     },
     {
       "basename": "file-20260505152511516",
