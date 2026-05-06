@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Shebang",
+      "path": "ROS2/Shebang.md"
+    },
+    {
       "basename": "功能包可执行文件的启动逻辑",
       "path": "ROS2/功能包可执行文件的启动逻辑.md"
     },
