@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "中间件",
+      "path": "计算机基本概念/中间件.md"
+    },
+    {
+      "basename": "ROS2",
+      "path": "ROS2/ROS2.md"
+    },
+    {
       "basename": "Shebang",
       "path": "ROS2/Shebang.md"
     },
@@ -113,10 +121,6 @@
       "path": "ROS2/节点.md"
     },
     {
-      "basename": "ROS2",
-      "path": "ROS2/ROS2.md"
-    },
-    {
       "basename": "动作",
       "path": "ROS2/动作.md"
     },
@@ -167,10 +171,6 @@
     {
       "basename": "MID-360s点云图录制",
       "path": "MID-360s/MID-360s点云图录制.md"
-    },
-    {
-      "basename": "中间件",
-      "path": "计算机基本概念/中间件.md"
     },
     {
       "basename": "面向对象",
