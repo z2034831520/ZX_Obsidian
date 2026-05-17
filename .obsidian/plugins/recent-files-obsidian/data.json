@@ -5,6 +5,10 @@
       "path": "Excalidraw/类和对象的存储位置.md"
     },
     {
+      "basename": "向上转型关系图",
+      "path": "Excalidraw/向上转型关系图.md"
+    },
+    {
       "basename": "ROS发展史",
       "path": "Excalidraw/ROS发展史.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "MID-360s点云图录制",
       "path": "MID-360s/MID-360s点云图录制.md"
-    },
-    {
-      "basename": "面向对象",
-      "path": "计算机基本概念/面向对象.md"
     }
   ],
   "omittedPaths": [],
