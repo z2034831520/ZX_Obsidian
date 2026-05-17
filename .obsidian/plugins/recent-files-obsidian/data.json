@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Drawing 2026-05-17 14.54.04.excalidraw",
+      "path": "Excalidraw/Drawing 2026-05-17 14.54.04.excalidraw.md"
+    },
+    {
+      "basename": "ROS发展史",
+      "path": "Excalidraw/ROS发展史.md"
+    },
+    {
       "basename": "向上转型",
       "path": "计算机基本概念/向上转型.md"
     },
@@ -125,10 +133,6 @@
       "path": "计算机基本概念/代码的复用性.md"
     },
     {
-      "basename": "ROS发展史",
-      "path": "Excalidraw/ROS发展史.md"
-    },
-    {
       "basename": "服务",
       "path": "ROS2/服务.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "面向对象",
       "path": "计算机基本概念/面向对象.md"
-    },
-    {
-      "basename": "鲁棒性",
-      "path": "计算机基本概念/鲁棒性.md"
     }
   ],
   "omittedPaths": [],
