@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "向下转型关系图",
+      "path": "Excalidraw/向下转型关系图.md"
+    },
+    {
       "basename": "向上转型关系图",
       "path": "Excalidraw/向上转型关系图.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "思想的坟墓",
       "path": "心理学定律/思想的坟墓.md"
-    },
-    {
-      "basename": "MID-360s点云图录制",
-      "path": "MID-360s/MID-360s点云图录制.md"
     }
   ],
   "omittedPaths": [],
