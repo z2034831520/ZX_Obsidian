@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "函数指针",
+      "path": "C/函数指针.md"
+    },
+    {
+      "basename": "类与对象",
+      "path": "计算机基本概念/类与对象.md"
+    },
+    {
       "basename": "继承",
       "path": "计算机基本概念/继承.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "代码复用",
       "path": "计算机基本概念/代码复用.md"
-    },
-    {
-      "basename": "小龙虾使用手册",
-      "path": "实操/小龙虾使用手册.md"
-    },
-    {
-      "basename": "类与对象",
-      "path": "计算机基本概念/类与对象.md"
     }
   ],
   "omittedPaths": [],
