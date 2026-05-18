@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "状态机",
-      "path": "单片机/状态机.md"
-    },
-    {
       "basename": "时间片轮转",
       "path": "单片机/时间片轮转.md"
+    },
+    {
+      "basename": "状态机",
+      "path": "单片机/状态机.md"
     },
     {
       "basename": "函数指针",
