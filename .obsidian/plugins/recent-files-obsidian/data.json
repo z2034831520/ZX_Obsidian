@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "状态机",
+      "path": "单片机/状态机.md"
+    },
+    {
       "basename": "时间片轮转",
       "path": "单片机/时间片轮转.md"
     },
     {
-      "basename": "状态机",
-      "path": "单片机/状态机.md"
+      "basename": "串口烧录流程解析",
+      "path": "单片机/串口烧录流程解析.md"
     },
     {
       "basename": "函数指针",
@@ -195,10 +199,6 @@
     {
       "basename": "MID-360s雷达操作手册",
       "path": "MID-360s/MID-360s雷达操作手册.md"
-    },
-    {
-      "basename": "错失恐惧症",
-      "path": "心理学定律/错失恐惧症.md"
     }
   ],
   "omittedPaths": [],
