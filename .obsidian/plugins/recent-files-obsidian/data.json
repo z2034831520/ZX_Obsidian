@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "时间片轮转",
+      "path": "单片机/时间片轮转.md"
+    },
+    {
       "basename": "函数指针",
       "path": "C/函数指针.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "串口烧录流程解析",
       "path": "单片机/串口烧录流程解析.md"
-    },
-    {
-      "basename": "代码复用",
-      "path": "计算机基本概念/代码复用.md"
     }
   ],
   "omittedPaths": [],
