@@ -35,3 +35,33 @@ int main()
 
 ### 进阶应用场景
 上面我们演示了`extern`关键字的基础用法，但是在实际的开发中我们往往不会使用上面的这种方式去使用`extern`关键字。更标准的做法是将`extern`的声明统一放在头文件中，然后让需要使用的文件去引用这个头文件
+
+1. `globals.h`（声明）
+	```c
+#ifndef GLOBALS_H
+#define GLOBALS_H
+
+	// 对外暴露的接口和变量声明
+	extern int shared_data;
+
+#endif
+	```
+2. `globals.c`（定义）
+	```c
+	#include "globals.h"
+
+	// 真正的定义，整个项目只出现一次
+	int shared_data = 42;
+	```
+3. `main.c`（使用）
+	```c
+	#include <stdio.h>
+	#include "globals.h" // 引入声明
+
+	int main() 
+	{
+	    printf("Shared data: %d\n", shared_data);
+	    return 0;
+	}
+	```
+	这样做的好处是：一旦变量的类型需要修改，我们就只需要修改`globals.c`和`globals.h`，而不需要去所有使用了该变量的`.c`文件中去挨个修改声明
