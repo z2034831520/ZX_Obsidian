@@ -2,7 +2,11 @@
   "recentFiles": [
     {
       "basename": "extern关键字的作用",
-      "path": "单片机/extern关键字的作用.md"
+      "path": "C/extern关键字的作用.md"
+    },
+    {
+      "basename": "定义和声明",
+      "path": "C/定义和声明.md"
     },
     {
       "basename": "Hermes安装过程",
@@ -195,10 +199,6 @@
     {
       "basename": "服务",
       "path": "ROS2/服务.md"
-    },
-    {
-      "basename": "file-20260505152511516",
-      "path": "ROS2/assets/创建Python版本功能包/file-20260505152511516.png"
     }
   ],
   "omittedPaths": [],
