@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "C10K问题",
+      "path": "网络编程/C10K问题.md"
+    },
+    {
+      "basename": "服务器创建过程",
+      "path": "网络编程/服务器创建过程.md"
+    },
+    {
       "basename": "extern关键字的作用",
       "path": "C/extern关键字的作用.md"
     },
@@ -101,10 +109,6 @@
       "path": "计算机基本概念/软链接.md"
     },
     {
-      "basename": "服务器创建过程",
-      "path": "网络编程/服务器创建过程.md"
-    },
-    {
       "basename": "网络分层",
       "path": "网络编程/网络分层.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "代码的复用性",
       "path": "计算机基本概念/代码的复用性.md"
-    },
-    {
-      "basename": "服务",
-      "path": "ROS2/服务.md"
     }
   ],
   "omittedPaths": [],
