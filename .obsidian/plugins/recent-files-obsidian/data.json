@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Docker简介",
+      "path": "Docker/Docker简介.md"
+    },
+    {
       "basename": "Docker VS 虚拟机",
       "path": "Docker/Docker VS 虚拟机.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "费曼学习法",
       "path": "心理学定律/费曼学习法.md"
-    },
-    {
-      "basename": "虚函数",
-      "path": "计算机基本概念/虚函数.md"
     }
   ],
   "omittedPaths": [],
