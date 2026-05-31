@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Docker VS 虚拟机",
+      "path": "Docker/Docker VS 虚拟机.md"
+    },
+    {
       "basename": "C10K问题",
       "path": "网络编程/C10K问题.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "虚函数",
       "path": "计算机基本概念/虚函数.md"
-    },
-    {
-      "basename": "代码的复用性",
-      "path": "计算机基本概念/代码的复用性.md"
     }
   ],
   "omittedPaths": [],
