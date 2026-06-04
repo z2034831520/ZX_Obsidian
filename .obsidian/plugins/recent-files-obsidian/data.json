@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "数据库考试",
+      "path": "数据库考试.md"
+    },
+    {
       "basename": "Docker简介",
       "path": "Docker/Docker简介.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "盖尔定律",
       "path": "心理学定律/盖尔定律.md"
-    },
-    {
-      "basename": "费曼学习法",
-      "path": "心理学定律/费曼学习法.md"
     }
   ],
   "omittedPaths": [],
