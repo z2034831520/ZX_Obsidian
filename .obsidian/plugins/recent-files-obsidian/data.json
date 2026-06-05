@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "数据库考试",
-      "path": "数据库考试.md"
-    },
-    {
       "basename": "Docker简介",
       "path": "Docker/Docker简介.md"
+    },
+    {
+      "basename": "数据库考试",
+      "path": "数据库考试.md"
     },
     {
       "basename": "Docker VS 虚拟机",
