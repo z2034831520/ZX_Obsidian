@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "数据库系统",
+      "path": "数据库期末复习/数据库系统.md"
+    },
+    {
       "basename": "数据库管理系统",
       "path": "数据库期末复习/数据库管理系统.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "环境变量",
       "path": "计算机基本概念/环境变量.md"
-    },
-    {
-      "basename": "开闭原则",
-      "path": "计算机基本概念/开闭原则.md"
     }
   ],
   "omittedPaths": [],
