@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "数据库期末复习",
-      "path": "数据库期末复习.md"
+      "basename": "数据库",
+      "path": "数据库期末复习/数据库.md"
+    },
+    {
+      "basename": "数据",
+      "path": "数据库期末复习/数据.md"
+    },
+    {
+      "basename": "数据库期末复习总结",
+      "path": "数据库期末复习/数据库期末复习总结.md"
     },
     {
       "basename": "C++线程编程",
@@ -191,14 +199,6 @@
     {
       "basename": "键值对",
       "path": "计算机基本概念/键值对.md"
-    },
-    {
-      "basename": "原子笔记",
-      "path": "原子笔记.md"
-    },
-    {
-      "basename": "Turtule Bot3小车操作手册",
-      "path": "实操/Turtule Bot3小车操作手册.md"
     }
   ],
   "omittedPaths": [],
