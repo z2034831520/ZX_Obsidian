@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "数据",
-      "path": "数据库期末复习/数据.md"
+      "basename": "数据库管理系统",
+      "path": "数据库期末复习/数据库管理系统.md"
     },
     {
       "basename": "数据库",
       "path": "数据库期末复习/数据库.md"
+    },
+    {
+      "basename": "数据",
+      "path": "数据库期末复习/数据.md"
     },
     {
       "basename": "数据库期末复习总结",
@@ -195,10 +199,6 @@
     {
       "basename": "开闭原则",
       "path": "计算机基本概念/开闭原则.md"
-    },
-    {
-      "basename": "键值对",
-      "path": "计算机基本概念/键值对.md"
     }
   ],
   "omittedPaths": [],
