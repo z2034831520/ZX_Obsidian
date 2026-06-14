@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "第一章 随机事件与概率",
+      "path": "概率论期末复习/第一章 随机事件与概率.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Java期末复习",
+      "path": "Java期末复习.md"
+    },
+    {
+      "basename": "C++线程编程",
+      "path": "C++线程编程.md"
+    },
+    {
+      "basename": "原子笔记",
+      "path": "原子笔记.md"
+    },
+    {
+      "basename": "数据库考试",
+      "path": "数据库考试.md"
+    },
+    {
       "basename": "数据库期末复习总结",
       "path": "数据库期末复习/数据库期末复习总结.md"
     },
@@ -19,22 +43,6 @@
     {
       "basename": "数据（Data）",
       "path": "数据库期末复习/数据（Data）.md"
-    },
-    {
-      "basename": "C++线程编程",
-      "path": "C++线程编程.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "未命名.md"
-    },
-    {
-      "basename": "数据库考试",
-      "path": "数据库考试.md"
-    },
-    {
-      "basename": "Java期末复习",
-      "path": "Java期末复习.md"
     },
     {
       "basename": "Docker简介",
@@ -191,14 +199,6 @@
     {
       "basename": "colcon构建冗余问题",
       "path": "ROS2/colcon构建冗余问题.md"
-    },
-    {
-      "basename": "编写C++版本节点",
-      "path": "ROS2/编写C++版本节点.md"
-    },
-    {
-      "basename": "环境变量",
-      "path": "计算机基本概念/环境变量.md"
     }
   ],
   "omittedPaths": [],
