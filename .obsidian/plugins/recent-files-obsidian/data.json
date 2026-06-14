@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "事物",
+      "path": "数据库期末复习/事物.md"
+    },
+    {
       "basename": "索引",
       "path": "数据库期末复习/索引.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "创建Python版本功能包",
       "path": "ROS2/创建Python版本功能包.md"
-    },
-    {
-      "basename": "创建C++版本功能包",
-      "path": "ROS2/创建C++版本功能包.md"
     }
   ],
   "omittedPaths": [],
