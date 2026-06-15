@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "事务",
-      "path": "数据库期末复习/事务.md"
+      "basename": "数据库管理系统（DBMS）",
+      "path": "数据库期末复习/数据库管理系统（DBMS）.md"
+    },
+    {
+      "basename": "数据库（DB）",
+      "path": "数据库期末复习/数据库（DB）.md"
     },
     {
       "basename": "数据（Data）",
       "path": "数据库期末复习/数据（Data）.md"
+    },
+    {
+      "basename": "事务",
+      "path": "数据库期末复习/事务.md"
     },
     {
       "basename": "不可重复读",
@@ -59,14 +67,6 @@
     {
       "basename": "数据库系统（DBS）",
       "path": "数据库期末复习/数据库系统（DBS）.md"
-    },
-    {
-      "basename": "数据库管理系统（DBMS）",
-      "path": "数据库期末复习/数据库管理系统（DBMS）.md"
-    },
-    {
-      "basename": "数据库（DB）",
-      "path": "数据库期末复习/数据库（DB）.md"
     },
     {
       "basename": "Docker简介",
