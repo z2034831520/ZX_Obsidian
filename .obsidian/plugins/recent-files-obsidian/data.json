@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "三级模式两级映像",
+      "path": "数据库期末复习/三级模式两级映像.md"
+    },
+    {
       "basename": "串口烧录流程解析",
       "path": "单片机/串口烧录流程解析.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "ROS2",
       "path": "ROS2/ROS2.md"
-    },
-    {
-      "basename": "Shebang",
-      "path": "ROS2/Shebang.md"
     }
   ],
   "omittedPaths": [],
