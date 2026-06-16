@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "索引",
+      "path": "数据库期末复习/索引.md"
+    },
+    {
       "basename": "三级模式两级映像",
       "path": "数据库期末复习/三级模式两级映像.md"
     },
@@ -35,10 +39,6 @@
     {
       "basename": "幻读",
       "path": "数据库期末复习/幻读.md"
-    },
-    {
-      "basename": "索引",
-      "path": "数据库期末复习/索引.md"
     },
     {
       "basename": "脏读",
