@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "反范式设计",
-      "path": "数据库期末复习/反范式设计.md"
+      "basename": "第一范式",
+      "path": "数据库期末复习/第一范式.md"
     },
     {
       "basename": "范式设计",
       "path": "数据库期末复习/范式设计.md"
+    },
+    {
+      "basename": "反范式设计",
+      "path": "数据库期末复习/反范式设计.md"
+    },
+    {
+      "basename": "第二范式",
+      "path": "数据库期末复习/第二范式.md"
+    },
+    {
+      "basename": "第三范式",
+      "path": "数据库期末复习/第三范式.md"
     },
     {
       "basename": "索引",
@@ -187,18 +199,6 @@
     {
       "basename": "ROS发展史",
       "path": "Excalidraw/ROS发展史.md"
-    },
-    {
-      "basename": "面向过程",
-      "path": "计算机基本概念/面向过程.md"
-    },
-    {
-      "basename": "软链接",
-      "path": "计算机基本概念/软链接.md"
-    },
-    {
-      "basename": "网络分层",
-      "path": "网络编程/网络分层.md"
     }
   ],
   "omittedPaths": [],
