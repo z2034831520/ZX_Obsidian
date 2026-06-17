@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "范式设计",
+      "path": "数据库期末复习/范式设计.md"
+    },
+    {
       "basename": "索引",
       "path": "数据库期末复习/索引.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "中间件",
       "path": "计算机基本概念/中间件.md"
-    },
-    {
-      "basename": "ROS2",
-      "path": "ROS2/ROS2.md"
     }
   ],
   "omittedPaths": [],
