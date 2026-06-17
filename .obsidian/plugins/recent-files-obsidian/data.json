@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "反范式设计",
+      "path": "数据库期末复习/反范式设计.md"
+    },
+    {
       "basename": "范式设计",
       "path": "数据库期末复习/范式设计.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "网络分层",
       "path": "网络编程/网络分层.md"
-    },
-    {
-      "basename": "中间件",
-      "path": "计算机基本概念/中间件.md"
     }
   ],
   "omittedPaths": [],
