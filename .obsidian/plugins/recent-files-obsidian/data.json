@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "抽样分布",
+      "path": "概率论期末复习/抽样分布.md"
+    },
+    {
       "basename": "第一范式",
       "path": "数据库期末复习/第一范式.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "向上转型关系图",
       "path": "Excalidraw/向上转型关系图.md"
-    },
-    {
-      "basename": "ROS发展史",
-      "path": "Excalidraw/ROS发展史.md"
     }
   ],
   "omittedPaths": [],
