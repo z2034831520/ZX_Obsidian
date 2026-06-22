@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "复习路线",
+      "path": "计算机组成原理/复习路线.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Java期末复习",
+      "path": "Java期末复习.md"
+    },
+    {
+      "basename": "原子笔记",
+      "path": "原子笔记.md"
+    },
+    {
+      "basename": "数据库考试",
+      "path": "数据库考试.md"
+    },
+    {
       "basename": "抽样分布",
       "path": "概率论期末复习/抽样分布.md"
     },
@@ -77,24 +97,8 @@
       "path": "概率论期末复习/第一章 随机事件与概率.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "Java期末复习",
-      "path": "Java期末复习.md"
-    },
-    {
       "basename": "C++线程编程",
       "path": "C++线程编程.md"
-    },
-    {
-      "basename": "原子笔记",
-      "path": "原子笔记.md"
-    },
-    {
-      "basename": "数据库考试",
-      "path": "数据库考试.md"
     },
     {
       "basename": "数据库期末复习总结",
@@ -195,10 +199,6 @@
     {
       "basename": "MAC地址和IP地址",
       "path": "网络编程/MAC地址和IP地址.md"
-    },
-    {
-      "basename": "向上转型关系图",
-      "path": "Excalidraw/向上转型关系图.md"
     }
   ],
   "omittedPaths": [],
