@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "计算机系统概论",
+      "path": "计算机组成原理/计算机系统概论.md"
+    },
+    {
       "basename": "复习路线",
       "path": "计算机组成原理/复习路线.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "封装",
       "path": "计算机基本概念/封装.md"
-    },
-    {
-      "basename": "MAC地址和IP地址",
-      "path": "网络编程/MAC地址和IP地址.md"
     }
   ],
   "omittedPaths": [],
