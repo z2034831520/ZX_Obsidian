@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "系统总线",
+      "path": "计算机组成原理/系统总线.md"
+    },
+    {
       "basename": "计算机系统概论",
       "path": "计算机组成原理/计算机系统概论.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "鲁棒性",
       "path": "计算机基本概念/鲁棒性.md"
-    },
-    {
-      "basename": "封装",
-      "path": "计算机基本概念/封装.md"
     }
   ],
   "omittedPaths": [],
