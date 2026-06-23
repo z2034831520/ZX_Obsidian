@@ -5,6 +5,10 @@
       "path": "计算机组成原理/系统总线.md"
     },
     {
+      "basename": "F区按键功能",
+      "path": "F区按键功能.md"
+    },
+    {
       "basename": "计算机系统概论",
       "path": "计算机组成原理/计算机系统概论.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Java类和对象的存储位置",
       "path": "Excalidraw/Java类和对象的存储位置.md"
-    },
-    {
-      "basename": "鲁棒性",
-      "path": "计算机基本概念/鲁棒性.md"
     }
   ],
   "omittedPaths": [],
