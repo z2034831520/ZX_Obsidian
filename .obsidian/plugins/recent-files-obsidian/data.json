@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "覆写（overload）",
+      "path": "Java/覆写（overload）.md"
+    },
+    {
       "basename": "Java继承",
       "path": "Java/Java继承.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "向上转型",
       "path": "计算机基本概念/向上转型.md"
-    },
-    {
-      "basename": "向下转型关系图",
-      "path": "Excalidraw/向下转型关系图.md"
     }
   ],
   "omittedPaths": [],
