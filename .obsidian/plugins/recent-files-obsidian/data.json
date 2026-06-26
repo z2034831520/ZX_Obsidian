@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "数据库考试",
+      "path": "数据库考试.md"
+    },
+    {
+      "basename": "原子笔记",
+      "path": "原子笔记.md"
+    },
+    {
+      "basename": "抽样分布",
+      "path": "概率论期末复习/抽样分布.md"
+    },
+    {
       "basename": "系统总线",
       "path": "计算机组成原理/系统总线.md"
     },
@@ -23,18 +35,6 @@
     {
       "basename": "Java期末复习",
       "path": "Java期末复习.md"
-    },
-    {
-      "basename": "原子笔记",
-      "path": "原子笔记.md"
-    },
-    {
-      "basename": "数据库考试",
-      "path": "数据库考试.md"
-    },
-    {
-      "basename": "抽样分布",
-      "path": "概率论期末复习/抽样分布.md"
     },
     {
       "basename": "第一范式",
