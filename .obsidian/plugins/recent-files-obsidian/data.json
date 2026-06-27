@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "第二范式",
+      "path": "数据库期末复习/第二范式.md"
+    },
+    {
+      "basename": "第三范式",
+      "path": "数据库期末复习/第三范式.md"
+    },
+    {
+      "basename": "第一范式",
+      "path": "数据库期末复习/第一范式.md"
+    },
+    {
+      "basename": "Java继承",
+      "path": "Java/Java继承.md"
+    },
+    {
       "basename": "继承构造方法的调用",
       "path": "Java/继承构造方法的调用.md"
     },
@@ -9,16 +25,32 @@
       "path": "Java/覆写（overload）.md"
     },
     {
-      "basename": "Java继承",
-      "path": "Java/Java继承.md"
+      "basename": "包",
+      "path": "Java/包.md"
+    },
+    {
+      "basename": "系统总线",
+      "path": "计算机组成原理/系统总线.md"
+    },
+    {
+      "basename": "计算机系统概论",
+      "path": "计算机组成原理/计算机系统概论.md"
+    },
+    {
+      "basename": "复习路线",
+      "path": "计算机组成原理/复习路线.md"
+    },
+    {
+      "basename": "Docker简介",
+      "path": "Docker/Docker简介.md"
+    },
+    {
+      "basename": "Docker VS 虚拟机",
+      "path": "Docker/Docker VS 虚拟机.md"
     },
     {
       "basename": "继承",
       "path": "计算机基本概念/继承.md"
-    },
-    {
-      "basename": "包",
-      "path": "Java/包.md"
     },
     {
       "basename": "数据库考试",
@@ -33,20 +65,8 @@
       "path": "概率论期末复习/抽样分布.md"
     },
     {
-      "basename": "系统总线",
-      "path": "计算机组成原理/系统总线.md"
-    },
-    {
       "basename": "F区按键功能",
       "path": "F区按键功能.md"
-    },
-    {
-      "basename": "计算机系统概论",
-      "path": "计算机组成原理/计算机系统概论.md"
-    },
-    {
-      "basename": "复习路线",
-      "path": "计算机组成原理/复习路线.md"
     },
     {
       "basename": "README",
@@ -57,24 +77,12 @@
       "path": "Java期末复习.md"
     },
     {
-      "basename": "第一范式",
-      "path": "数据库期末复习/第一范式.md"
-    },
-    {
       "basename": "范式设计",
       "path": "数据库期末复习/范式设计.md"
     },
     {
       "basename": "反范式设计",
       "path": "数据库期末复习/反范式设计.md"
-    },
-    {
-      "basename": "第二范式",
-      "path": "数据库期末复习/第二范式.md"
-    },
-    {
-      "basename": "第三范式",
-      "path": "数据库期末复习/第三范式.md"
     },
     {
       "basename": "索引",
@@ -139,14 +147,6 @@
     {
       "basename": "数据库系统（DBS）",
       "path": "数据库期末复习/数据库系统（DBS）.md"
-    },
-    {
-      "basename": "Docker简介",
-      "path": "Docker/Docker简介.md"
-    },
-    {
-      "basename": "Docker VS 虚拟机",
-      "path": "Docker/Docker VS 虚拟机.md"
     },
     {
       "basename": "C10K问题",
