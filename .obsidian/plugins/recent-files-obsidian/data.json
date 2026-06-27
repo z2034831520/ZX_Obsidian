@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "属性 VS 主键",
-      "path": "数据库期末复习/属性 VS 主键.md"
+      "basename": "数据库格言",
+      "path": "数据库期末复习/数据库格言.md"
+    },
+    {
+      "basename": "范式设计",
+      "path": "数据库期末复习/范式设计.md"
     },
     {
       "basename": "第二范式",
@@ -15,6 +19,26 @@
     {
       "basename": "第一范式",
       "path": "数据库期末复习/第一范式.md"
+    },
+    {
+      "basename": "不可重复读",
+      "path": "数据库期末复习/不可重复读.md"
+    },
+    {
+      "basename": "反范式设计",
+      "path": "数据库期末复习/反范式设计.md"
+    },
+    {
+      "basename": "数据库（DB）",
+      "path": "数据库期末复习/数据库（DB）.md"
+    },
+    {
+      "basename": "数据（Data）",
+      "path": "数据库期末复习/数据（Data）.md"
+    },
+    {
+      "basename": "属性 VS 主键",
+      "path": "数据库期末复习/属性 VS 主键.md"
     },
     {
       "basename": "Java继承",
@@ -81,14 +105,6 @@
       "path": "Java期末复习.md"
     },
     {
-      "basename": "范式设计",
-      "path": "数据库期末复习/范式设计.md"
-    },
-    {
-      "basename": "反范式设计",
-      "path": "数据库期末复习/反范式设计.md"
-    },
-    {
       "basename": "索引",
       "path": "数据库期末复习/索引.md"
     },
@@ -109,20 +125,8 @@
       "path": "数据库期末复习/数据库管理系统（DBMS）.md"
     },
     {
-      "basename": "数据库（DB）",
-      "path": "数据库期末复习/数据库（DB）.md"
-    },
-    {
-      "basename": "数据（Data）",
-      "path": "数据库期末复习/数据（Data）.md"
-    },
-    {
       "basename": "事务",
       "path": "数据库期末复习/事务.md"
-    },
-    {
-      "basename": "不可重复读",
-      "path": "数据库期末复习/不可重复读.md"
     },
     {
       "basename": "幻读",
@@ -195,10 +199,6 @@
     {
       "basename": "函数指针",
       "path": "C/函数指针.md"
-    },
-    {
-      "basename": "类与对象",
-      "path": "计算机基本概念/类与对象.md"
     }
   ],
   "omittedPaths": [],
