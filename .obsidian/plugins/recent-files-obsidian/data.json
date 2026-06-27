@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "属性 VS 主键",
+      "path": "数据库期末复习/属性 VS 主键.md"
+    },
+    {
       "basename": "第二范式",
       "path": "数据库期末复习/第二范式.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "类与对象",
       "path": "计算机基本概念/类与对象.md"
-    },
-    {
-      "basename": "向下转型",
-      "path": "计算机基本概念/向下转型.md"
     }
   ],
   "omittedPaths": [],
