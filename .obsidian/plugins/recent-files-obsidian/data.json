@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "耦合度",
+      "path": "计算机基本概念/耦合度.md"
+    },
+    {
       "basename": "static关键字",
       "path": "Java/static关键字.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "时间片轮转",
       "path": "单片机/时间片轮转.md"
-    },
-    {
-      "basename": "状态机",
-      "path": "单片机/状态机.md"
     }
   ],
   "omittedPaths": [],
