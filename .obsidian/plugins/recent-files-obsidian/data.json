@@ -1,8 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "static关键字",
+      "path": "Java/static关键字.md"
+    },
+    {
+      "basename": "Java继承",
+      "path": "Java/Java继承.md"
+    },
+    {
+      "basename": "继承构造方法的调用",
+      "path": "Java/继承构造方法的调用.md"
+    },
+    {
+      "basename": "覆写（overload）",
+      "path": "Java/覆写（overload）.md"
+    },
+    {
+      "basename": "包",
+      "path": "Java/包.md"
+    },
+    {
       "basename": "范式设计",
       "path": "数据库期末复习/范式设计.md"
+    },
+    {
+      "basename": "反范式设计",
+      "path": "数据库期末复习/反范式设计.md"
+    },
+    {
+      "basename": "幻读",
+      "path": "数据库期末复习/幻读.md"
     },
     {
       "basename": "数据库期末复习总结",
@@ -11,10 +39,6 @@
     {
       "basename": "数据库管理系统（DBMS）",
       "path": "数据库期末复习/数据库管理系统（DBMS）.md"
-    },
-    {
-      "basename": "反范式设计",
-      "path": "数据库期末复习/反范式设计.md"
     },
     {
       "basename": "三级模式两级映像",
@@ -59,22 +83,6 @@
     {
       "basename": "属性 VS 主键",
       "path": "数据库期末复习/属性 VS 主键.md"
-    },
-    {
-      "basename": "Java继承",
-      "path": "Java/Java继承.md"
-    },
-    {
-      "basename": "继承构造方法的调用",
-      "path": "Java/继承构造方法的调用.md"
-    },
-    {
-      "basename": "覆写（overload）",
-      "path": "Java/覆写（overload）.md"
-    },
-    {
-      "basename": "包",
-      "path": "Java/包.md"
     },
     {
       "basename": "系统总线",
@@ -137,10 +145,6 @@
       "path": "数据库期末复习/事务.md"
     },
     {
-      "basename": "幻读",
-      "path": "数据库期末复习/幻读.md"
-    },
-    {
       "basename": "脏读",
       "path": "数据库期末复习/脏读.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "状态机",
       "path": "单片机/状态机.md"
-    },
-    {
-      "basename": "函数指针",
-      "path": "C/函数指针.md"
     }
   ],
   "omittedPaths": [],
