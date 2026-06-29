@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "VPS搭建",
+      "path": "VPS搭建.md"
+    },
+    {
       "basename": "复习路线",
       "path": "计算机组成原理/复习路线.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "伪调度器架构",
       "path": "单片机/伪调度器架构.md"
-    },
-    {
-      "basename": "时间片轮转",
-      "path": "单片机/时间片轮转.md"
     }
   ],
   "omittedPaths": [],
