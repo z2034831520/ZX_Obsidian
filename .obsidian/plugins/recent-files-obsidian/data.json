@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "字编址 VS 字节编址",
+      "path": "计算机组成原理/字编址 VS 字节编址.md"
+    },
+    {
       "basename": "VPS搭建",
       "path": "VPS搭建.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "接收缓冲区非空中断",
       "path": "单片机/接收缓冲区非空中断.md"
-    },
-    {
-      "basename": "伪调度器架构",
-      "path": "单片机/伪调度器架构.md"
     }
   ],
   "omittedPaths": [],
