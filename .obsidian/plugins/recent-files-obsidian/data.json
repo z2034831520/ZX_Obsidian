@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Sublime软件的使用",
+      "path": "Python/Sublime软件的使用.md"
+    },
+    {
       "basename": "VPS搭建",
       "path": "VPS搭建.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "小龙虾使用手册",
       "path": "实操/小龙虾使用手册.md"
-    },
-    {
-      "basename": "接收缓冲区非空中断",
-      "path": "单片机/接收缓冲区非空中断.md"
     }
   ],
   "omittedPaths": [],
