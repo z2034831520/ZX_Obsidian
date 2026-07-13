@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "堆和栈",
+      "path": "Python/堆和栈.md"
+    },
+    {
       "basename": "列表",
       "path": "Python/列表.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "extern关键字的作用",
       "path": "C/extern关键字的作用.md"
-    },
-    {
-      "basename": "定义和声明",
-      "path": "C/定义和声明.md"
     }
   ],
   "omittedPaths": [],
