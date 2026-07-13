@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "String字符串常用函数",
+      "path": "Python/String字符串常用函数.md"
+    },
+    {
       "basename": "Sublime软件的使用",
       "path": "Python/Sublime软件的使用.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Hermes安装过程",
       "path": "实操/Hermes安装过程.md"
-    },
-    {
-      "basename": "小龙虾使用手册",
-      "path": "实操/小龙虾使用手册.md"
     }
   ],
   "omittedPaths": [],
