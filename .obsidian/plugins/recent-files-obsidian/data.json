@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Lambda表达式",
+      "path": "Python/Lambda表达式.md"
+    },
+    {
       "basename": "可迭代对象",
       "path": "Python/可迭代对象.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "C10K问题",
       "path": "网络编程/C10K问题.md"
-    },
-    {
-      "basename": "服务器创建过程",
-      "path": "网络编程/服务器创建过程.md"
     }
   ],
   "omittedPaths": [],
