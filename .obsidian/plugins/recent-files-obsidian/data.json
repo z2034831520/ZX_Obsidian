@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "声明式编程",
-      "path": "编程基本概念/声明式编程.md"
-    },
-    {
       "basename": "命令式编程",
       "path": "编程基本概念/命令式编程.md"
+    },
+    {
+      "basename": "声明式编程",
+      "path": "编程基本概念/声明式编程.md"
     },
     {
       "basename": "函数式编程",
