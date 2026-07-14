@@ -24,7 +24,6 @@ Anaconda是一个强大的包管理器，专为数据科学、机器学习和科
 
 ### 重新启动软件
 重新启动软件时建议通过命令行进行启动，我们可以开启`Anaconda Prompt`软件，开启后会打开一个终端，我们直接在终端中输入如下两条命令即可
-`anaconda-navigator --reset
-anaconda-navigator`
-
+`anaconda-navigator --reset`
+`anaconda-navigator`
 ![](assets/Anaconda使用/file-20260714135911873.png)
