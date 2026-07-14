@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Anaconda使用",
+      "path": "Python/Anaconda使用.md"
+    },
+    {
       "basename": "模块",
       "path": "Python/模块.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "第一章 随机事件与概率",
       "path": "概率论期末复习/第一章 随机事件与概率.md"
-    },
-    {
-      "basename": "C++线程编程",
-      "path": "C++线程编程.md"
     }
   ],
   "omittedPaths": [],
