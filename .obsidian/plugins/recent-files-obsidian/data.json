@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "函数式编程",
+      "path": "编程基本概念/函数式编程.md"
+    },
+    {
+      "basename": "Lambda表达式",
+      "path": "Python/Lambda表达式.md"
+    },
+    {
       "basename": "Anaconda使用",
       "path": "Python/Anaconda使用.md"
     },
@@ -37,10 +45,6 @@
       "path": "数据库期末复习/事务.md"
     },
     {
-      "basename": "Lambda表达式",
-      "path": "Python/Lambda表达式.md"
-    },
-    {
       "basename": "Sublime软件的使用",
       "path": "Python/Sublime软件的使用.md"
     },
@@ -70,7 +74,7 @@
     },
     {
       "basename": "耦合度",
-      "path": "计算机基本概念/耦合度.md"
+      "path": "编程基本概念/耦合度.md"
     },
     {
       "basename": "static关键字",
@@ -154,7 +158,7 @@
     },
     {
       "basename": "继承",
-      "path": "计算机基本概念/继承.md"
+      "path": "编程基本概念/继承.md"
     },
     {
       "basename": "数据库考试",
@@ -195,10 +199,6 @@
     {
       "basename": "概率的定义与性质",
       "path": "概率论期末复习/概率的定义与性质.md"
-    },
-    {
-      "basename": "第一章 随机事件与概率",
-      "path": "概率论期末复习/第一章 随机事件与概率.md"
     }
   ],
   "omittedPaths": [],
