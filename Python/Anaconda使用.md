@@ -27,3 +27,15 @@ Anaconda是一个强大的包管理器，专为数据科学、机器学习和科
 `anaconda-navigator --reset`
 `anaconda-navigator`
 ![](assets/Anaconda使用/file-20260714135911873.png)
+
+## 使用方式
+### `Jupyter Lab`使用方式
+使用`Jupter Lab`时我们可以通过软件的图形化界面进行一键启动，但是在实际使用的时候我们通常不会这样做，因为默认情况下该软件启动后的默认目录是`C:\Users\zhou`，通常在使用时该软件时我们需要在指定文件夹下启动`Jupyter Lab`，因此更高效的方法是通过终端来启动`Jupyter Lab`
+![](assets/Anaconda使用/file-20260714163351150.png)
+通过终端启动的方法如下：
+首先打开`Anaconda Prompt`
+![](assets/Anaconda使用/file-20260714163613572.png)
+然后在终端中切换到工作目录
+![](assets/Anaconda使用/file-20260714163727269.png)
+切换到工作目录之后我们再通过`jupyter lab`命令在终端中直接启动环境，接下来我们就可以在浏览器中看到相应的工作区
+![](assets/Anaconda使用/file-20260714163918468.png)
