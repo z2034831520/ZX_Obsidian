@@ -5,12 +5,32 @@
       "path": "Python/模块.md"
     },
     {
+      "basename": "列表",
+      "path": "Python/列表.md"
+    },
+    {
       "basename": "可迭代对象",
       "path": "Python/可迭代对象.md"
     },
     {
       "basename": "堆和栈",
       "path": "Python/堆和栈.md"
+    },
+    {
+      "basename": "数据库期末复习总结",
+      "path": "数据库期末复习/数据库期末复习总结.md"
+    },
+    {
+      "basename": "数据库格言",
+      "path": "数据库期末复习/数据库格言.md"
+    },
+    {
+      "basename": "数据（Data）",
+      "path": "数据库期末复习/数据（Data）.md"
+    },
+    {
+      "basename": "事务",
+      "path": "数据库期末复习/事务.md"
     },
     {
       "basename": "Lambda表达式",
@@ -23,10 +43,6 @@
     {
       "basename": "String字符串常用函数",
       "path": "Python/String字符串常用函数.md"
-    },
-    {
-      "basename": "列表",
-      "path": "Python/列表.md"
     },
     {
       "basename": "VPS搭建",
@@ -85,20 +101,12 @@
       "path": "数据库期末复习/幻读.md"
     },
     {
-      "basename": "数据库期末复习总结",
-      "path": "数据库期末复习/数据库期末复习总结.md"
-    },
-    {
       "basename": "数据库管理系统（DBMS）",
       "path": "数据库期末复习/数据库管理系统（DBMS）.md"
     },
     {
       "basename": "三级模式两级映像",
       "path": "数据库期末复习/三级模式两级映像.md"
-    },
-    {
-      "basename": "数据库格言",
-      "path": "数据库期末复习/数据库格言.md"
     },
     {
       "basename": "不可重复读",
@@ -127,10 +135,6 @@
     {
       "basename": "数据库（DB）",
       "path": "数据库期末复习/数据库（DB）.md"
-    },
-    {
-      "basename": "数据（Data）",
-      "path": "数据库期末复习/数据（Data）.md"
     },
     {
       "basename": "属性 VS 主键",
@@ -179,10 +183,6 @@
     {
       "basename": "串口空闲中断",
       "path": "单片机/串口空闲中断.md"
-    },
-    {
-      "basename": "事务",
-      "path": "数据库期末复习/事务.md"
     },
     {
       "basename": "脏读",
