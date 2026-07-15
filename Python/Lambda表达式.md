@@ -14,5 +14,6 @@ print(add(2,3))
 ```python
 add = lambda x, y: x + y
 
-print()
+print(add(2,3))
 ```
+
