@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Anaconda使用",
+      "path": "Python/Anaconda使用.md"
+    },
+    {
       "basename": "Jupyter Lab使用教程",
       "path": "Python/Jupyter Lab使用教程.md"
+    },
+    {
+      "basename": "main函数的作用",
+      "path": "Python/main函数的作用.md"
     },
     {
       "basename": "可迭代对象",
@@ -11,10 +19,6 @@
     {
       "basename": "Lambda表达式",
       "path": "Python/Lambda表达式.md"
-    },
-    {
-      "basename": "Anaconda使用",
-      "path": "Python/Anaconda使用.md"
     },
     {
       "basename": "封装",
@@ -195,10 +199,6 @@
     {
       "basename": "F区按键功能",
       "path": "F区按键功能.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     }
   ],
   "omittedPaths": [],
