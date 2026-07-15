@@ -10,4 +10,9 @@ def add(x,y):
 	return x + y
 print(add(2,3))
 ```
-`lambda`写法(mie'yo)
+### `lambda`写法(没有函数名，直接返回计算结果)
+```python
+add = lambda x, y: x + y
+
+print()
+```
