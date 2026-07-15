@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Anaconda使用",
-      "path": "Python/Anaconda使用.md"
+      "basename": "Lambda表达式",
+      "path": "Python/Lambda表达式.md"
     },
     {
       "basename": "可迭代对象",
       "path": "Python/可迭代对象.md"
+    },
+    {
+      "basename": "Anaconda使用",
+      "path": "Python/Anaconda使用.md"
     },
     {
       "basename": "封装",
@@ -15,10 +19,6 @@
     {
       "basename": "多态",
       "path": "编程基本概念/多态.md"
-    },
-    {
-      "basename": "Lambda表达式",
-      "path": "Python/Lambda表达式.md"
     },
     {
       "basename": "函数式编程",
