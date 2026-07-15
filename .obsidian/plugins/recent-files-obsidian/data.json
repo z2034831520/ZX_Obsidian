@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "总览",
+      "path": "无人机开发/总览.md"
+    },
+    {
       "basename": "Anaconda使用",
       "path": "Python/Anaconda使用.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "抽样分布",
       "path": "概率论期末复习/抽样分布.md"
-    },
-    {
-      "basename": "F区按键功能",
-      "path": "F区按键功能.md"
     }
   ],
   "omittedPaths": [],
