@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "F570无人机无线烧录",
+      "path": "无人机开发/F570无人机无线烧录.md"
+    },
+    {
       "basename": "总览",
       "path": "无人机开发/总览.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "原子笔记",
       "path": "原子笔记.md"
-    },
-    {
-      "basename": "抽样分布",
-      "path": "概率论期末复习/抽样分布.md"
     }
   ],
   "omittedPaths": [],
