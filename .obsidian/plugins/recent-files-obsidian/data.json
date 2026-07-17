@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "VPS搭建",
+      "path": "VPS搭建.md"
+    },
+    {
+      "basename": "F区按键功能",
+      "path": "F区按键功能.md"
+    },
+    {
+      "basename": "原子笔记",
+      "path": "原子笔记.md"
+    },
+    {
       "basename": "F570无人机无线烧录",
       "path": "无人机开发/F570无人机无线烧录.md"
     },
@@ -83,10 +95,6 @@
     {
       "basename": "String字符串常用函数",
       "path": "Python/String字符串常用函数.md"
-    },
-    {
-      "basename": "VPS搭建",
-      "path": "VPS搭建.md"
     },
     {
       "basename": "字编址 VS 字节编址",
@@ -191,14 +199,6 @@
     {
       "basename": "继承",
       "path": "编程基本概念/继承.md"
-    },
-    {
-      "basename": "数据库考试",
-      "path": "数据库考试.md"
-    },
-    {
-      "basename": "原子笔记",
-      "path": "原子笔记.md"
     }
   ],
   "omittedPaths": [],
