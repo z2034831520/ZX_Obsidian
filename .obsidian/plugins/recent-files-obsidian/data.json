@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "任务状态",
+      "path": "FreeRTOS/任务状态.md"
+    },
+    {
       "basename": "抢占式任务调度",
       "path": "FreeRTOS/抢占式任务调度.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "第二范式",
       "path": "数据库期末复习/第二范式.md"
-    },
-    {
-      "basename": "索引",
-      "path": "数据库期末复习/索引.md"
     }
   ],
   "omittedPaths": [],
