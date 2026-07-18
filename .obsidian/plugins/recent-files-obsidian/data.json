@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "FreeRTOS底层实现原理",
+      "path": "FreeRTOS/FreeRTOS底层实现原理.md"
+    },
+    {
       "basename": "FreeRTOS介绍",
       "path": "FreeRTOS/FreeRTOS介绍.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "数据库系统（DBS）",
       "path": "数据库期末复习/数据库系统（DBS）.md"
-    },
-    {
-      "basename": "数据库（DB）",
-      "path": "数据库期末复习/数据库（DB）.md"
     }
   ],
   "omittedPaths": [],
