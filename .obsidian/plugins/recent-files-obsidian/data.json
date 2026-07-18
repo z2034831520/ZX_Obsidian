@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "FreeRTOS简介",
+      "path": "FreeRTOS/FreeRTOS简介.md"
+    },
+    {
       "basename": "模块",
       "path": "Python/模块.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "数据库（DB）",
       "path": "数据库期末复习/数据库（DB）.md"
-    },
-    {
-      "basename": "属性 VS 主键",
-      "path": "数据库期末复习/属性 VS 主键.md"
     }
   ],
   "omittedPaths": [],
