@@ -1,12 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "函数式编程",
-      "path": "编程基本概念/函数式编程.md"
+      "basename": "模块",
+      "path": "Python/模块.md"
+    },
+    {
+      "basename": "堆和栈",
+      "path": "Python/堆和栈.md"
+    },
+    {
+      "basename": "虚函数",
+      "path": "编程基本概念/虚函数.md"
+    },
+    {
+      "basename": "开闭原则",
+      "path": "编程基本概念/开闭原则.md"
+    },
+    {
+      "basename": "环境变量",
+      "path": "编程基本概念/环境变量.md"
     },
     {
       "basename": "VPS搭建",
       "path": "VPS搭建.md"
+    },
+    {
+      "basename": "函数式编程",
+      "path": "编程基本概念/函数式编程.md"
     },
     {
       "basename": "F区按键功能",
@@ -61,16 +81,8 @@
       "path": "编程基本概念/声明式编程.md"
     },
     {
-      "basename": "模块",
-      "path": "Python/模块.md"
-    },
-    {
       "basename": "列表",
       "path": "Python/列表.md"
-    },
-    {
-      "basename": "堆和栈",
-      "path": "Python/堆和栈.md"
     },
     {
       "basename": "数据库期末复习总结",
@@ -187,18 +199,6 @@
     {
       "basename": "属性 VS 主键",
       "path": "数据库期末复习/属性 VS 主键.md"
-    },
-    {
-      "basename": "Docker简介",
-      "path": "Docker/Docker简介.md"
-    },
-    {
-      "basename": "Docker VS 虚拟机",
-      "path": "Docker/Docker VS 虚拟机.md"
-    },
-    {
-      "basename": "继承",
-      "path": "编程基本概念/继承.md"
     }
   ],
   "omittedPaths": [],
