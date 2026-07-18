@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "抢占式任务调度",
+      "path": "FreeRTOS/抢占式任务调度.md"
+    },
+    {
       "basename": "FreeRTOS底层实现原理",
       "path": "FreeRTOS/FreeRTOS底层实现原理.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "索引",
       "path": "数据库期末复习/索引.md"
-    },
-    {
-      "basename": "数据库系统（DBS）",
-      "path": "数据库期末复习/数据库系统（DBS）.md"
     }
   ],
   "omittedPaths": [],
