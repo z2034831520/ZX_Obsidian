@@ -9,12 +9,12 @@
       "path": "FreeRTOS/FreeRTOS底层实现原理.md"
     },
     {
-      "basename": "抢占式任务调度",
-      "path": "FreeRTOS/抢占式任务调度.md"
-    },
-    {
       "basename": "任务状态",
       "path": "FreeRTOS/任务状态.md"
+    },
+    {
+      "basename": "抢占式任务调度",
+      "path": "FreeRTOS/抢占式任务调度.md"
     },
     {
       "basename": "模块",
