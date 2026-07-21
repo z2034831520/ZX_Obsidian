@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "未命名",
+      "path": "FreeRTOS/未命名.md"
+    },
+    {
       "basename": "F区按键功能",
       "path": "F区按键功能.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "第三范式",
       "path": "数据库期末复习/第三范式.md"
-    },
-    {
-      "basename": "第二范式",
-      "path": "数据库期末复习/第二范式.md"
     }
   ],
   "omittedPaths": [],
