@@ -13,6 +13,6 @@
 由于学习`FreeRTOS`的同学应该都进行过`SMT32`的裸机开发，因此对这款软件应该都不陌生，这款软件主要是用于HAL库程序的初始化，我们常常用它来进行程序的初始化配置，这个软件的存在极大的降低了`FreeRTOS`的移植难度，我们可以仅通过几个按键就实现`FreeRTOS`的配置，由于大多数人都用过这款软件，所以这里不做过多解释，在后面的实操步骤中会进行演示
 
 ### STM32CubeCLT
-**STM32CubeCLT (Command Line Toolset)** 是 ST 官方专为第三方 IDE（如 CLion、VS Code）推出的命令行工具合集。把它理解为你开发环境的“引擎”。
+**STM32CubeCLT (Command Line Toolset)** 是 ST 官方专为第三方 IDE（如 CLion、VS Code）推出的命令行工具合集。它是我们`CLion`开发环境的引擎，
 
 
