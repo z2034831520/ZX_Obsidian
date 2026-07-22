@@ -16,6 +16,6 @@
 **STM32CubeCLT (Command Line Toolset)** 是 ST 官方专为第三方 IDE（如 CLion、VS Code）推出的命令行工具合集。它是我们`CLion`开发环境的引擎
 
 #### 作用
-把高级计算机语言翻译成单片机指令，我们使用的个人PC是X86架构的，但是`STM32`使用的是ARM架构的，电脑自带的便以及无法生成可以在`STM32`上运行的程序
+把高级计算机语言翻译成单片机指令，我们使用的个人PC是`X86`架构的，但是`STM32`使用的是`ARM`架构的，电脑自带的便以及无法生成可以在`STM32`上运行的程序，`STM32CubeCLT` 内置了 **GNU Arm Embedded Toolchain**（即 `arm-none-eabi-gcc` 编译器），它负责将我们写的 `C/C++`代码编译成 STM32 能识别的 `.elf` 或 `.bin` 二进制文件。
 
 
