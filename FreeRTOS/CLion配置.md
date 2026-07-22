@@ -16,13 +16,21 @@
 **STM32CubeCLT (Command Line Toolset)** 是 ST 官方专为第三方 IDE（如 CLion、VS Code）推出的命令行工具合集。它是我们`CLion`开发环境的引擎
 
 #### 作用
-把高级计算机语言翻译成单片机指令，我们使用的个人PC是`X86`架构的，但是`STM32`使用的是`ARM`架构的，电脑自带的便以及无法生成可以在`STM32`上运行的程序，`STM32CubeCLT` 内置了 **GNU Arm Embedded Toolchain**（即 `arm-none-eabi-gcc` 编译器），它负责将我们写的 `C/C++`代码编译成 STM32 能识别的 `.elf` 或 `.bin` 二进制文件。
+把高级计算机语言翻译成单片机指令，我们使用的个人PC是`X86`架构的，但是`STM32`使用的是`ARM`架构的，电脑自带的编译器无法生成可以在`STM32`上运行的程序，`STM32CubeCLT` 内置了 **GNU Arm Embedded Toolchain**（即 `arm-none-eabi-gcc` 编译器），它负责将我们写的 `C/C++`代码编译成 STM32 能识别的 `.elf` 或 `.bin` 二进制文件。
 
 
-**附加功能：** 它还包含了 `ST-LINK GDB Server`（官方调试服务端）和 `STM32CubeProgrammer`（官方烧录工具）。在最新的 CLion 版本中，只需配置这一个 CLT 路径，CLion 就能自动识别出编译器和调试工具。
+**附加功能：** 它还包含了 `ST-LINK GDB Server`（官方调试服务）和 `STM32CubeProgrammer`（官方烧录工具）。在最新的 CLion 版本中，只需配置这一个 CLT 路径，CLion 就能自动识别出`ST-Link`调试器，并进行下载调试等一系列操作。
 
 ### OpenOCD
-**OpenOCD (Open On-Chip Debugger)** 是一个开源的片上调试软件。它是电脑软件与硬件芯片之间的“桥梁”。
+**OpenOCD (Open On-Chip Debugger)** 是一个开源的片上调试软件。它是电脑软件与硬件芯片之间的“桥梁”，也是本次教程中着重需要介绍的，它的存在极大的提高了`CLion`开发单片机的兼容性
 
 #### 作用
-其核心作用是烧录程序与硬件调试，`CLion`作为一个纯软件，本身是无法通过`USB`线去控制
+其核心作用是烧录程序与硬件调试，`CLion`作为一个纯软件，本身是无法通过`USB`线去控制具体的硬件，当我们将仿真器（如`ST-Link`、`J-Link`、`DAP-Link`）插在电脑上并连接单片机时，`OpenOCD`会与`CLion`的内部调试器对接，它允许我们在代码中进行断点单步执行以及实时查看变量值等操作。
+当我们点击运行按键时，`OpenOCD`负责把编译器生成的二进制文件通过仿真器刷写到`STM32`的`Flash`闪存中
+
+其实在`STM32CubeCLT`中也自带了意法半导体官方的调试器，上一次介绍`CLion`的使用操作时我们就是直接使用它的。但是由于我们本次使用的调试器是非官方的`DAP-Link`，且`OpenOCD`是开源的，因此我们在本次的项目配置中需要使用到它
+
+### 工作流程
+介绍完了上面三者，我们可以总结一下`CLion`单片机开发的流程
+1. 初始化项目：通过使用`STM32CubeMX`软件进行工程的初始化和代码生成
+2. 编写代码：在`CLion`中打开工程文件夹并
