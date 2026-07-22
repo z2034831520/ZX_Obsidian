@@ -19,3 +19,10 @@
 把高级计算机语言翻译成单片机指令，我们使用的个人PC是`X86`架构的，但是`STM32`使用的是`ARM`架构的，电脑自带的便以及无法生成可以在`STM32`上运行的程序，`STM32CubeCLT` 内置了 **GNU Arm Embedded Toolchain**（即 `arm-none-eabi-gcc` 编译器），它负责将我们写的 `C/C++`代码编译成 STM32 能识别的 `.elf` 或 `.bin` 二进制文件。
 
 
+**附加功能：** 它还包含了 `ST-LINK GDB Server`（官方调试服务端）和 `STM32CubeProgrammer`（官方烧录工具）。在最新的 CLion 版本中，只需配置这一个 CLT 路径，CLion 就能自动识别出编译器和调试工具。
+
+### OpenOCD
+**OpenOCD (Open On-Chip Debugger)** 是一个开源的片上调试软件。它是电脑软件与硬件芯片之间的“桥梁”。
+
+#### 作用
+其核心作用是烧录程序与硬件调试，`CLion`作为一个纯软件，本身是无法通过`USB`线去控制
