@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "CLion使用教程——FreeRTOS",
+      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
+    },
+    {
       "basename": "CLion配置",
       "path": "FreeRTOS/CLion配置.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "不可重复读",
       "path": "数据库期末复习/不可重复读.md"
-    },
-    {
-      "basename": "第一范式",
-      "path": "数据库期末复习/第一范式.md"
     }
   ],
   "omittedPaths": [],
