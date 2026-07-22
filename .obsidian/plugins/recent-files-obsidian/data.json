@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "CLion配置",
+      "path": "FreeRTOS/CLion配置.md"
+    },
+    {
+      "basename": "FreeRTOS底层实现原理",
+      "path": "FreeRTOS/FreeRTOS底层实现原理.md"
+    },
+    {
       "basename": "环境变量",
       "path": "编程基本概念/环境变量.md"
     },
     {
       "basename": "键值对",
       "path": "编程基本概念/键值对.md"
-    },
-    {
-      "basename": "CLion配置",
-      "path": "FreeRTOS/CLion配置.md"
     },
     {
       "basename": "F区按键功能",
@@ -27,10 +31,6 @@
     {
       "basename": "FreeRTOS介绍",
       "path": "FreeRTOS/FreeRTOS介绍.md"
-    },
-    {
-      "basename": "FreeRTOS底层实现原理",
-      "path": "FreeRTOS/FreeRTOS底层实现原理.md"
     },
     {
       "basename": "任务状态",
