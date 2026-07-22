@@ -78,3 +78,15 @@
 如果我们还使用默认的`Systick`那么就会出现冲突，因此我们在配置`SYS`的时候可以使用芯片自带的其它定时器来提供时间基准，这里我使用的芯片是`STM32F103RCT6`，我选择使用`TIM7`作为系统时钟
 ![](assets/CLion配置/file-20260722140409738.png)
 随后我们点开左侧的`Middleware and Software`中点击`FREERTOS`，然后选择`CMSIS_V2`，这样我们就成功开启了`FreeRTOS`。
+随后在项目配置界面中选择`IDE`为`CMake`
+![](assets/CLion配置/file-20260722140812285.png)
+然后在`Code Genarator`中勾选红色方框内选项
+![](assets/CLion配置/file-20260722140903366.png)
+
+点击生成代码之后会弹出弹窗，我们选择`Open Folder`
+![](assets/CLion配置/file-20260722140959041.png)
+然后我们再回到`CLion`中选择项目路径
+![](assets/CLion配置/file-20260722141132138.png)
+选择成功之后点击继续，然后就会弹出项目的配置界面
+![](assets/CLion配置/file-20260722141229991.png)
+我们保持和图中一样的配置即可点击确定
