@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "偏航角",
+      "path": "无人机开发/偏航角.md"
+    },
+    {
       "basename": "CLion使用教程——FreeRTOS",
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "三级模式两级映像",
       "path": "数据库期末复习/三级模式两级映像.md"
-    },
-    {
-      "basename": "不可重复读",
-      "path": "数据库期末复习/不可重复读.md"
     }
   ],
   "omittedPaths": [],
