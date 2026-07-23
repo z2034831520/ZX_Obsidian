@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "抢占式任务调度",
+      "path": "FreeRTOS/抢占式任务调度.md"
+    },
+    {
       "basename": "CLion使用教程——FreeRTOS",
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
+    },
+    {
+      "basename": "FreeRTOS底层实现原理",
+      "path": "FreeRTOS/FreeRTOS底层实现原理.md"
+    },
+    {
+      "basename": "FreeRTOS介绍",
+      "path": "FreeRTOS/FreeRTOS介绍.md"
     },
     {
       "basename": "CLion配置",
@@ -77,10 +89,6 @@
       "path": "编程基本概念/多态.md"
     },
     {
-      "basename": "FreeRTOS底层实现原理",
-      "path": "FreeRTOS/FreeRTOS底层实现原理.md"
-    },
-    {
       "basename": "环境变量",
       "path": "编程基本概念/环境变量.md"
     },
@@ -91,14 +99,6 @@
     {
       "basename": "F区按键功能",
       "path": "F区按键功能.md"
-    },
-    {
-      "basename": "FreeRTOS介绍",
-      "path": "FreeRTOS/FreeRTOS介绍.md"
-    },
-    {
-      "basename": "抢占式任务调度",
-      "path": "FreeRTOS/抢占式任务调度.md"
     },
     {
       "basename": "模块",
