@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "FreeRTOS命名规则",
+      "path": "FreeRTOS/FreeRTOS命名规则.md"
+    },
+    {
       "basename": "抢占式任务调度",
       "path": "FreeRTOS/抢占式任务调度.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "static关键字",
       "path": "Java/static关键字.md"
-    },
-    {
-      "basename": "Java继承",
-      "path": "Java/Java继承.md"
     }
   ],
   "omittedPaths": [],
