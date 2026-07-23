@@ -1,16 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "FreeRTOS命名规则",
-      "path": "FreeRTOS/FreeRTOS命名规则.md"
-    },
-    {
-      "basename": "抢占式任务调度",
-      "path": "FreeRTOS/抢占式任务调度.md"
-    },
-    {
       "basename": "CLion使用教程——FreeRTOS",
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
+    },
+    {
+      "basename": "CLion配置",
+      "path": "FreeRTOS/CLion配置.md"
     },
     {
       "basename": "FreeRTOS底层实现原理",
@@ -21,8 +17,12 @@
       "path": "FreeRTOS/FreeRTOS介绍.md"
     },
     {
-      "basename": "CLion配置",
-      "path": "FreeRTOS/CLion配置.md"
+      "basename": "FreeRTOS命名规则",
+      "path": "FreeRTOS/FreeRTOS命名规则.md"
+    },
+    {
+      "basename": "抢占式任务调度",
+      "path": "FreeRTOS/抢占式任务调度.md"
     },
     {
       "basename": "无人机控制基础知识",

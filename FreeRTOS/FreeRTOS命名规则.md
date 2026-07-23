@@ -26,4 +26,4 @@
 | `Put / Set`  | 发送数据/设置标志 | `osMessageQueuePut()`<br>`osEventFlagSet()`  |
 | `Get / Wait` | 接收数据/等待标志 | `osMessageQueueGet()`<br>`osEventFlagWait()` |
 | `Delete`     | 删除对象回收内存  | `osThreadDelete()`                           |
-|              |           |                                              |
+
