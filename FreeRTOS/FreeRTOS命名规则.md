@@ -14,3 +14,16 @@
 - `MessageQueue`：消息队列（用于任务之间的数据传输）
 - `Timer`：软件定时器
 - `EventFlags`：事件标志组（用于多事件同步）
+
+### 具体动作
+跟在对象后后面的单词代表我们要执行的操作，命名同样很规则
+
+| 动作后缀         | 代表含义      | 代码示例                                         |
+| ------------ | --------- | -------------------------------------------- |
+| `New`        | 创建并初始化对象  | `osThreadNew()`<br>`osMessageQueueNew()`     |
+| `Acquire`    | 获取/占用（资源） | `osMessageQueueNew()`<br>`osMutexAcquire`    |
+| `Release`    | 释放/交出（资源） | `osSemaphoreRelease()`<br>`osMutexRelease()` |
+| `Put / Set`  | 发送数据/设置标志 | `osMessageQueuePut()`<br>`osEventFlagSet()`  |
+| `Get / Wait` | 接收数据/等待标志 | `osMessageQueueGet()`<br>`osEventFlagWait()` |
+| `Delete`     | 删除对象回收内存  | `osThreadDelete()`                           |
+|              |           |                                              |
