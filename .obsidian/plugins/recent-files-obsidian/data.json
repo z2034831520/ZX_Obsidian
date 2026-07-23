@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "无人机控制基础知识",
-      "path": "无人机开发/无人机控制基础知识.md"
-    },
-    {
       "basename": "CLion使用教程——FreeRTOS",
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
     },
     {
       "basename": "CLion配置",
       "path": "FreeRTOS/CLion配置.md"
+    },
+    {
+      "basename": "无人机控制基础知识",
+      "path": "无人机开发/无人机控制基础知识.md"
+    },
+    {
+      "basename": "字编址 VS 字节编址",
+      "path": "计算机组成原理/字编址 VS 字节编址.md"
+    },
+    {
+      "basename": "计算机系统概论",
+      "path": "计算机组成原理/计算机系统概论.md"
     },
     {
       "basename": "任务状态",
@@ -55,10 +63,6 @@
     {
       "basename": "总览",
       "path": "无人机开发/总览.md"
-    },
-    {
-      "basename": "计算机系统概论",
-      "path": "计算机组成原理/计算机系统概论.md"
     },
     {
       "basename": "继承",
@@ -175,10 +179,6 @@
     {
       "basename": "String字符串常用函数",
       "path": "Python/String字符串常用函数.md"
-    },
-    {
-      "basename": "字编址 VS 字节编址",
-      "path": "计算机组成原理/字编址 VS 字节编址.md"
     },
     {
       "basename": "复习路线",
