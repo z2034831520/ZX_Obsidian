@@ -5,6 +5,62 @@
       "path": "无人机开发/无人机控制基础知识.md"
     },
     {
+      "basename": "F570无人机无线烧录",
+      "path": "无人机开发/F570无人机无线烧录.md"
+    },
+    {
+      "basename": "面向对象",
+      "path": "编程基本概念/面向对象.md"
+    },
+    {
+      "basename": "面向过程",
+      "path": "编程基本概念/面向过程.md"
+    },
+    {
+      "basename": "封装",
+      "path": "编程基本概念/封装.md"
+    },
+    {
+      "basename": "代码的复用性",
+      "path": "编程基本概念/代码的复用性.md"
+    },
+    {
+      "basename": "向上转型关系图",
+      "path": "Excalidraw/向上转型关系图.md"
+    },
+    {
+      "basename": "向下转型关系图",
+      "path": "Excalidraw/向下转型关系图.md"
+    },
+    {
+      "basename": "Java类和对象的存储位置",
+      "path": "Excalidraw/Java类和对象的存储位置.md"
+    },
+    {
+      "basename": "ROS发展史",
+      "path": "Excalidraw/ROS发展史.md"
+    },
+    {
+      "basename": "总览",
+      "path": "无人机开发/总览.md"
+    },
+    {
+      "basename": "计算机系统概论",
+      "path": "计算机组成原理/计算机系统概论.md"
+    },
+    {
+      "basename": "继承",
+      "path": "编程基本概念/继承.md"
+    },
+    {
+      "basename": "函数式编程",
+      "path": "编程基本概念/函数式编程.md"
+    },
+    {
+      "basename": "多态",
+      "path": "编程基本概念/多态.md"
+    },
+    {
       "basename": "CLion使用教程——FreeRTOS",
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
     },
@@ -27,14 +83,6 @@
     {
       "basename": "F区按键功能",
       "path": "F区按键功能.md"
-    },
-    {
-      "basename": "F570无人机无线烧录",
-      "path": "无人机开发/F570无人机无线烧录.md"
-    },
-    {
-      "basename": "总览",
-      "path": "无人机开发/总览.md"
     },
     {
       "basename": "FreeRTOS介绍",
@@ -69,10 +117,6 @@
       "path": "VPS搭建.md"
     },
     {
-      "basename": "函数式编程",
-      "path": "编程基本概念/函数式编程.md"
-    },
-    {
       "basename": "原子笔记",
       "path": "原子笔记.md"
     },
@@ -95,14 +139,6 @@
     {
       "basename": "Lambda表达式",
       "path": "Python/Lambda表达式.md"
-    },
-    {
-      "basename": "封装",
-      "path": "编程基本概念/封装.md"
-    },
-    {
-      "basename": "多态",
-      "path": "编程基本概念/多态.md"
     },
     {
       "basename": "命令式编程",
@@ -153,10 +189,6 @@
       "path": "计算机组成原理/系统总线.md"
     },
     {
-      "basename": "计算机系统概论",
-      "path": "计算机组成原理/计算机系统概论.md"
-    },
-    {
       "basename": "耦合度",
       "path": "编程基本概念/耦合度.md"
     },
@@ -167,34 +199,6 @@
     {
       "basename": "Java继承",
       "path": "Java/Java继承.md"
-    },
-    {
-      "basename": "继承构造方法的调用",
-      "path": "Java/继承构造方法的调用.md"
-    },
-    {
-      "basename": "覆写（overload）",
-      "path": "Java/覆写（overload）.md"
-    },
-    {
-      "basename": "包",
-      "path": "Java/包.md"
-    },
-    {
-      "basename": "范式设计",
-      "path": "数据库期末复习/范式设计.md"
-    },
-    {
-      "basename": "反范式设计",
-      "path": "数据库期末复习/反范式设计.md"
-    },
-    {
-      "basename": "幻读",
-      "path": "数据库期末复习/幻读.md"
-    },
-    {
-      "basename": "数据库管理系统（DBMS）",
-      "path": "数据库期末复习/数据库管理系统（DBMS）.md"
     }
   ],
   "omittedPaths": [],
