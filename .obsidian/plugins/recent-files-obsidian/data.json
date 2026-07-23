@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "CLion使用教程——FreeRTOS",
+      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
+    },
+    {
+      "basename": "FreeRTOS底层实现原理",
+      "path": "FreeRTOS/FreeRTOS底层实现原理.md"
+    },
+    {
+      "basename": "任务状态",
+      "path": "FreeRTOS/任务状态.md"
+    },
+    {
+      "basename": "抢占式任务调度",
+      "path": "FreeRTOS/抢占式任务调度.md"
+    },
+    {
+      "basename": "CLion配置",
+      "path": "FreeRTOS/CLion配置.md"
+    },
+    {
+      "basename": "数据库考试",
+      "path": "数据库考试.md"
+    },
+    {
+      "basename": "Java期末复习",
+      "path": "Java期末复习.md"
+    },
+    {
+      "basename": "F570无人机无线烧录",
+      "path": "无人机开发/F570无人机无线烧录.md"
+    },
+    {
+      "basename": "无人机控制基础知识",
+      "path": "无人机开发/无人机控制基础知识.md"
+    },
+    {
+      "basename": "总览",
+      "path": "无人机开发/总览.md"
+    },
+    {
       "basename": "Java类和对象的存储位置",
       "path": "Excalidraw/Java类和对象的存储位置.md"
     },
@@ -25,18 +65,6 @@
       "path": "原子笔记.md"
     },
     {
-      "basename": "CLion使用教程——FreeRTOS",
-      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
-    },
-    {
-      "basename": "CLion配置",
-      "path": "FreeRTOS/CLion配置.md"
-    },
-    {
-      "basename": "FreeRTOS底层实现原理",
-      "path": "FreeRTOS/FreeRTOS底层实现原理.md"
-    },
-    {
       "basename": "FreeRTOS介绍",
       "path": "FreeRTOS/FreeRTOS介绍.md"
     },
@@ -45,28 +73,12 @@
       "path": "FreeRTOS/FreeRTOS命名规则.md"
     },
     {
-      "basename": "抢占式任务调度",
-      "path": "FreeRTOS/抢占式任务调度.md"
-    },
-    {
-      "basename": "无人机控制基础知识",
-      "path": "无人机开发/无人机控制基础知识.md"
-    },
-    {
       "basename": "字编址 VS 字节编址",
       "path": "计算机组成原理/字编址 VS 字节编址.md"
     },
     {
       "basename": "计算机系统概论",
       "path": "计算机组成原理/计算机系统概论.md"
-    },
-    {
-      "basename": "任务状态",
-      "path": "FreeRTOS/任务状态.md"
-    },
-    {
-      "basename": "F570无人机无线烧录",
-      "path": "无人机开发/F570无人机无线烧录.md"
     },
     {
       "basename": "面向对象",
@@ -83,10 +95,6 @@
     {
       "basename": "代码的复用性",
       "path": "编程基本概念/代码的复用性.md"
-    },
-    {
-      "basename": "总览",
-      "path": "无人机开发/总览.md"
     },
     {
       "basename": "继承",
@@ -191,14 +199,6 @@
     {
       "basename": "复习路线",
       "path": "计算机组成原理/复习路线.md"
-    },
-    {
-      "basename": "系统总线",
-      "path": "计算机组成原理/系统总线.md"
-    },
-    {
-      "basename": "耦合度",
-      "path": "编程基本概念/耦合度.md"
     }
   ],
   "omittedPaths": [],
