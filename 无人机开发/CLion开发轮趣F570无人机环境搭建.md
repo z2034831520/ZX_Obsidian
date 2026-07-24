@@ -66,4 +66,6 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 
 对于初学者来说可能会感觉到疑惑的事是，为什么`CMakeLists.txt`文件中默认什么源文件路径都没有？按理说这样不会引发报错吗？这种怀疑是正确的，我们可以在`CMakeLists.txt`文件中看到这样一句话
 ![](assets/CLion开发轮趣F570无人机环境搭建/file-20260724152326173.png)
-红色方框内的语句作用是添加其它文件夹下的`CMakeLists.txt`文件来导入编译信息，在程序中括号内的文件夹内刚好有一个
+红色方框内的语句作用是添加其它文件夹下的`CMakeLists.txt`文件来导入编译信息，在程序中括号内的文件夹内刚好有一个`CMakeLists.txt`文件
+![](assets/CLion开发轮趣F570无人机环境搭建/file-20260724152845014.png)
+该文件夹中就包含了所有由`CubeMX`自动生成的源文件、`HAL`库外设驱动文件、以及系统启动文件
