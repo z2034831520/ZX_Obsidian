@@ -17,5 +17,14 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here   
 )
 ```
-英语好的同学应该一下就能看出来这部分代码的作用是什么，上面的英文注释翻译成中文就是：向可执行文件中添加源文件。因此不难推出
+英语好的同学应该一下就能看出来这部分代码的作用是什么，上面的英文注释翻译成中文就是：向可执行文件中添加源文件。因此不难推出如果我们向项目中添加了一个新的源文件，那么我们就应该在这里来添加相关信息
+假设我们现在向程序中创建了一个`App`目录，并在其中创建了串口接收相关的源文件用于处理串口接收任务，源文件的文件名为`uart_callback.c`，添加完成后我们就需要在`CMakeLists.txt`文件中上面的代码中添加一条新语句`${CMAKE_CURRENT_SOURCE_DIR}/App/uart_callback.c `，添加后对应部分的代码变为
+```cmake
+# Add sources to executable  
+target_sources(${CMAKE_PROJECT_NAME} PRIVATE  
+    # Add user sources here  
+    ${CMAKE_CURRENT_SOURCE_DIR}/App/uart_callback.c  
+)
+```
+我们可以尝试拆解一下该语句，这条语句的内容并不复杂，其中`${CMAKE_CURRENT_SOURCE_DIR}`是一个占位符，它代表当前程序的根目录，我们可以直接记忆，它也是编写此类添加语句的起手式，因为`CMake`需要从根目录开始向下寻找对应的文件。此部分之后的内容就是我们需要
 
