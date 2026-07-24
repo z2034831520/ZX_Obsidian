@@ -3,10 +3,10 @@
 
 ## 配置流程
 我们打开`CLion`然后点击新建项目
-![](assets/CLion配置/file-20260721203009581.png)然后在新建项目中选择`STM32CubeMX`
-![](assets/CLion配置/file-20260721203110175.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007418%201.png)然后在新建项目中选择`STM32CubeMX`
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007417.png)
 在界面中我们关注红色方框内的内容，如果是首次配置那么极有可能显示没有找到或者是红色方框报错，我们可以点击旁边的编辑，然后就可以在新界面中看到更详细的配置信息
-![](assets/CLion配置/file-20260721203509478.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007418.png)
 之前的教程中我们使用的是`STlink`进行程序的烧录下载调试，但是在实际的程序编写时我们可能会使用其它的调试器，这次我们使用`CMSIS-DAP Link`进行程序的下载与调试，刚好再熟悉一下`CLion`的配置流程，在上面的配置界面中我们需要配置`STM32CubeMX`、`OpenOCD`以及`STM32CubeCLT`。这次我们来介绍一下这三者的作用作用。
 
 ### `STM32CubeMX`
@@ -44,71 +44,71 @@
 首先我们需要将基础的三剑客配置一下，然后才能进行后续的开发
 
 #### `STM32CubeMX`配置
-![](assets/CLion配置/file-20260722112406811.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007416.png)
 我们在`CLion`的项目创建界面中我们需要找到红色方框中三者的对应安装路径，大家应该都安装过`CubeMX`了，所以我们可以先配置`CubeMX`的可执行文件路径，不过这里不配置也可以，因为这里配置`CubeMX`路径的作用只是方便我们直接从`CLion`中启动它，我们也可以直接手动打开`CubeMX`进行项目配置，然后再用`CLion`打开该项目
 
 #### `Stm32CubeCLT`配置
 `Stm32CubeCLT`大多数人可能并没有下载过，不过不用担心，下载方式也非常简单，我们可以直接点击对应选项下面的蓝色下载字体，然后就可以直接跳转到对应的下载界面了，我们在这里点击了蓝色字体后会直接跳转到意法半导体官方的下载界面中
-![](assets/CLion配置/file-20260722113046459.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007416%201.png)
 我们下拉就可以看到适配不同操作系统的不同版本的安装包，大家可以根据自身情况进行选择
-![](assets/CLion配置/file-20260722113134373.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007415%201.png)
 下面演示一下`WIndows`系统下的安装流程，点击对应的版本，然后即可获得一个`.zip`安装包，我们右键解压之后双击即可进行安装
-![](assets/CLion配置/file-20260722113324237.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007415.png)
 后续的安装过程较为简单，这里就不做过多赘述，不过有一点需要注意的是，你需要记住安装的路径，因为接下来我们需要进行路径的配置
 安装完成之后我们将安装的路径导入到`CLion`中即可
-![](assets/CLion配置/file-20260722113459144.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007414.png)
 
 #### `OpenOCD`配置
 前面两个配置好之后我们就应该下载并配置`OpenOCD`了，但是当我们点击了蓝色的下载字体后我们跳转到的却不是下载界面
-![](assets/CLion配置/file-20260722113714436.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007413%201.png)
 我在当前界面找了一下，并没有找到对应的下载链接，后来我是在`GitHub`里找到了对应的项目，然后下载了对应的安装包，该项目的地址为：
 `https://github.com/xpack-dev-tools/openocd-xpack/releases/`
 打开该链接可以直接跳转到对应的下载界面
-![](assets/CLion配置/file-20260722134002111.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007413.png)
 我们可以直接在该界面中下载对应的软件版本，下载之后是一个压缩包，我们可以将其放入指定文件夹中，然后在`CLIon`中选择对应的可执行文件路径即可。
-![](assets/CLion配置/file-20260722134213148.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007411%201.png)
 
 ### 基础项目创建
 前置配置完成之后我们就可以在`CLion`中点击启动`STM32CUbeMX`然后我们就可以打开`CubeMX`
-![](assets/CLion配置/file-20260722134450384.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007412.png)
 
 项目配置的一些基础操作我们不做过多赘述，接下我们只会介绍`CubeMX`中与`FreeRTOS`相关的内容
 #### 系统时钟配置
 之前在使用`HAL`库裸机开发中我们通常使用`SysTick`（系统滴答定时器）作为我们的系统时基，当我们执行一些延时操作时系统就会依据这个定时器来进行时间计算。但是在`FreeRTOS`中，在进行任务调度、时间片轮转的时候同样需要一个定时器来作为系统心跳，因为`SysTick`是`ARM Cortex-M`内核标配的定时器，`FreeRTOS`为了保证可移植性，默认会强制征用`SysTick`作为自己的系统心跳。
 如果我们还使用默认的`Systick`那么就会出现冲突，因此我们在配置`SYS`的时候可以使用芯片自带的其它定时器来提供时间基准，这里我使用的芯片是`STM32F103RCT6`，我选择使用`TIM7`作为系统时钟
-![](assets/CLion配置/file-20260722140409738.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007411.png)
 随后我们点开左侧的`Middleware and Software`中点击`FREERTOS`，然后选择`CMSIS_V2`，这样我们就成功开启了`FreeRTOS`。
 随后在项目配置界面中选择`IDE`为`CMake`
-![](assets/CLion配置/file-20260722140812285.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007410.png)
 然后在`Code Genarator`中勾选红色方框内选项
-![](assets/CLion配置/file-20260722140903366.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007409.png)
 
 点击生成代码之后会弹出弹窗，我们选择`Open Folder`
-![](assets/CLion配置/file-20260722140959041.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007408%201.png)
 然后我们再回到`CLion`中选择项目路径
-![](assets/CLion配置/file-20260722141132138.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007408.png)
 选择成功之后点击继续，然后就会弹出项目的配置界面
-![](assets/CLion配置/file-20260722141229991.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007407.png)
 我们保持和图中一样的配置即可点击确定进入下一步的操作，进入到软件中我们可以点击顶部的锤子标识，这是编译选项，点击编译后我们可以看到编译信息和系统资源占用情况
-![](assets/CLion配置/file-20260722141508493.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007406.png)
 
 #### 烧录配置
 基础配置完成之后如果我们点击顶部绿色的运行按键，那么此时大概率会出现报错，除非你使用的是意法半导体官方提供的`ST-Link`，我这里使用的是`DAP-Link`，所以就触发了报错，此时我们需要再进行烧录的配置
 我们先点击顶部的蓝色中断图标，上面对应的是我们的项目名，然后再点击编辑配置
-![](assets/CLion配置/file-20260722141839068.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007405.png)
 然后我们再点击加号，然后再选择`OpecOCD`下载并运行
-![](assets/CLion配置/file-20260722142753677.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007404.png)
 
 然后可执行的二进制文件我们选择刚刚编译生成的`.elf`文件，面板配置文件需要我们自己编写，我们可以创建一个`.cfg`后缀的配置文件，文件中保存着烧录器的配置信息，例如我们此次使用的配置文件内容如下，大家可以自己创建一个一样的配置文件，如果想要了解这个文件具体应该怎样编写可以问一下`AI`
-![](assets/CLion配置/file-20260722144800910.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007403.png)
 
 文件编写完成之后我们可以回到`CLion`中继续进行项目的配置了，我们将刚才创建的配置文件选中，然后保持如下图所示的配置即可
-![](assets/CLion配置/file-20260722151832737.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007402.png)
 最后点击确定
 然后我们还需要选择原生模式除非你使用的是`ST-Link`
-![](assets/CLion配置/file-20260722152050617.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007401%201.png)
 配置完上述内容之后我们将开发板连接到电脑上之后再次点击顶部的绿色三角形即可下载烧录程序
-![](assets/CLion配置/file-20260722151935458.png)
+![](assets/CLion开发FreeRTOS的基本配置/file-20260724140007401.png)
 
 ## 总结
 至此我们就完成的一个完整的`FreeRTOS`项目的创建与烧录，相较于直接使用`ST-LINk`，使用第三方烧录器的配置流程要复杂不少，如果大家有条件最好还是使用官方的`ST-Link`烧录器，其中一些配置部分讲的会有些混乱，如果有不懂的地方可以尝试去问问`AI`
