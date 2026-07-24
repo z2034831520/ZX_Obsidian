@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "CLion开发轮趣F570无人机环境搭建",
-      "path": "无人机开发/CLion开发轮趣F570无人机环境搭建.md"
+      "basename": "MID-360s点云图录制",
+      "path": "MID-360s/MID-360s点云图录制.md"
+    },
+    {
+      "basename": "FreeRTOS命名规则",
+      "path": "FreeRTOS/FreeRTOS命名规则.md"
+    },
+    {
+      "basename": "FreeRTOS介绍",
+      "path": "FreeRTOS/FreeRTOS介绍.md"
     },
     {
       "basename": "CLion使用教程——FreeRTOS",
@@ -13,24 +21,40 @@
       "path": "FreeRTOS/FreeRTOS底层实现原理.md"
     },
     {
+      "basename": "CLion配置",
+      "path": "FreeRTOS/CLion配置.md"
+    },
+    {
+      "basename": "原子笔记",
+      "path": "杂谈/原子笔记.md"
+    },
+    {
+      "basename": "C++线程编程",
+      "path": "杂谈/C++线程编程.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "VPS搭建",
+      "path": "杂谈/VPS搭建.md"
+    },
+    {
+      "basename": "F区按键功能",
+      "path": "杂谈/F区按键功能.md"
+    },
+    {
+      "basename": "CLion开发轮趣F570无人机环境搭建",
+      "path": "无人机开发/CLion开发轮趣F570无人机环境搭建.md"
+    },
+    {
       "basename": "任务状态",
       "path": "FreeRTOS/任务状态.md"
     },
     {
       "basename": "抢占式任务调度",
       "path": "FreeRTOS/抢占式任务调度.md"
-    },
-    {
-      "basename": "CLion配置",
-      "path": "FreeRTOS/CLion配置.md"
-    },
-    {
-      "basename": "数据库考试",
-      "path": "数据库考试.md"
-    },
-    {
-      "basename": "Java期末复习",
-      "path": "Java期末复习.md"
     },
     {
       "basename": "F570无人机无线烧录",
@@ -63,18 +87,6 @@
     {
       "basename": "未命名",
       "path": "ROS2/未命名.md"
-    },
-    {
-      "basename": "原子笔记",
-      "path": "原子笔记.md"
-    },
-    {
-      "basename": "FreeRTOS介绍",
-      "path": "FreeRTOS/FreeRTOS介绍.md"
-    },
-    {
-      "basename": "FreeRTOS命名规则",
-      "path": "FreeRTOS/FreeRTOS命名规则.md"
     },
     {
       "basename": "字编址 VS 字节编址",
@@ -121,10 +133,6 @@
       "path": "编程基本概念/键值对.md"
     },
     {
-      "basename": "F区按键功能",
-      "path": "F区按键功能.md"
-    },
-    {
       "basename": "模块",
       "path": "Python/模块.md"
     },
@@ -139,10 +147,6 @@
     {
       "basename": "开闭原则",
       "path": "编程基本概念/开闭原则.md"
-    },
-    {
-      "basename": "VPS搭建",
-      "path": "VPS搭建.md"
     },
     {
       "basename": "Anaconda使用",
@@ -195,10 +199,6 @@
     {
       "basename": "Sublime软件的使用",
       "path": "Python/Sublime软件的使用.md"
-    },
-    {
-      "basename": "String字符串常用函数",
-      "path": "Python/String字符串常用函数.md"
     }
   ],
   "omittedPaths": [],
