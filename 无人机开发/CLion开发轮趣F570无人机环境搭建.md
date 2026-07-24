@@ -26,5 +26,18 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/App/uart_callback.c  
 )
 ```
-我们可以尝试拆解一下该语句，这条语句的内容并不复杂，其中`${CMAKE_CURRENT_SOURCE_DIR}`是一个占位符，它代表当前程序的根目录，我们可以直接记忆，它也是编写此类添加语句的起手式，因为`CMake`需要从根目录开始向下寻找对应的文件。此部分之后的内容就是我们需要
+我们可以尝试拆解一下该语句，这条语句的内容并不复杂，其中`${CMAKE_CURRENT_SOURCE_DIR}`是一个占位符，它代表当前程序的根目录，我们可以直接记忆，它也是编写此类添加语句的起手式，因为`CMake`需要从根目录开始向下寻找对应的文件。此部分之后的内容就是我们添加的目标文件相较于根目录的相对路径。
 
+#### 添加头文件包含目录
+如果我们新建了一个包含头文件的文件夹，且我们还在程序中引用了该文件夹中的头文件，那么我们就需要告诉编译器去哪里找这些`.h`文件，对应部分的代码如下：
+
+```cmake
+# Add include paths  
+target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE  
+    # Add user defined include paths  
+)
+```
+假设我们创建了一个`App`文件夹，并在该文件夹下又创建了一个`Inc`文件夹，我们将程序中引用的部分头文件放入了改文件夹中，那么我们就需要使用`${CMAKE_CURRENT_SOURCE_DIR}/App/Inc`语句将改文件夹添加到程序的头文件搜索路径中，修改后的代码部分如下：
+```cmake
+
+```
