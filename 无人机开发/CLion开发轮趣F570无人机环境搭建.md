@@ -39,5 +39,27 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
 ```
 假设我们创建了一个`App`文件夹，并在该文件夹下又创建了一个`Inc`文件夹，我们将程序中引用的部分头文件放入了改文件夹中，那么我们就需要使用`${CMAKE_CURRENT_SOURCE_DIR}/App/Inc`语句将改文件夹添加到程序的头文件搜索路径中，修改后的代码部分如下：
 ```cmake
+# 添加头文件搜索路径
+target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
+    # Add user defined include paths
+    ${CMAKE_CURRENT_SOURCE_DIR}/App/Inc
+)
+```
+该命令和添加源文件的命令形式极为相似，我们可以类比的去记忆
 
+#### 进阶管理
+随着项目变得越来越复杂，我们需要控制的外设也越来越多，业务裸机也变得越来越复杂，也必然会创建更多的文件，如果我们将所有的文件都一股脑的放到`target_sources` 下，那么过不了多久该部分的代码就会变得无比臃肿，因此我们可以想办法通过定义变量来解决这一问题，我们可以将文件的路径信息保存到变量中，然后再将变量导入到`target_sources` 下，示例代码如下：
+```cmake
+# 1. 定义模块变量 
+set(APP_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/App/main_task.c ${CMAKE_CURRENT_SOURCE_DIR}/App/motor_control.c ) 
+
+set(DRIVER_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Custom/imu_sensor.c ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Custom/can_bsp.c )
+```
+我们可以定义两个变量，一个用于存放业务逻辑相关的文件信息，另一个用于存放驱动文件的文件信息，然后我们再将这两个变量导入到`target_sources`中
+```cmake
+# 2. 将变量展开并添加到工程源文件中 
+target_sources(${CMAKE_PROJECT_NAME} PRIVATE 
+	${APP_SOURCES} 
+	${DRIVER_SOURCES} 
+)
 ```
