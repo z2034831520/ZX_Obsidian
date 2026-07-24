@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "蓝牙无线烧录移植",
+      "path": "无人机开发/蓝牙无线烧录移植.md"
+    },
+    {
       "basename": "CLion开发STM32——文件管理",
       "path": "无人机开发/CLion开发STM32——文件管理.md"
+    },
+    {
+      "basename": "总览",
+      "path": "无人机开发/总览.md"
     },
     {
       "basename": "F570无人机无线烧录",
@@ -15,10 +23,6 @@
     {
       "basename": "CLion开发FreeRTOS的基本配置",
       "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
-    },
-    {
-      "basename": "总览",
-      "path": "无人机开发/总览.md"
     },
     {
       "basename": "MID-360s点云图录制",
@@ -195,10 +199,6 @@
     {
       "basename": "事务",
       "path": "数据库期末复习/事务.md"
-    },
-    {
-      "basename": "Sublime软件的使用",
-      "path": "Python/Sublime软件的使用.md"
     }
   ],
   "omittedPaths": [],
