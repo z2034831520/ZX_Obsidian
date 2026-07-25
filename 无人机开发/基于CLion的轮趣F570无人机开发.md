@@ -54,3 +54,5 @@ CCMRAM (xrw)      : ORIGIN = 0x10000000, LENGTH = 64K
 FLASH (rx) : ORIGIN = 0x08010000, LENGTH = 960K  
 }
 ```
+
+然后我们还需要在根目录下的`CMakeLists.txt`文件中添加一条语句
