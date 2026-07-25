@@ -1,36 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "F570无人机基于CLion的自动烧录配置",
-      "path": "无人机开发/F570无人机基于CLion的自动烧录配置.md"
-    },
-    {
-      "basename": "蓝牙无线烧录移植",
-      "path": "无人机开发/蓝牙无线烧录移植.md"
+      "basename": "基于CLion的轮趣F570无人机开发",
+      "path": "无人机开发/基于CLion的轮趣F570无人机开发.md"
     },
     {
       "basename": "CLion开发STM32——文件管理",
       "path": "无人机开发/CLion开发STM32——文件管理.md"
     },
     {
-      "basename": "总览",
-      "path": "无人机开发/总览.md"
-    },
-    {
       "basename": "F570无人机无线烧录",
       "path": "无人机开发/F570无人机无线烧录.md"
     },
     {
-      "basename": "无人机控制基础知识",
-      "path": "无人机开发/无人机控制基础知识.md"
-    },
-    {
-      "basename": "CLion开发FreeRTOS的基本配置",
-      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
-    },
-    {
-      "basename": "MID-360s点云图录制",
-      "path": "MID-360s/MID-360s点云图录制.md"
+      "basename": "蓝牙无线烧录移植",
+      "path": "无人机开发/蓝牙无线烧录移植.md"
     },
     {
       "basename": "FreeRTOS命名规则",
@@ -41,12 +25,28 @@
       "path": "FreeRTOS/FreeRTOS介绍.md"
     },
     {
+      "basename": "FreeRTOS底层实现原理",
+      "path": "FreeRTOS/FreeRTOS底层实现原理.md"
+    },
+    {
       "basename": "CLion使用教程——FreeRTOS",
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
     },
     {
-      "basename": "FreeRTOS底层实现原理",
-      "path": "FreeRTOS/FreeRTOS底层实现原理.md"
+      "basename": "CLion开发FreeRTOS的基本配置",
+      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
+    },
+    {
+      "basename": "总览",
+      "path": "无人机开发/总览.md"
+    },
+    {
+      "basename": "无人机控制基础知识",
+      "path": "无人机开发/无人机控制基础知识.md"
+    },
+    {
+      "basename": "MID-360s点云图录制",
+      "path": "MID-360s/MID-360s点云图录制.md"
     },
     {
       "basename": "原子笔记",
