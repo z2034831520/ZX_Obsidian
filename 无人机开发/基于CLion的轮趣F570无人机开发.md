@@ -161,3 +161,4 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
   }  
 }
 ```
+#### 生成目标文件配置
