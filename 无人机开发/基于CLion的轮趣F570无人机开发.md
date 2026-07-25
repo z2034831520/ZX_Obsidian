@@ -64,4 +64,12 @@ target_compile_definitions(stm32cubemx INTERFACE
 ```
 
 #### 复位功能配置
-为了实现在接收到上位机发送的复位信息后自动复位，我们要想办法实现自动复位的功能，因此我们可以复用官方
+为了实现在接收到上位机发送的复位信息后自动复位，我们要想办法实现自动复位的功能，因此我们可以复用官方提供的源码文件，我们可以在项目的根目录下创建一个名为`App`的文件夹，然后将对应的源文件拷贝过来，源文件的名称为`uart_callback.c`，添加完成之后我们还需要在根目录下的`CmakeLists.txt`文件中添加对应的文件搜索路径，修改后的部分内容如下：
+```cmake
+# Add sources to executable  
+target_sources(${CMAKE_PROJECT_NAME} PRIVATE  
+    # Add user sources here  
+        ${CMAKE_CURRENT_SOURCE_DIR}/App/uart_callback.c  
+)
+```
+
