@@ -73,4 +73,91 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 )
 ```
 
-然后我们需要在`main.c`中开启串口4的中断接收功能
+然后我们需要在`main.c`中开启串口4的中断接收功能，同时定义全局变量
+```c
+/* USER CODE BEGIN PV */  
+uint8_t uart4_recv;  
+/* USER CODE END PV */
+```
+
+```c
+/* USER CODE BEGIN 2 */  
+HAL_UART_Receive_IT(&huart4, &uart4_recv, 1);  
+/* USER CODE END 2 */
+```
+添加完上述代码之后就可以开始进行编译验证了，现在的问题是官方提供的文件中不只使用了串口4还使用了串口1，因此为了提高该文件的可移植性，我对文件内容进行了微调，去除了串口一的相关代码，修改后的内容如下，大家可以替换到自己的文件中
+```c
+#include <stdbool.h>  
+  
+#include "usart.h"  
+  
+#define RESET_COMMAND_TIMEOUT_MS 500U  
+  
+typedef struct  
+{  
+  uint8_t index;  
+  uint32_t last_byte_tick;  
+} ResetParserState;  
+  
+extern uint8_t uart4_recv;  
+  
+static ResetParserState uart4_reset_parser;  
+static const uint8_t reset_command[] = {'r', 'e', 's', 'e', 't'};  
+  
+static bool ResetParser_Push(ResetParserState *state, uint8_t byte)  
+{  
+  uint32_t now = HAL_GetTick();  
+  
+  if ((state->index != 0U) &&  
+      ((now - state->last_byte_tick) > RESET_COMMAND_TIMEOUT_MS))  
+  {  
+    state->index = 0U;  
+  }  
+  
+  state->last_byte_tick = now;  
+  
+  if (byte == reset_command[state->index])  
+  {  
+    state->index++;  
+  }  
+  else  
+  {  
+    state->index = (byte == reset_command[0]) ? 1U : 0U;  
+  }  
+  
+  if (state->index == sizeof(reset_command))  
+  {  
+    state->index = 0U;  
+    return true;  
+  }  
+  
+  return false;  
+}  
+  
+static void RestartUartReception(UART_HandleTypeDef *huart, uint8_t *byte)  
+{  
+  (void)HAL_UART_Receive_IT(huart, byte, 1U);  
+}  
+  
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)  
+{  
+  if (huart == &huart4)  
+  {  
+    if (ResetParser_Push(&uart4_reset_parser, uart4_recv))  
+    {  
+      NVIC_SystemReset();  
+    }  
+    RestartUartReception(&huart4, &uart4_recv);  
+  }  
+}  
+  
+void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)  
+{  
+  if (huart == &huart4)  
+  {  
+    uart4_reset_parser.index = 0U;  
+    __HAL_UART_CLEAR_OREFLAG(&huart4);  
+    RestartUartReception(&huart4, &uart4_recv);  
+  }  
+}
+```
