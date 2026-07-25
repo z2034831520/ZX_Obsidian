@@ -5,28 +5,28 @@
       "path": "无人机开发/基于CLion的轮趣F570无人机开发.md"
     },
     {
-      "basename": "CLion开发FreeRTOS的基本配置",
-      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
-    },
-    {
-      "basename": "CLion开发STM32——文件管理",
-      "path": "无人机开发/CLion开发STM32——文件管理.md"
-    },
-    {
-      "basename": "总览",
-      "path": "无人机开发/总览.md"
+      "basename": "蓝牙无线烧录移植",
+      "path": "无人机开发/蓝牙无线烧录移植.md"
     },
     {
       "basename": "无人机控制基础知识",
       "path": "无人机开发/无人机控制基础知识.md"
     },
     {
-      "basename": "蓝牙无线烧录移植",
-      "path": "无人机开发/蓝牙无线烧录移植.md"
-    },
-    {
       "basename": "F570无人机无线烧录",
       "path": "无人机开发/F570无人机无线烧录.md"
+    },
+    {
+      "basename": "CLion开发STM32——文件管理",
+      "path": "无人机开发/CLion开发STM32——文件管理.md"
+    },
+    {
+      "basename": "CLion开发FreeRTOS的基本配置",
+      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
+    },
+    {
+      "basename": "总览",
+      "path": "无人机开发/总览.md"
     },
     {
       "basename": "抢占式任务调度",
