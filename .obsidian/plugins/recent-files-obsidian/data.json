@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "F570无人机基于CLion的自动烧录配置",
+      "path": "无人机开发/F570无人机基于CLion的自动烧录配置.md"
+    },
+    {
       "basename": "蓝牙无线烧录移植",
       "path": "无人机开发/蓝牙无线烧录移植.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "数据（Data）",
       "path": "数据库期末复习/数据（Data）.md"
-    },
-    {
-      "basename": "事务",
-      "path": "数据库期末复习/事务.md"
     }
   ],
   "omittedPaths": [],
