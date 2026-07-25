@@ -162,3 +162,24 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
 }
 ```
 #### 生成目标文件配置
+由于无线烧录需要使用到二进制`.bin`文件，因此我们还需要在根目录下的`CMakeLists.txt`文件末尾添加如下内容
+```cmake
+add_custom_command(TARGET ${CMAKE_PROJECT_NAME} POST_BUILD  
+        COMMAND ${CMAKE_OBJCOPY} -O binary  
+        $<TARGET_FILE:${CMAKE_PROJECT_NAME}>  
+        ${CMAKE_PROJECT_NAME}.bin  
+        COMMENT "Generating ${CMAKE_PROJECT_NAME}.bin"  
+)
+```
+最后我们再点击顶部选项框中的锤子图标进行编译就可以生成我们需要的`.bin`文件了，当然如果还需要十六进制的`.hex`文件的话，我们可以将添加的内容修改为以下内容
+```cmake
+add_custom_command(TARGET ${CMAKE_PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_OBJCOPY} -O ihex
+            $<TARGET_FILE:${CMAKE_PROJECT_NAME}>
+            ${CMAKE_PROJECT_NAME}.hex
+    COMMAND ${CMAKE_OBJCOPY} -O binary
+            $<TARGET_FILE:${CMAKE_PROJECT_NAME}>
+            ${CMAKE_PROJECT_NAME}.bin
+    COMMENT "Generating HEX and BIN"
+)
+```
