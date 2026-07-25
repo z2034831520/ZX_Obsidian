@@ -73,4 +73,4 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 )
 ```
 
-然后我们需要在`main.c`中开启串口1和串口4的中断接收功能
+然后我们需要在`main.c`中开启串口4的中断接收功能
