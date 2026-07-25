@@ -183,3 +183,13 @@ add_custom_command(TARGET ${CMAKE_PROJECT_NAME} POST_BUILD
     COMMENT "Generating HEX and BIN"
 )
 ```
+然后我们就可以进行最后的无线下载烧录操作了
+
+## 烧录
+上述所有操作都完成之后我们就可以进行无线烧录操作了，程序编译生成的`.bin`文件位于根目录下的`build`文件夹下
+![](assets/基于CLion的轮趣F570无人机开发/file-20260725161550323.png)
+我们选择好目标文件之后再点击开始烧录即可
+![](assets/基于CLion的轮趣F570无人机开发/file-20260725161624692.png)
+
+## 总结
+至此我们就完成了项目构建的相关操作，虽然当前的项目中没有任何功能，但是我们配置的过程中却几乎涉及到了`CLion`项目管理中的所有相关操作
