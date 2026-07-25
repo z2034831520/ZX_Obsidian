@@ -55,4 +55,13 @@ FLASH (rx) : ORIGIN = 0x08010000, LENGTH = 960K
 }
 ```
 
-然后我们还需要在根目录下的`CMakeLists.txt`文件中添加一条语句
+然后我们还需要在根目录下的`CMakeLists.txt`文件中添加一条语句，添加该语句的作用是修改项链表偏移寄存器的值，以实现固件在`Flash`中偏移`0x10000`，语句如下：
+```cmake
+target_compile_definitions(stm32cubemx INTERFACE  
+        USER_VECT_TAB_ADDRESS  
+        VECT_TAB_OFFSET=0x10000U  
+)
+```
+
+#### 复位功能配置
+为了实现在接收到上位机发送的复位信息后自动复位我们要想办法
