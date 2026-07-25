@@ -9,12 +9,32 @@
       "path": "无人机开发/CLion开发STM32——文件管理.md"
     },
     {
-      "basename": "F570无人机无线烧录",
-      "path": "无人机开发/F570无人机无线烧录.md"
+      "basename": "总览",
+      "path": "无人机开发/总览.md"
+    },
+    {
+      "basename": "无人机控制基础知识",
+      "path": "无人机开发/无人机控制基础知识.md"
     },
     {
       "basename": "蓝牙无线烧录移植",
       "path": "无人机开发/蓝牙无线烧录移植.md"
+    },
+    {
+      "basename": "CLion开发FreeRTOS的基本配置",
+      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
+    },
+    {
+      "basename": "F570无人机无线烧录",
+      "path": "无人机开发/F570无人机无线烧录.md"
+    },
+    {
+      "basename": "抢占式任务调度",
+      "path": "FreeRTOS/抢占式任务调度.md"
+    },
+    {
+      "basename": "任务状态",
+      "path": "FreeRTOS/任务状态.md"
     },
     {
       "basename": "FreeRTOS命名规则",
@@ -31,18 +51,6 @@
     {
       "basename": "CLion使用教程——FreeRTOS",
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
-    },
-    {
-      "basename": "CLion开发FreeRTOS的基本配置",
-      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
-    },
-    {
-      "basename": "总览",
-      "path": "无人机开发/总览.md"
-    },
-    {
-      "basename": "无人机控制基础知识",
-      "path": "无人机开发/无人机控制基础知识.md"
     },
     {
       "basename": "MID-360s点云图录制",
@@ -67,14 +75,6 @@
     {
       "basename": "F区按键功能",
       "path": "杂谈/F区按键功能.md"
-    },
-    {
-      "basename": "任务状态",
-      "path": "FreeRTOS/任务状态.md"
-    },
-    {
-      "basename": "抢占式任务调度",
-      "path": "FreeRTOS/抢占式任务调度.md"
     },
     {
       "basename": "Java类和对象的存储位置",
