@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "介绍",
+      "path": "无人机开发/介绍.md"
+    },
+    {
       "basename": "基于CLion的轮趣F570无人机开发",
       "path": "无人机开发/基于CLion的轮趣F570无人机开发.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "数据库格言",
       "path": "数据库期末复习/数据库格言.md"
-    },
-    {
-      "basename": "数据（Data）",
-      "path": "数据库期末复习/数据（Data）.md"
     }
   ],
   "omittedPaths": [],
