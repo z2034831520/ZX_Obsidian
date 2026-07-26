@@ -57,7 +57,7 @@
 - **典型用途：** 捕获导致系统 Hard Fault 的罪魁祸首。函数参数会直接告诉你**是哪个任务**（`pcTaskName`）发生了栈溢出，方便你针对性地增加该任务的栈大小。
 #### 守护任务启动钩子函数
 - **触发时机：** 仅在启用了软件定时器 (`USE_TIMERS = 1`) 的前提下，当 RTOS 的定时器服务任务（守护任务）**首次**开始运行时，被调用一次。
-- 对应选项：
+- 对应选项：`USE_DAEMON_TASK_STARTUP_HOOK`
     
 - **关联函数：** `vApplicationDaemonTaskStartupHook(void)`
     
