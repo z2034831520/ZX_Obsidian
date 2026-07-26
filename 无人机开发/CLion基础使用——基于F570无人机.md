@@ -6,4 +6,4 @@
 ## 实操
 本次开发同样是基于上一次文档中的项目进行的，如果没看也没关系，自己创建一个新的项目也行，接下来我们直接进行项目的进一步开发。首先我们先在`CubeMX`中进行一下项目的配置，我们点开`FreeRTOS`中的`Config parameters`选项
 ![](assets/CLion基础使用——基于F570无人机/file-20260726104755249.png)
-我们本次需要关注的内容是`Hook function related definitions`的相关内容，这部分的选项大多都是用来
+我们本次需要关注的内容是`Hook function related definitions`的相关内容，这部分的选项大多都是`FreeRTOS`给开发者预留的接口
