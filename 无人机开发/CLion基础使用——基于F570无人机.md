@@ -12,6 +12,7 @@
 
 #### 空闲任务钩子函数
 - **触发时机：** 当系统中没有任何“就绪态”任务需要运行时，空闲任务便会被不断循环调用
+- 对应选项：`USE_IDLE_HOOK`
     
 - **关联函数：** `vApplicationIdleHook(void)`
     
@@ -25,6 +26,7 @@
 
 #### 滴答定时器钩子函数
 - **触发时机：** 每次 FreeRTOS 的系统时钟节拍（Tick Interrupt，通常由 SysTick 产生，默认 1ms 一次）触发时被调用。
+- 对应选项：`USE_TICK_HOOK`
     
 - **关联函数：** `vApplicationTickHook(void)`
     
@@ -33,12 +35,14 @@
 - **注意事项：** 这个函数是**在中断上下文 (ISR) 中执行的**。代码必须极其简短高效，且只能调用带有 `FromISR` 后缀的 FreeRTOS API。严禁在此处执行长延时或复杂计算。
 #### 内存分配失败钩子函数
 - **触发时机：** 当代码中尝试使用 `pvPortMalloc()` 申请动态内存，但 FreeRTOS 的堆空间 (Heap) 耗尽导致分配失败（返回 NULL）时被调用。
+- 对应选项：`USE_MALLOC_FAILED_HOOK`
     
 - **关联函数：** `vApplicationMallocFailedHook(void)`
     
 - **典型用途：** 调试和异常捕获。通常在这里点亮一个红色的 Error LED、触发断言 (`configASSERT`) 或通过串口打印错误日志，以帮助开发者快速发现内存泄漏或在 CubeMX 中分配的总 Heap Size 过小的问题。
 #### 栈溢出检查钩子函数
 - **触发时机：** 发生任务栈溢出时调用。
+- 对应选项：`CHECK_FOR_STACK_OVERFLOW`
     
 - **关联函数：** `vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)`
     
@@ -51,3 +55,10 @@
     - `Option 2`: 在创建任务时用已知标记（如 `0xA5`）填充栈。检查栈底部的这些标记是否被覆盖。速度稍慢，但极其可靠。
         
 - **典型用途：** 捕获导致系统 Hard Fault 的罪魁祸首。函数参数会直接告诉你**是哪个任务**（`pcTaskName`）发生了栈溢出，方便你针对性地增加该任务的栈大小。
+#### 守护任务启动钩子函数
+- **触发时机：** 仅在启用了软件定时器 (`USE_TIMERS = 1`) 的前提下，当 RTOS 的定时器服务任务（守护任务）**首次**开始运行时，被调用一次。
+- 对应选项：
+    
+- **关联函数：** `vApplicationDaemonTaskStartupHook(void)`
+    
+- **典型用途：** 如果你的某些初始化代码（例如网络协议栈初始化、需要等待事件标志组的外设初始化）必须在 FreeRTOS 调度器启动**之后**才能安全执行，就可以将这些代码放在这里，而不是放在 `main()` 循环中的 `osKernelStart()` 之前。
