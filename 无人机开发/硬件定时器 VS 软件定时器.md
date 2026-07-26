@@ -9,5 +9,5 @@
 ## FreeRTOS开发
 当我们引入了`FreeRTOS`后，`SysTcik`这个硬件定时器被操作系统“独占”了
 
-- `FreeRTOS`：
+- `FreeRTOS`会强制把`SysTick`编程整个
 
