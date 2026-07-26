@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "硬件定时器 VS 软件定时器",
+      "path": "无人机开发/硬件定时器 VS 软件定时器.md"
+    },
+    {
       "basename": "CLion基础使用——基于F570无人机",
       "path": "无人机开发/CLion基础使用——基于F570无人机.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "数据库期末复习总结",
       "path": "数据库期末复习/数据库期末复习总结.md"
-    },
-    {
-      "basename": "数据库格言",
-      "path": "数据库期末复习/数据库格言.md"
     }
   ],
   "omittedPaths": [],
