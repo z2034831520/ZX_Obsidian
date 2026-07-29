@@ -127,4 +127,4 @@ __weak void configureTimerForRunTimeStats(void)
 }
 ```
 由于该函数前面有`__weak`标识我们也可以在其它文件中重写函数名并实现该函数
-在这里我们
+在这里我们在`HAL_TIM_Base_Start`函数内部传入参数`htim6`时通常情况下都会报错
