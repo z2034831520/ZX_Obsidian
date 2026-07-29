@@ -147,26 +147,22 @@ extern TIM_HandleTypeDef htim6;
 我们刚才初始化了对应的高精度硬件定时器之后接下来就要想办法去获取对应的数值了，由于我们后续需要根据时间戳来判断一个任务占据了多少CPU资源，因此我们需要去实时的读取定时器的计数值。读取计数值的操作系统会通过调用`getRunTimeCounterValue`函数来实现，该函数和定时器初始化函数一样，也是一个弱定义函数，我们同样可以在其它文件中去实现它，本次仅作演示，就直接在原文件中进行代码实现了，具体的代码实现如下：
 
 ```c
-__weak unsigned long getRunTimeCounterValue(void)  
-{  
-  static unsigned long time = 0;  
-  static uint16_t lasttime = 0;  
-  static uint16_t nowtime = 0;  
-  
-  //读取当前计数值  
-  nowtime = TIM6->CNT;  
-  
-  //如果本次计数值小于上次计数值说明发生了溢出  
-  if (nowtime < lasttime)  
-  {  
-    //溢出后的时间增量  
-    time += (nowtime + 0xffff - lasttime);  
-  }  
-  //未发生溢出增量为：本次时间-上次时间  
-  else time += (nowtime - lasttime);  
-  
-  lasttime = nowtime;  
-  return time;  
+__weak unsigned long getRunTimeCounterValue(void)
+{
+    static unsigned long total_time = 0;
+    static uint16_t last_time = 0;
+    uint16_t now_time = TIM6->CNT;
+
+    /* 
+     * 利用 16 位无符号整数的溢出特性，直接相减获取增量
+     * 无论是否发生溢出，delta 都是完全准确的
+     */
+    uint16_t delta = now_time - last_time; 
+    
+    total_time += delta;
+    last_time = now_time;
+
+    return total_time;
 }
 ```
 函数
