@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "费曼学习法",
+      "path": "心理学定律/费曼学习法.md"
+    },
+    {
+      "basename": "错失恐惧症",
+      "path": "心理学定律/错失恐惧症.md"
+    },
+    {
       "basename": "CLion基本开发——基于F570无人机",
       "path": "无人机开发/CLion基本开发——基于F570无人机.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "声明式编程",
       "path": "编程基本概念/声明式编程.md"
-    },
-    {
-      "basename": "列表",
-      "path": "Python/列表.md"
-    },
-    {
-      "basename": "数据库期末复习总结",
-      "path": "数据库期末复习/数据库期末复习总结.md"
     }
   ],
   "omittedPaths": [],
