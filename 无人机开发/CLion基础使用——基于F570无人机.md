@@ -115,4 +115,16 @@ int __io_putchar(int ch)
 为了获取一个频率为软件定时器`100`倍的硬件定时器，在`CubeMX`中我们把预分频器的值设置为`840 - 1`，这样我们就得到了一个`10us`精度的硬件定时器
 
 ### 定时器驱动配置
-我们开启了对应的硬件定时器之后还需要在对应的函数中去开启它，对应函数为`configureTimerForRunTimeStats`，我们在其中开启定时器`TIM6`，系统内会自动调用该函数，后续在
+我们开启了对应的硬件定时器之后还需要在对应的函数中去开启它，对应函数为`configureTimerForRunTimeStats`，我们在其中开启定时器`TIM6`，系统内会自动调用该函数，启动后这个高精度定时器就会在后台开始计数，之后每发生一次任务切换时`FreeRTOS`就会获取该定时器的时间戳，以此来计算任务到底占用了多长时间的`CPU`
+
+修改后的代码内容如下
+```c
+/* USER CODE BEGIN 1 */  
+/* Functions needed when configGENERATE_RUN_TIME_STATS is on */  
+__weak void configureTimerForRunTimeStats(void)  
+{  
+  HAL_TIM_Base_Start(&htim6);  
+}
+```
+由于该函数前面有`__weak`标识我们也可以在其它文件中重写函数名并实现该函数
+在这里我们
