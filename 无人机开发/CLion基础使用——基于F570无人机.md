@@ -153,10 +153,7 @@ __weak unsigned long getRunTimeCounterValue(void)
     static uint16_t last_time = 0;
     uint16_t now_time = TIM6->CNT;
 
-    /* 
-     * 利用 16 位无符号整数的溢出特性，直接相减获取增量
-     * 无论是否发生溢出，delta 都是完全准确的
-     */
+    // 利用 16 位无符号整数的溢出特性，直接相减获取增量，无论是否发生溢出，delta 都是完全准确的
     uint16_t delta = now_time - last_time; 
     
     total_time += delta;
