@@ -295,4 +295,4 @@ vTaskDelay(*delaytime);
     
 - 工作机制： 直接调用 `xPortGetFreeHeapSize()` 获取 FreeRTOS 管理的内存堆中当前还有多少空闲字节可以被 `pvPortMalloc` 分配
     
-- 诊断用途： 在长时间运行测试中，如果你观察到打印出来的 `free heap size` 在不断变小，就说明你的代码中存在内存泄漏
+- 诊断用途： 在长时间运行测试中，如果我们观察到打印出来的 `free heap size` 在不断变小，就说明代码中存在内存泄漏
