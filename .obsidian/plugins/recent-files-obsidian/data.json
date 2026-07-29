@@ -5,6 +5,22 @@
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
     },
     {
+      "basename": "CLion基础开发——基于F570无人机",
+      "path": "无人机开发/CLion基础开发——基于F570无人机.md"
+    },
+    {
+      "basename": "CLion嵌入式开发基操——文件管理",
+      "path": "无人机开发/CLion嵌入式开发基操——文件管理.md"
+    },
+    {
+      "basename": "无人机控制基础知识",
+      "path": "无人机开发/无人机控制基础知识.md"
+    },
+    {
+      "basename": "硬件定时器 VS 软件定时器",
+      "path": "无人机开发/硬件定时器 VS 软件定时器.md"
+    },
+    {
       "basename": "CLion开发FreeRTOS的基本配置",
       "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
     },
@@ -17,28 +33,12 @@
       "path": "无人机开发/CLion项目蓝牙无线烧录移植.md"
     },
     {
-      "basename": "CLion嵌入式开发基操——文件管理",
-      "path": "无人机开发/CLion嵌入式开发基操——文件管理.md"
-    },
-    {
       "basename": "总览",
       "path": "无人机开发/总览.md"
     },
     {
-      "basename": "硬件定时器 VS 软件定时器",
-      "path": "无人机开发/硬件定时器 VS 软件定时器.md"
-    },
-    {
-      "basename": "无人机控制基础知识",
-      "path": "无人机开发/无人机控制基础知识.md"
-    },
-    {
       "basename": "烧录配置——无线烧录",
       "path": "无人机开发/烧录配置——无线烧录.md"
-    },
-    {
-      "basename": "CLion基础开发——基于F570无人机",
-      "path": "无人机开发/CLion基础开发——基于F570无人机.md"
     },
     {
       "basename": "开闭原则",

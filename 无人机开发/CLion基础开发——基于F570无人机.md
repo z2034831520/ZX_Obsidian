@@ -320,7 +320,7 @@ vTaskDelay(*delaytime);
 ![](assets/CLion基础开发——基于F570无人机/file-20260729153534963.png)
 
 ## 实时调试
-
+当然我们也可以使用`CLion`进行便捷的实时体调试操作，具体的操作过程可以参照[CLion使用教程——FreeRTOS](../FreeRTOS/CLion使用教程——FreeRTOS.md)
 
 ## 总结
 至此我们就完整的走完了一段`Clion`的开发流程
