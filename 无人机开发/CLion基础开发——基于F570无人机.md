@@ -323,4 +323,4 @@ vTaskDelay(*delaytime);
 当然我们也可以使用`CLion`进行便捷的实时体调试操作，具体的操作过程可以参照[CLion使用教程——FreeRTOS](../FreeRTOS/CLion使用教程——FreeRTOS.md)文章中的操作流程
 
 ## 总结
-至此我们就完整的走完了一段`Clion`的开发流程，
+至此我们就完整的走完了一段`Clion`的开发流程，在这个过程中我们或多或少的感受到了`CLion`作为现代化`IDE`的优势，
