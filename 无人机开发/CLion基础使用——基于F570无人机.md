@@ -144,5 +144,30 @@ extern TIM_HandleTypeDef htim6;
 以前我们需要手动引入头文件，但是现在`CLion`给我们提供了一种新的解决方案，我们可以通过键盘上的`ALT + ENTER`组合键来快速引入对应的头文件，在`CLion`中这个组合键的作用是一键修复报错，当我们遇到因为头文件没有引入而引发的报错时我们可以直接按下这个组合键，`CLion`会帮我们直接引入缺失的头文件。这种方式相较于之前的手动引入要方便的多
 
 ### 定时器参数读取
-我们刚才初始化了对应的高精度硬件定时器之后接下来就要想办法去获取对应的数值了，由于我们后续需要根据时间戳来判断一个任务占据了多少CPU资源，因此我们需要去实时的读取定时器的计数值。读取计数值的操作系统会通过调用`getRunTimeCounterValue`函数来实现，该函数和定时器初始化函数一样，也是一个弱定义函数，我们同样可以在其它文件中去实现它，本次仅作延时就直接在原文件中进行代码实现了
+我们刚才初始化了对应的高精度硬件定时器之后接下来就要想办法去获取对应的数值了，由于我们后续需要根据时间戳来判断一个任务占据了多少CPU资源，因此我们需要去实时的读取定时器的计数值。读取计数值的操作系统会通过调用`getRunTimeCounterValue`函数来实现，该函数和定时器初始化函数一样，也是一个弱定义函数，我们同样可以在其它文件中去实现它，本次仅作演示，就直接在原文件中进行代码实现了，具体的代码实现如下：
+
+```c
+__weak unsigned long getRunTimeCounterValue(void)  
+{  
+  static unsigned long time = 0;  
+  static uint16_t lasttime = 0;  
+  static uint16_t nowtime = 0;  
+  
+  //读取当前计数值  
+  nowtime = TIM6->CNT;  
+  
+  //如果本次计数值小于上次计数值说明发生了溢出  
+  if (nowtime < lasttime)  
+  {  
+    //溢出后的时间增量  
+    time += (nowtime + 0xffff - lasttime);  
+  }  
+  //未发生溢出增量为：本次时间-上次时间  
+  else time += (nowtime - lasttime);  
+  
+  lasttime = nowtime;  
+  return time;  
+}
+```
+
 
