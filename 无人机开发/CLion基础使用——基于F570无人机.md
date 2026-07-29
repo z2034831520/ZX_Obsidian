@@ -253,4 +253,14 @@ void RTOSDebugTask(void *param)
 上述代码中我们都在代码块前后添加了对应的宏定义约束，确保任务能否生效都取决于宏定义的状态。我们通过`userconfig_RTOS_DEBUG`控制着监测任务的状态，我们先声明了任务函数，然后创建了对应的任务，我们在创建任务时将改任务的优先级设置为了`osPriorityAboveNormal`，这种优先级高于常规的`Normal`优先级，这样可以确保即便有其它的常规任务函数在运行时系统监测任务也能正常运行。
 
 在任务函数中我们主要监测了`CPU`运行时间信息、任务状态与栈空间健康度以及动态内存是否泄漏
-
+#### CPU运行时间统计
+代码如下：
+```c
+vTaskGetRunTimeStats(showbuf);
+printf("TaskName\tUsername\tCPU\t\n");
+printf("%s\r\n",showbuf);
+vTaskDelay(*delaytime);
+```
+- 作用：监测系统中各个任务占用的`CPU`时间百分比
+- 底层关联：当调用 `vTaskGetRunTimeStats` 时，FreeRTOS 内核就会去调用你之前写的那个 `getRunTimeCounterValue()` 函数，在该函数中我们会去读取硬件定时器`TIM6`的值
+- 工作机制：系统会将每个任务的绝对运行时间换算成百分比，并格式化成一个多行字符串
