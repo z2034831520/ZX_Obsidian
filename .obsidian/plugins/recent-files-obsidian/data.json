@@ -1,16 +1,136 @@
 {
   "recentFiles": [
     {
+      "basename": "CLion基础开发——基于F570无人机",
+      "path": "无人机开发/CLion基础开发——基于F570无人机.md"
+    },
+    {
+      "basename": "烧录配置——无线烧录",
+      "path": "无人机开发/烧录配置——无线烧录.md"
+    },
+    {
+      "basename": "开闭原则",
+      "path": "编程基本概念/开闭原则.md"
+    },
+    {
+      "basename": "键值对",
+      "path": "编程基本概念/键值对.md"
+    },
+    {
+      "basename": "代码的复用性",
+      "path": "编程基本概念/代码的复用性.md"
+    },
+    {
+      "basename": "系统总线",
+      "path": "计算机组成原理/系统总线.md"
+    },
+    {
+      "basename": "属性 VS 主键",
+      "path": "数据库期末复习/属性 VS 主键.md"
+    },
+    {
+      "basename": "反范式设计",
+      "path": "数据库期末复习/反范式设计.md"
+    },
+    {
+      "basename": "第一范式",
+      "path": "数据库期末复习/第一范式.md"
+    },
+    {
+      "basename": "Sublime软件的使用",
+      "path": "Python/Sublime软件的使用.md"
+    },
+    {
+      "basename": "String字符串常用函数",
+      "path": "Python/String字符串常用函数.md"
+    },
+    {
+      "basename": "main函数的作用",
+      "path": "Python/main函数的作用.md"
+    },
+    {
+      "basename": "Lambda表达式",
+      "path": "Python/Lambda表达式.md"
+    },
+    {
+      "basename": "堆和栈",
+      "path": "Python/堆和栈.md"
+    },
+    {
+      "basename": "列表",
+      "path": "Python/列表.md"
+    },
+    {
+      "basename": "MID-360s雷达操作手册",
+      "path": "MID-360s/MID-360s雷达操作手册.md"
+    },
+    {
+      "basename": "MID-360s点云图录制",
+      "path": "MID-360s/MID-360s点云图录制.md"
+    },
+    {
+      "basename": "包",
+      "path": "Java/包.md"
+    },
+    {
+      "basename": "覆写（overload）",
+      "path": "Java/覆写（overload）.md"
+    },
+    {
+      "basename": "继承构造方法的调用",
+      "path": "Java/继承构造方法的调用.md"
+    },
+    {
+      "basename": "Java继承",
+      "path": "Java/Java继承.md"
+    },
+    {
+      "basename": "static关键字",
+      "path": "Java/static关键字.md"
+    },
+    {
+      "basename": "Java类和对象的存储位置",
+      "path": "Excalidraw/Java类和对象的存储位置.md"
+    },
+    {
+      "basename": "ROS发展史",
+      "path": "Excalidraw/ROS发展史.md"
+    },
+    {
+      "basename": "向下转型关系图",
+      "path": "Excalidraw/向下转型关系图.md"
+    },
+    {
+      "basename": "向上转型关系图",
+      "path": "Excalidraw/向上转型关系图.md"
+    },
+    {
+      "basename": "F区按键功能",
+      "path": "杂谈/F区按键功能.md"
+    },
+    {
+      "basename": "VPS搭建",
+      "path": "杂谈/VPS搭建.md"
+    },
+    {
+      "basename": "原子笔记",
+      "path": "杂谈/原子笔记.md"
+    },
+    {
+      "basename": "盖尔定律",
+      "path": "心理学定律/盖尔定律.md"
+    },
+    {
+      "basename": "思想的坟墓",
+      "path": "心理学定律/思想的坟墓.md"
+    },
+    {
       "basename": "费曼学习法",
       "path": "心理学定律/费曼学习法.md"
     },
     {
       "basename": "错失恐惧症",
       "path": "心理学定律/错失恐惧症.md"
-    },
-    {
-      "basename": "CLion基本开发——基于F570无人机",
-      "path": "无人机开发/CLion基本开发——基于F570无人机.md"
     },
     {
       "basename": "CLion基操STM32——文件管理",
@@ -23,10 +143,6 @@
     {
       "basename": "无人机控制基础知识",
       "path": "无人机开发/无人机控制基础知识.md"
-    },
-    {
-      "basename": "烧录配置——无线烧录",
-      "path": "无人机开发/烧录配置——无线烧录.md"
     },
     {
       "basename": "总览",
@@ -69,14 +185,6 @@
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
     },
     {
-      "basename": "MID-360s点云图录制",
-      "path": "MID-360s/MID-360s点云图录制.md"
-    },
-    {
-      "basename": "原子笔记",
-      "path": "杂谈/原子笔记.md"
-    },
-    {
       "basename": "C++线程编程",
       "path": "杂谈/C++线程编程.md"
     },
@@ -85,120 +193,12 @@
       "path": "README.md"
     },
     {
-      "basename": "VPS搭建",
-      "path": "杂谈/VPS搭建.md"
-    },
-    {
-      "basename": "F区按键功能",
-      "path": "杂谈/F区按键功能.md"
-    },
-    {
-      "basename": "Java类和对象的存储位置",
-      "path": "Excalidraw/Java类和对象的存储位置.md"
-    },
-    {
-      "basename": "向下转型关系图",
-      "path": "Excalidraw/向下转型关系图.md"
-    },
-    {
-      "basename": "向上转型关系图",
-      "path": "Excalidraw/向上转型关系图.md"
-    },
-    {
-      "basename": "ROS发展史",
-      "path": "Excalidraw/ROS发展史.md"
-    },
-    {
       "basename": "未命名",
       "path": "ROS2/未命名.md"
     },
     {
       "basename": "字编址 VS 字节编址",
       "path": "计算机组成原理/字编址 VS 字节编址.md"
-    },
-    {
-      "basename": "计算机系统概论",
-      "path": "计算机组成原理/计算机系统概论.md"
-    },
-    {
-      "basename": "面向对象",
-      "path": "编程基本概念/面向对象.md"
-    },
-    {
-      "basename": "面向过程",
-      "path": "编程基本概念/面向过程.md"
-    },
-    {
-      "basename": "封装",
-      "path": "编程基本概念/封装.md"
-    },
-    {
-      "basename": "代码的复用性",
-      "path": "编程基本概念/代码的复用性.md"
-    },
-    {
-      "basename": "继承",
-      "path": "编程基本概念/继承.md"
-    },
-    {
-      "basename": "函数式编程",
-      "path": "编程基本概念/函数式编程.md"
-    },
-    {
-      "basename": "多态",
-      "path": "编程基本概念/多态.md"
-    },
-    {
-      "basename": "环境变量",
-      "path": "编程基本概念/环境变量.md"
-    },
-    {
-      "basename": "键值对",
-      "path": "编程基本概念/键值对.md"
-    },
-    {
-      "basename": "模块",
-      "path": "Python/模块.md"
-    },
-    {
-      "basename": "堆和栈",
-      "path": "Python/堆和栈.md"
-    },
-    {
-      "basename": "虚函数",
-      "path": "编程基本概念/虚函数.md"
-    },
-    {
-      "basename": "开闭原则",
-      "path": "编程基本概念/开闭原则.md"
-    },
-    {
-      "basename": "Anaconda使用",
-      "path": "Python/Anaconda使用.md"
-    },
-    {
-      "basename": "Jupyter Lab使用教程",
-      "path": "Python/Jupyter Lab使用教程.md"
-    },
-    {
-      "basename": "main函数的作用",
-      "path": "Python/main函数的作用.md"
-    },
-    {
-      "basename": "可迭代对象",
-      "path": "Python/可迭代对象.md"
-    },
-    {
-      "basename": "Lambda表达式",
-      "path": "Python/Lambda表达式.md"
-    },
-    {
-      "basename": "命令式编程",
-      "path": "编程基本概念/命令式编程.md"
-    },
-    {
-      "basename": "声明式编程",
-      "path": "编程基本概念/声明式编程.md"
     }
   ],
   "omittedPaths": [],
