@@ -162,5 +162,5 @@ __weak unsigned long getRunTimeCounterValue(void)
     return total_time;
 }
 ```
-函数
+原版函数中会判断是否发生溢出，如果发生溢出会进行补数操作，即将上一次的结果 
 
