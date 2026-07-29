@@ -164,6 +164,29 @@ __weak unsigned long getRunTimeCounterValue(void)
 ```
 原版函数中会判断是否发生溢出，如果发生溢出会进行补数操作，即将上一次的结果加上`0xffff`之后再进行相减操作，但是后面我发现无符号整数溢出后会直接变成0，然后继续增加，即当数值增加到`65535`溢出之后会从`0`开始继续增加，相对应的，如果我们用一个无符号整数去接收计算的结果，那么即便发生了溢出也不会产生任何异常，官方的原版代码内容如下：
 ```c
-
+__weak unsigned long getRunTimeCounterValue(void)  
+{  
+  static unsigned long time = 0;  
+  static uint16_t lasttime = 0;  
+  static uint16_t nowtime = 0;  
+  
+  //读取当前计数值  
+  nowtime = TIM6->CNT;  
+  
+  //如果本次计数值小于上次计数值说明发生了溢出  
+  if (nowtime < lasttime)  
+  {  
+    //溢出后的时间增量  
+    time += (nowtime + 0xffff - lasttime);  
+  }  
+  //未发生溢出增量为：本次时间-上次时间  
+  else time += (nowtime - lasttime);  
+  
+  lasttime = nowtime;  
+  return time;  
+}
 ```
+大致的原理如下图所示：
+![](assets/CLion基础使用——基于F570无人机/file-20260729105319485.png)
+上述内容完成之后我们可以
 
