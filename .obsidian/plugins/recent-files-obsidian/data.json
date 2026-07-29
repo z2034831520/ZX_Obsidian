@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "CLion基操STM32——文件管理",
-      "path": "无人机开发/CLion基操STM32——文件管理.md"
+      "basename": "CLion使用教程——FreeRTOS",
+      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
+    },
+    {
+      "basename": "CLion开发FreeRTOS的基本配置",
+      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
     },
     {
       "basename": "F570无人机无线烧录介绍",
       "path": "无人机开发/F570无人机无线烧录介绍.md"
     },
     {
-      "basename": "CLion基础开发——基于F570无人机",
-      "path": "无人机开发/CLion基础开发——基于F570无人机.md"
+      "basename": "CLion项目蓝牙无线烧录移植",
+      "path": "无人机开发/CLion项目蓝牙无线烧录移植.md"
+    },
+    {
+      "basename": "CLion嵌入式开发基操——文件管理",
+      "path": "无人机开发/CLion嵌入式开发基操——文件管理.md"
     },
     {
       "basename": "总览",
@@ -29,8 +37,8 @@
       "path": "无人机开发/烧录配置——无线烧录.md"
     },
     {
-      "basename": "CLion项目蓝牙无线烧录移植",
-      "path": "无人机开发/CLion项目蓝牙无线烧录移植.md"
+      "basename": "CLion基础开发——基于F570无人机",
+      "path": "无人机开发/CLion基础开发——基于F570无人机.md"
     },
     {
       "basename": "开闭原则",
@@ -157,10 +165,6 @@
       "path": "心理学定律/错失恐惧症.md"
     },
     {
-      "basename": "CLion开发FreeRTOS的基本配置",
-      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
-    },
-    {
       "basename": "抢占式任务调度",
       "path": "FreeRTOS/抢占式任务调度.md"
     },
@@ -179,10 +183,6 @@
     {
       "basename": "FreeRTOS底层实现原理",
       "path": "FreeRTOS/FreeRTOS底层实现原理.md"
-    },
-    {
-      "basename": "CLion使用教程——FreeRTOS",
-      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
     },
     {
       "basename": "C++线程编程",
