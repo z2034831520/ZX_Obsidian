@@ -203,7 +203,7 @@ unsigned long getRunTimeCounterValue(void)
 ### 监测任务创建
 在进行了前面这么长的铺垫之后我们终于可以进行监测任务的创建了，我们会自己手动创建一个对应的监测任务，这里手动创建对应的任务相较于直接在`CubeMX`生成，相对应的优势是我们可以借助宏定义来控制是否开启调试任务。大致的代码实现逻辑如下：
 
-#### 创建控制宏
+#### 声明任务函数
 我们先创建对应的宏定义变量来进行总览控制
 ```c
 #if ( 1 == userconfig_RTOS_DEBUG)  
@@ -219,7 +219,7 @@ void RTOSDebugTask(void *param);
 #endif
 ```
 
-#### 实现任务函数
+#### 定义任务函数
 ```c
 /* Private application code */  
 /* USER CODE BEGIN Application */  
@@ -249,3 +249,5 @@ void RTOSDebugTask(void *param)
 /* USER CODE END Application */
 ```
 
+### 代码分析
+上述代码
