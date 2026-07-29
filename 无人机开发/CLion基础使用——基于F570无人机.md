@@ -210,3 +210,42 @@ unsigned long getRunTimeCounterValue(void)
 void RTOSDebugTask(void *param);  
 #endif
 ```
+
+#### 创建任务
+```c
+#if ( 1 == userconfig_RTOS_DEBUG)  
+  static uint16_t delaytime = 5000;  
+  xTaskCreate(RTOSDebugTask, "DebugTask", 128, &delaytime, osPriorityAboveNormal, NULL);  
+#endif
+```
+
+#### 实现任务函数
+```c
+/* Private application code */  
+/* USER CODE BEGIN Application */  
+#if (1 == userconfig_RTOS_DEBUG)  
+void RTOSDebugTask(void *param)  
+{  
+  uint16_t* delaytime = (uint16_t*)param;  
+  static char showbuf[500];  
+  
+  while (1)  
+  {  
+    vTaskGetRunTimeStats(showbuf);  
+    printf("TaskName\tUsername\tCPU\t\n");  
+    printf("%s\r\n",showbuf);  
+    vTaskDelay(*delaytime);  
+  
+    vTaskList(showbuf);  
+    printf("TaskName\tTaskState\tTaskPrio\tStackSize\tTaskNum\r\n");  
+    printf("%s\r\n",showbuf);  
+    vTaskDelay(*delaytime);  
+  
+    printf("free heap size : %d bytes\r\n\r\n", xPortGetFreeHeapSize());  
+    vTaskDelay(*delaytime);  
+  }  
+}  
+#endif  
+/* USER CODE END Application */
+```
+
