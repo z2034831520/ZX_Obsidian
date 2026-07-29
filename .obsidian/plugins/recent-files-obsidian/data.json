@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "CLion使用教程——FreeRTOS",
-      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
-    },
-    {
       "basename": "CLion基础开发——基于F570无人机",
       "path": "无人机开发/CLion基础开发——基于F570无人机.md"
+    },
+    {
+      "basename": "CLion使用教程——FreeRTOS",
+      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
     },
     {
       "basename": "CLion嵌入式开发基操——文件管理",
