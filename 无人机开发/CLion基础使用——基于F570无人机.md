@@ -263,4 +263,26 @@ vTaskDelay(*delaytime);
 ```
 - 作用：监测系统中各个任务占用的`CPU`时间百分比
 - 底层关联：当调用 `vTaskGetRunTimeStats` 时，FreeRTOS 内核就会去调用你之前写的那个 `getRunTimeCounterValue()` 函数，在该函数中我们会去读取硬件定时器`TIM6`的值
-- 工作机制：系统会将每个任务的绝对运行时间换算成百分比，并格式化成一个多行字符串
+- 工作机制：系统会将每个任务的绝对运行时间换算成百分比，并格式化成一个多行字符串写入`showbuf`中，然后通过串口打印。打印完成后，任务主动挂起休眠
+
+#### 任务状态与栈空间健康度
+代码如下：
+```c
+vTaskList(showbuf);
+printf("TaskName\tTaskState\tTaskPrio\tStackSize\tTaskNum\r\n");
+printf("%s\r\n",showbuf);
+vTaskDelay(*delaytime);
+```
+- 作用： 监测所有任务的当前状态以及是否面临栈溢出风险。
+    
+- **工作机制：** `vTaskList` 会遍历整个操作系统的任务控制块，并收集以下信息：
+    
+    - TaskState (任务状态): `X` (运行态 Running)、`R` (就绪态 Ready)、`B` (阻塞态 Blocked)、`S` (挂起态 Suspended)、`D` (被删除 Deleted)
+        
+    - TaskPrio (任务优先级): 当前配置的任务优先级
+        
+    - StackSize (历史最小剩余栈空间): 在 FreeRTOS 中，这个值叫做 High Water Mark（高水位线）。它表示该任务自启动以来，栈空间最少剩下过多少。如果这个值接近 0，说明该任务随时可能发生栈溢出崩溃；如果这个值很大，说明任务创建时栈分配得过大，浪费了内存
+        
+- 打印完成后，任务再次进入休眠
+
+#### 动态内存泄漏监测
