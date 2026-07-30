@@ -14,4 +14,6 @@
 ![](assets/无人机主控MCU定时器信息/file-20260730141851888.png)
 
 因此对应的定时器频率数值为：
-84Mhz
+`84Mhz`：`TIM2、TIM3、TIM4、TIM5、TIM6、TIM7、TIM12、TIM13、TIM14`
+
+`168Mhz`：
