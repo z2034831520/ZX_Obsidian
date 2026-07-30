@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "无人机主控MCU定时器信息",
+      "path": "无人机开发/无人机主控MCU定时器信息.md"
+    },
+    {
       "basename": "CLion基础开发——基于F570无人机",
       "path": "无人机开发/CLion基础开发——基于F570无人机.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "FreeRTOS介绍",
       "path": "FreeRTOS/FreeRTOS介绍.md"
-    },
-    {
-      "basename": "FreeRTOS底层实现原理",
-      "path": "FreeRTOS/FreeRTOS底层实现原理.md"
     }
   ],
   "omittedPaths": [],
