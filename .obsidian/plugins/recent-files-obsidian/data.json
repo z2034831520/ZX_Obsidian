@@ -5,6 +5,10 @@
       "path": "无人机开发/CLion基础开发——基于F570无人机.md"
     },
     {
+      "basename": "CLion程序烧录——ST-Link",
+      "path": "CLion/CLion程序烧录——ST-Link.md"
+    },
+    {
       "basename": "CLion使用教程——FreeRTOS",
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "未命名",
       "path": "ROS2/未命名.md"
-    },
-    {
-      "basename": "字编址 VS 字节编址",
-      "path": "计算机组成原理/字编址 VS 字节编址.md"
     }
   ],
   "omittedPaths": [],
