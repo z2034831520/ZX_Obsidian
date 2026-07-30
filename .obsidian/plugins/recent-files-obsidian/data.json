@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "CLion内置串口界面使用",
+      "path": "CLion/CLion内置串口界面使用.md"
+    },
+    {
       "basename": "CLion基础开发——基于F570无人机",
       "path": "无人机开发/CLion基础开发——基于F570无人机.md"
+    },
+    {
+      "basename": "CLion嵌入式开发基操——文件管理",
+      "path": "无人机开发/CLion嵌入式开发基操——文件管理.md"
     },
     {
       "basename": "CLion程序烧录——ST-Link",
@@ -11,10 +19,6 @@
     {
       "basename": "CLion使用教程——FreeRTOS",
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
-    },
-    {
-      "basename": "CLion嵌入式开发基操——文件管理",
-      "path": "无人机开发/CLion嵌入式开发基操——文件管理.md"
     },
     {
       "basename": "无人机控制基础知识",
@@ -195,10 +199,6 @@
     {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "ROS2/未命名.md"
     }
   ],
   "omittedPaths": [],
