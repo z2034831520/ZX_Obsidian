@@ -1,16 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "IMU传感器模块使用教程",
+      "path": "无人机开发/IMU传感器模块使用教程.md"
+    },
+    {
+      "basename": "烧录配置——无线烧录",
+      "path": "无人机开发/烧录配置——无线烧录.md"
+    },
+    {
+      "basename": "无人机控制基础知识",
+      "path": "无人机开发/无人机控制基础知识.md"
+    },
+    {
+      "basename": "无人机主控MCU定时器信息",
+      "path": "无人机开发/无人机主控MCU定时器信息.md"
+    },
+    {
+      "basename": "硬件定时器 VS 软件定时器",
+      "path": "无人机开发/硬件定时器 VS 软件定时器.md"
+    },
+    {
       "basename": "CLion基础开发——基于F570无人机",
       "path": "无人机开发/CLion基础开发——基于F570无人机.md"
     },
     {
       "basename": "CLion程序烧录——ST-Link",
       "path": "CLion/CLion程序烧录——ST-Link.md"
-    },
-    {
-      "basename": "烧录配置——无线烧录",
-      "path": "无人机开发/烧录配置——无线烧录.md"
     },
     {
       "basename": "CLion项目蓝牙无线烧录移植",
@@ -23,14 +39,6 @@
     {
       "basename": "F570无人机无线烧录介绍",
       "path": "无人机开发/F570无人机无线烧录介绍.md"
-    },
-    {
-      "basename": "硬件定时器 VS 软件定时器",
-      "path": "无人机开发/硬件定时器 VS 软件定时器.md"
-    },
-    {
-      "basename": "无人机主控MCU定时器信息",
-      "path": "无人机开发/无人机主控MCU定时器信息.md"
     },
     {
       "basename": "总览",
@@ -59,10 +67,6 @@
     {
       "basename": "定时器服务任务",
       "path": "FreeRTOS/定时器服务任务.md"
-    },
-    {
-      "basename": "无人机控制基础知识",
-      "path": "无人机开发/无人机控制基础知识.md"
     },
     {
       "basename": "CLion使用教程——FreeRTOS",
@@ -195,10 +199,6 @@
     {
       "basename": "错失恐惧症",
       "path": "心理学定律/错失恐惧症.md"
-    },
-    {
-      "basename": "抢占式任务调度",
-      "path": "FreeRTOS/抢占式任务调度.md"
     }
   ],
   "omittedPaths": [],
