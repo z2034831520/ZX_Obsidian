@@ -18,4 +18,4 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/App/Inc
 )
 ```
-该命令和添加源文件的命令形式极为相似，我们可以类比的去记忆
+该命令和添加源文件的命令形式极为相似，相关操作可以参照[CLion添加源文件搜索路径](CLion添加源文件搜索路径.md)文章内容，我们可以类比的去记忆
