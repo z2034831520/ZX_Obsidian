@@ -5,6 +5,14 @@
       "path": "CLion/CLion添加头文件搜索路径.md"
     },
     {
+      "basename": "CLion大括号格式配置",
+      "path": "CLion/CLion大括号格式配置.md"
+    },
+    {
+      "basename": "CLion内置串口界面使用",
+      "path": "CLion/CLion内置串口界面使用.md"
+    },
+    {
       "basename": "CLion嵌入式开发基操——文件管理",
       "path": "无人机开发/CLion嵌入式开发基操——文件管理.md"
     },
@@ -37,16 +45,8 @@
       "path": "无人机开发/无人机主控MCU定时器信息.md"
     },
     {
-      "basename": "CLion大括号格式配置",
-      "path": "CLion/CLion大括号格式配置.md"
-    },
-    {
       "basename": "CLion程序烧录——ST-Link",
       "path": "CLion/CLion程序烧录——ST-Link.md"
-    },
-    {
-      "basename": "Drawing 2026-07-30 13.31.19.excalidraw",
-      "path": "CLion/Drawing 2026-07-30 13.31.19.excalidraw.md"
     },
     {
       "basename": "CLion项目蓝牙无线烧录移植",
@@ -55,10 +55,6 @@
     {
       "basename": "F570无人机无线烧录介绍",
       "path": "无人机开发/F570无人机无线烧录介绍.md"
-    },
-    {
-      "basename": "CLion内置串口界面使用",
-      "path": "CLion/CLion内置串口界面使用.md"
     },
     {
       "basename": "CLion使用教程——FreeRTOS",
