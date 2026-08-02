@@ -5,6 +5,10 @@
       "path": "无人机开发/IMU传感器模块使用教程.md"
     },
     {
+      "basename": "CLion项目蓝牙无线烧录移植",
+      "path": "无人机开发/CLion项目蓝牙无线烧录移植.md"
+    },
+    {
       "basename": "烧录配置——无线烧录",
       "path": "无人机开发/烧录配置——无线烧录.md"
     },
@@ -27,10 +31,6 @@
     {
       "basename": "CLion程序烧录——ST-Link",
       "path": "CLion/CLion程序烧录——ST-Link.md"
-    },
-    {
-      "basename": "CLion项目蓝牙无线烧录移植",
-      "path": "无人机开发/CLion项目蓝牙无线烧录移植.md"
     },
     {
       "basename": "CLion嵌入式开发基操——文件管理",
