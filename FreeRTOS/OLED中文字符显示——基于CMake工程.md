@@ -51,5 +51,29 @@ const uint8_t font_zhong[32] = {
     0x0F,0x00,0x00,0x00,/*"中",0*/  
 };
 ```
-为了看起来更美观我们将每四个数据为一组进行摆放，数组中的每一个字符组合在一起，最终才组成了一个字符的显示内容，我们粘贴过来的时候会引发报错，因为粘贴过来的字符中有大括号，所以我们需要删除中间的大括号，最后剩下的才是我们需要的内容，随后我们还需要在头文件中为这个新数组添加声明，
+为了看起来更美观我们将每四个数据为一组进行摆放，数组中的每一个字符组合在一起，最终才组成了一个字符的显示内容，我们粘贴过来的时候会引发报错，因为粘贴过来的字符中有大括号，所以我们需要删除中间的大括号，最后剩下的才是我们需要的内容，随后我们还需要在头文件中为这个新数组添加声明，声明语句为：`extern const uint8_t font_zhong[32];`
 
+### 编写输出函数
+当我们获取并配置好了字符编码的相关内容之后我们还需要编写对应的中文显示函数，中文显示函数的内容如下：
+```c
+void OLED_PutChinese16(uint8_t x, uint8_t y, const uint8_t font[32])  
+{  
+    uint8_t col;  
+    uint8_t page;  
+  
+    if (y > 7 || y > 3 || font == 0)  
+    {  
+        return;  
+    }  
+  
+    col = x * 16;  
+    page = y * 2;  
+  
+    OLED_SetPosition(page, col);  
+    OLED_WriteNBytes((uint8_t*)&font[0], 16);  
+  
+    OLED_SetPosition(page + 1, col);  
+    OLED_WriteNBytes((uint8_t*)&font[16], 16);  
+}
+```
+该函数同属于`OLED`操作函数，因此我将它放在`driver_oled.c`文件中实现，
