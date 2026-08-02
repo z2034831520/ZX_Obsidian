@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Drawing 2026-08-02 12.03.12.excalidraw",
+      "path": "FreeRTOS/Drawing 2026-08-02 12.03.12.excalidraw.md"
+    },
+    {
       "basename": "OLED中文字符显示——基于CMake工程",
       "path": "FreeRTOS/OLED中文字符显示——基于CMake工程.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "费曼学习法",
       "path": "心理学定律/费曼学习法.md"
-    },
-    {
-      "basename": "错失恐惧症",
-      "path": "心理学定律/错失恐惧症.md"
     }
   ],
   "omittedPaths": [],
