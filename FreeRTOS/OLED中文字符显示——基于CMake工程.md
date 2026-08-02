@@ -76,4 +76,4 @@ void OLED_PutChinese16(uint8_t x, uint8_t y, const uint8_t font[32])
     OLED_WriteNBytes((uint8_t*)&font[16], 16);  
 }
 ```
-该函数同属于`OLED`操作函数，因此我将它放在`driver_oled.c`文件中实现，
+该函数同属于`OLED`操作函数，因此我将它放在`driver_oled.c`文件中实现，为了能够输出一个完整的中文字符我们选择将其分为上下两部分来进行输出
