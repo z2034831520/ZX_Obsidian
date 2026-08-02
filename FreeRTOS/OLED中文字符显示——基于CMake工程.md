@@ -58,20 +58,25 @@ const uint8_t font_zhong[32] = {
 ```c
 void OLED_PutChinese16(uint8_t x, uint8_t y, const uint8_t font[32])  
 {  
+	//定义行列位置
     uint8_t col;  
     uint8_t page;  
   
+	//入口参数检查
     if (y > 7 || y > 3 || font == 0)  
     {  
         return;  
     }  
   
+	//计算行坐标和列坐标
     col = x * 16;  
     page = y * 2;  
   
+	//输出字符上半部分
     OLED_SetPosition(page, col);  
     OLED_WriteNBytes((uint8_t*)&font[0], 16);  
   
+	//输出字符下半部分
     OLED_SetPosition(page + 1, col);  
     OLED_WriteNBytes((uint8_t*)&font[16], 16);  
 }
