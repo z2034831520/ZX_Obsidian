@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Drawing 2026-08-02 12.03.12.excalidraw",
-      "path": "FreeRTOS/Drawing 2026-08-02 12.03.12.excalidraw.md"
-    },
-    {
       "basename": "OLED中文字符显示——基于CMake工程",
       "path": "FreeRTOS/OLED中文字符显示——基于CMake工程.md"
+    },
+    {
+      "basename": "FreeRTOS命名规则",
+      "path": "FreeRTOS/FreeRTOS命名规则.md"
+    },
+    {
+      "basename": "CLion开发FreeRTOS的基本配置",
+      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
+    },
+    {
+      "basename": "CLion使用教程——FreeRTOS",
+      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
+    },
+    {
+      "basename": "Drawing 2026-08-02 12.03.12.excalidraw",
+      "path": "FreeRTOS/Drawing 2026-08-02 12.03.12.excalidraw.md"
     },
     {
       "basename": "CLion项目蓝牙无线烧录移植",
@@ -71,14 +83,6 @@
     {
       "basename": "定时器服务任务",
       "path": "FreeRTOS/定时器服务任务.md"
-    },
-    {
-      "basename": "CLion使用教程——FreeRTOS",
-      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
-    },
-    {
-      "basename": "CLion开发FreeRTOS的基本配置",
-      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
     },
     {
       "basename": "开闭原则",
@@ -195,10 +199,6 @@
     {
       "basename": "思想的坟墓",
       "path": "心理学定律/思想的坟墓.md"
-    },
-    {
-      "basename": "费曼学习法",
-      "path": "心理学定律/费曼学习法.md"
     }
   ],
   "omittedPaths": [],
