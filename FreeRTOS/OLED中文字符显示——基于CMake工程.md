@@ -85,3 +85,6 @@ void OLED_PutChinese16(uint8_t x, uint8_t y, const uint8_t font[32])
 我们在代码中调整了中文字符的显示位置，
 程序修改并烧录后的输出效果如图所示：
 ![](assets/OLED中文字符显示——基于CMake工程/file-20260802114505925.jpg)
+
+### 网页版取模
+如果你不想下载对应的取模软件，你也可以在网页中进行取模操作
