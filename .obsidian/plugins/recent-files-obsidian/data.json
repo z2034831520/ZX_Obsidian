@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "双系统安装",
+      "path": "Ubuntu/双系统安装.md"
+    },
+    {
       "basename": "函数指针",
       "path": "C/函数指针.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "VPS搭建",
       "path": "杂谈/VPS搭建.md"
-    },
-    {
-      "basename": "原子笔记",
-      "path": "杂谈/原子笔记.md"
     }
   ],
   "omittedPaths": [],
