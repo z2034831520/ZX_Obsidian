@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "函数指针",
+      "path": "C/函数指针.md"
+    },
+    {
+      "basename": "网络分层",
+      "path": "网络编程/网络分层.md"
+    },
+    {
       "basename": "OLED中文字符显示——基于CMake工程",
       "path": "FreeRTOS/OLED中文字符显示——基于CMake工程.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "原子笔记",
       "path": "杂谈/原子笔记.md"
-    },
-    {
-      "basename": "盖尔定律",
-      "path": "心理学定律/盖尔定律.md"
-    },
-    {
-      "basename": "思想的坟墓",
-      "path": "心理学定律/思想的坟墓.md"
     }
   ],
   "omittedPaths": [],
