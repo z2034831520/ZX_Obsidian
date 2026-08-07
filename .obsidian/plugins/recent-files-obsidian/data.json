@@ -5,12 +5,40 @@
       "path": "Ubuntu/Ubuntu前传——.md"
     },
     {
-      "basename": "函数指针",
-      "path": "C/函数指针.md"
+      "basename": "file-20260729145742021",
+      "path": "无人机开发/assets/烧录配置——无线烧录/file-20260729145742021.png"
+    },
+    {
+      "basename": "无人机控制基础知识",
+      "path": "无人机开发/无人机控制基础知识.md"
+    },
+    {
+      "basename": "CMake起手式",
+      "path": "CMake/CMake起手式.md"
+    },
+    {
+      "basename": "CMake",
+      "path": "CMake/CMake.md"
+    },
+    {
+      "basename": "MAC地址和IP地址",
+      "path": "网络编程/MAC地址和IP地址.md"
+    },
+    {
+      "basename": "C10K问题",
+      "path": "网络编程/C10K问题.md"
     },
     {
       "basename": "网络分层",
       "path": "网络编程/网络分层.md"
+    },
+    {
+      "basename": "服务器创建过程",
+      "path": "网络编程/服务器创建过程.md"
+    },
+    {
+      "basename": "函数指针",
+      "path": "C/函数指针.md"
     },
     {
       "basename": "OLED中文字符显示——基于CMake工程",
@@ -39,10 +67,6 @@
     {
       "basename": "烧录配置——无线烧录",
       "path": "无人机开发/烧录配置——无线烧录.md"
-    },
-    {
-      "basename": "无人机控制基础知识",
-      "path": "无人机开发/无人机控制基础知识.md"
     },
     {
       "basename": "无人机主控MCU定时器信息",
@@ -175,30 +199,6 @@
     {
       "basename": "static关键字",
       "path": "Java/static关键字.md"
-    },
-    {
-      "basename": "Java类和对象的存储位置",
-      "path": "Excalidraw/Java类和对象的存储位置.md"
-    },
-    {
-      "basename": "ROS发展史",
-      "path": "Excalidraw/ROS发展史.md"
-    },
-    {
-      "basename": "向下转型关系图",
-      "path": "Excalidraw/向下转型关系图.md"
-    },
-    {
-      "basename": "向上转型关系图",
-      "path": "Excalidraw/向上转型关系图.md"
-    },
-    {
-      "basename": "F区按键功能",
-      "path": "杂谈/F区按键功能.md"
-    },
-    {
-      "basename": "VPS搭建",
-      "path": "杂谈/VPS搭建.md"
     }
   ],
   "omittedPaths": [],
