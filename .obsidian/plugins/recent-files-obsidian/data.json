@@ -5,6 +5,10 @@
       "path": "Ubuntu/那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录.md"
     },
     {
+      "basename": "抽样分布",
+      "path": "概率论期末复习/抽样分布.md"
+    },
+    {
       "basename": "OLED中文字符显示——基于CMake工程",
       "path": "FreeRTOS/OLED中文字符显示——基于CMake工程.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "覆写（overload）",
       "path": "Java/覆写（overload）.md"
-    },
-    {
-      "basename": "继承构造方法的调用",
-      "path": "Java/继承构造方法的调用.md"
     }
   ],
   "omittedPaths": [],
