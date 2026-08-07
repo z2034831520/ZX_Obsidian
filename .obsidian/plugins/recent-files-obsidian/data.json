@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "MID-360s点云图录制",
+      "path": "MID-360s/MID-360s点云图录制.md"
+    },
+    {
+      "basename": "MID-360s雷达操作手册",
+      "path": "MID-360s/MID-360s雷达操作手册.md"
+    },
+    {
+      "basename": "Turtule Bot3小车操作手册",
+      "path": "实操/Turtule Bot3小车操作手册.md"
+    },
+    {
+      "basename": "AI飞书操作手册",
+      "path": "实操/AI飞书操作手册.md"
+    },
+    {
+      "basename": "小龙虾使用手册",
+      "path": "实操/小龙虾使用手册.md"
+    },
+    {
       "basename": "那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录",
       "path": "Ubuntu/那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录.md"
     },
@@ -59,10 +79,6 @@
     {
       "basename": "CLion添加源文件搜索路径",
       "path": "CLion/CLion添加源文件搜索路径.md"
-    },
-    {
-      "basename": "MID-360s雷达操作手册",
-      "path": "MID-360s/MID-360s雷达操作手册.md"
     },
     {
       "basename": "file-20260729145742021",
@@ -183,22 +199,6 @@
     {
       "basename": "堆和栈",
       "path": "Python/堆和栈.md"
-    },
-    {
-      "basename": "列表",
-      "path": "Python/列表.md"
-    },
-    {
-      "basename": "MID-360s点云图录制",
-      "path": "MID-360s/MID-360s点云图录制.md"
-    },
-    {
-      "basename": "包",
-      "path": "Java/包.md"
-    },
-    {
-      "basename": "覆写（overload）",
-      "path": "Java/覆写（overload）.md"
     }
   ],
   "omittedPaths": [],
