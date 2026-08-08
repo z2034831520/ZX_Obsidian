@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "服务器创建过程",
+      "path": "网络编程/服务器创建过程.md"
+    },
+    {
+      "basename": "Turtule Bot3小车操作手册",
+      "path": "实操/Turtule Bot3小车操作手册.md"
+    },
+    {
+      "basename": "AI飞书操作手册",
+      "path": "实操/AI飞书操作手册.md"
+    },
+    {
+      "basename": "小龙虾使用手册",
+      "path": "实操/小龙虾使用手册.md"
+    },
+    {
+      "basename": "字编址 VS 字节编址",
+      "path": "计算机组成原理/字编址 VS 字节编址.md"
+    },
+    {
+      "basename": "系统总线",
+      "path": "计算机组成原理/系统总线.md"
+    },
+    {
+      "basename": "计算机系统概论",
+      "path": "计算机组成原理/计算机系统概论.md"
+    },
+    {
       "basename": "README",
       "path": "README.md"
     },
@@ -39,18 +67,6 @@
     {
       "basename": "MID-360s雷达操作手册",
       "path": "MID-360s/MID-360s雷达操作手册.md"
-    },
-    {
-      "basename": "Turtule Bot3小车操作手册",
-      "path": "实操/Turtule Bot3小车操作手册.md"
-    },
-    {
-      "basename": "AI飞书操作手册",
-      "path": "实操/AI飞书操作手册.md"
-    },
-    {
-      "basename": "小龙虾使用手册",
-      "path": "实操/小龙虾使用手册.md"
     },
     {
       "basename": "抽样分布",
@@ -137,16 +153,8 @@
       "path": "网络编程/网络分层.md"
     },
     {
-      "basename": "服务器创建过程",
-      "path": "网络编程/服务器创建过程.md"
-    },
-    {
       "basename": "函数指针",
       "path": "C/函数指针.md"
-    },
-    {
-      "basename": "Drawing 2026-08-02 12.03.12.excalidraw",
-      "path": "FreeRTOS/Drawing 2026-08-02 12.03.12.excalidraw.md"
     },
     {
       "basename": "CLion项目蓝牙无线烧录移植",
@@ -187,18 +195,6 @@
     {
       "basename": "键值对",
       "path": "编程基本概念/键值对.md"
-    },
-    {
-      "basename": "代码的复用性",
-      "path": "编程基本概念/代码的复用性.md"
-    },
-    {
-      "basename": "系统总线",
-      "path": "计算机组成原理/系统总线.md"
-    },
-    {
-      "basename": "属性 VS 主键",
-      "path": "数据库期末复习/属性 VS 主键.md"
     }
   ],
   "omittedPaths": [],
