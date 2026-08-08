@@ -1,6 +1,146 @@
 {
   "recentFiles": [
     {
+      "basename": "根分区介绍",
+      "path": "Ubuntu/根分区介绍.md"
+    },
+    {
+      "basename": "用户分区",
+      "path": "Ubuntu/用户分区.md"
+    },
+    {
+      "basename": "双系统安装分区理论",
+      "path": "Ubuntu/双系统安装分区理论.md"
+    },
+    {
+      "basename": "Ubuntu24.04双系统安装实操",
+      "path": "Ubuntu/Ubuntu24.04双系统安装实操.md"
+    },
+    {
+      "basename": "定时器服务任务",
+      "path": "FreeRTOS/定时器服务任务.md"
+    },
+    {
+      "basename": "队列、信号量和互斥锁",
+      "path": "FreeRTOS/队列、信号量和互斥锁.md"
+    },
+    {
+      "basename": "内存管理与栈溢出检测",
+      "path": "FreeRTOS/内存管理与栈溢出检测.md"
+    },
+    {
+      "basename": "抢占式任务调度",
+      "path": "FreeRTOS/抢占式任务调度.md"
+    },
+    {
+      "basename": "任务创建、删除与优先级",
+      "path": "FreeRTOS/任务创建、删除与优先级.md"
+    },
+    {
+      "basename": "OLED中文字符显示——基于CMake工程",
+      "path": "FreeRTOS/OLED中文字符显示——基于CMake工程.md"
+    },
+    {
+      "basename": "FreeRTOS知识索引",
+      "path": "FreeRTOS/FreeRTOS知识索引.md"
+    },
+    {
+      "basename": "FreeRTOS命名规则",
+      "path": "FreeRTOS/FreeRTOS命名规则.md"
+    },
+    {
+      "basename": "知识库索引",
+      "path": "知识库索引.md"
+    },
+    {
+      "basename": "中断与FreeRTOS API使用边界",
+      "path": "FreeRTOS/中断与FreeRTOS API使用边界.md"
+    },
+    {
+      "basename": "CLion开发FreeRTOS的基本配置",
+      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
+    },
+    {
+      "basename": "CLion使用教程——FreeRTOS",
+      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
+    },
+    {
+      "basename": "FreeRTOS底层实现原理",
+      "path": "FreeRTOS/FreeRTOS底层实现原理.md"
+    },
+    {
+      "basename": "FreeRTOS介绍",
+      "path": "FreeRTOS/FreeRTOS介绍.md"
+    },
+    {
+      "basename": "Docker Compose",
+      "path": "Docker/Docker Compose.md"
+    },
+    {
+      "basename": "Docker VS 虚拟机",
+      "path": "Docker/Docker VS 虚拟机.md"
+    },
+    {
+      "basename": "Docker简介",
+      "path": "Docker/Docker简介.md"
+    },
+    {
+      "basename": "Docker网络模式",
+      "path": "Docker/Docker网络模式.md"
+    },
+    {
+      "basename": "Dockerfile指令",
+      "path": "Docker/Dockerfile指令.md"
+    },
+    {
+      "basename": "Docker知识索引",
+      "path": "Docker/Docker知识索引.md"
+    },
+    {
+      "basename": "端口映射、卷挂载和环境变量",
+      "path": "Docker/端口映射、卷挂载和环境变量.md"
+    },
+    {
+      "basename": "多容器应用的服务发现",
+      "path": "Docker/多容器应用的服务发现.md"
+    },
+    {
+      "basename": "非root用户和最小权限",
+      "path": "Docker/非root用户和最小权限.md"
+    },
+    {
+      "basename": "构建缓存与多阶段构建",
+      "path": "Docker/构建缓存与多阶段构建.md"
+    },
+    {
+      "basename": "镜像标签、仓库与分发",
+      "path": "Docker/镜像标签、仓库与分发.md"
+    },
+    {
+      "basename": "日志、资源限制和健康检查",
+      "path": "Docker/日志、资源限制和健康检查.md"
+    },
+    {
+      "basename": "数据备份和容器故障排查",
+      "path": "Docker/数据备份和容器故障排查.md"
+    },
+    {
+      "basename": "Bootloader与固件升级",
+      "path": "单片机/Bootloader与固件升级.md"
+    },
+    {
+      "basename": "状态机",
+      "path": "单片机/状态机.md"
+    },
+    {
+      "basename": "伪调度器架构",
+      "path": "单片机/伪调度器架构.md"
+    },
+    {
+      "basename": "DMA工作机制",
+      "path": "单片机/DMA工作机制.md"
+    },
+    {
       "basename": "UART、SPI、I2C和CAN",
       "path": "单片机/UART、SPI、I2C和CAN.md"
     },
@@ -13,24 +153,12 @@
       "path": "单片机/单片机知识索引.md"
     },
     {
-      "basename": "Bootloader与固件升级",
-      "path": "单片机/Bootloader与固件升级.md"
-    },
-    {
-      "basename": "状态机",
-      "path": "单片机/状态机.md"
-    },
-    {
       "basename": "继承构造方法的调用",
       "path": "Java/继承构造方法的调用.md"
     },
     {
       "basename": "PID控制与参数整定",
       "path": "无人机开发/PID控制与参数整定.md"
-    },
-    {
-      "basename": "FreeRTOS知识索引",
-      "path": "FreeRTOS/FreeRTOS知识索引.md"
     },
     {
       "basename": "串口空闲中断",
@@ -43,10 +171,6 @@
     {
       "basename": "计算机系统概论",
       "path": "计算机组成原理/计算机系统概论.md"
-    },
-    {
-      "basename": "知识库索引",
-      "path": "知识库索引.md"
     },
     {
       "basename": "Python知识索引",
@@ -65,140 +189,16 @@
       "path": "README.md"
     },
     {
-      "basename": "Ubuntu24.04双系统安装实操",
-      "path": "Ubuntu/Ubuntu24.04双系统安装实操.md"
-    },
-    {
       "basename": "UEFI介绍",
       "path": "Ubuntu/UEFI介绍.md"
-    },
-    {
-      "basename": "用户分区",
-      "path": "Ubuntu/用户分区.md"
-    },
-    {
-      "basename": "双系统安装分区理论",
-      "path": "Ubuntu/双系统安装分区理论.md"
     },
     {
       "basename": "交换分区",
       "path": "Ubuntu/交换分区.md"
     },
     {
-      "basename": "根分区介绍",
-      "path": "Ubuntu/根分区介绍.md"
-    },
-    {
       "basename": "那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录",
       "path": "Ubuntu/那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录.md"
-    },
-    {
-      "basename": "extern关键字的作用",
-      "path": "C/extern关键字的作用.md"
-    },
-    {
-      "basename": "函数指针",
-      "path": "C/函数指针.md"
-    },
-    {
-      "basename": "定义和声明",
-      "path": "C/定义和声明.md"
-    },
-    {
-      "basename": "小龙虾使用手册",
-      "path": "实操/小龙虾使用手册.md"
-    },
-    {
-      "basename": "服务器创建过程",
-      "path": "网络编程/服务器创建过程.md"
-    },
-    {
-      "basename": "Turtule Bot3小车操作手册",
-      "path": "实操/Turtule Bot3小车操作手册.md"
-    },
-    {
-      "basename": "AI飞书操作手册",
-      "path": "实操/AI飞书操作手册.md"
-    },
-    {
-      "basename": "字编址 VS 字节编址",
-      "path": "计算机组成原理/字编址 VS 字节编址.md"
-    },
-    {
-      "basename": "系统总线",
-      "path": "计算机组成原理/系统总线.md"
-    },
-    {
-      "basename": "MID-360s点云图录制",
-      "path": "MID-360s/MID-360s点云图录制.md"
-    },
-    {
-      "basename": "MID-360s雷达操作手册",
-      "path": "MID-360s/MID-360s雷达操作手册.md"
-    },
-    {
-      "basename": "OLED中文字符显示——基于CMake工程",
-      "path": "FreeRTOS/OLED中文字符显示——基于CMake工程.md"
-    },
-    {
-      "basename": "FreeRTOS命名规则",
-      "path": "FreeRTOS/FreeRTOS命名规则.md"
-    },
-    {
-      "basename": "CLion使用教程——FreeRTOS",
-      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
-    },
-    {
-      "basename": "CLion开发FreeRTOS的基本配置",
-      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
-    },
-    {
-      "basename": "任务状态",
-      "path": "FreeRTOS/任务状态.md"
-    },
-    {
-      "basename": "抢占式任务调度",
-      "path": "FreeRTOS/抢占式任务调度.md"
-    },
-    {
-      "basename": "定时器服务任务",
-      "path": "FreeRTOS/定时器服务任务.md"
-    },
-    {
-      "basename": "CLion内置串口界面使用",
-      "path": "CLion/CLion内置串口界面使用.md"
-    },
-    {
-      "basename": "CLion大括号格式配置",
-      "path": "CLion/CLion大括号格式配置.md"
-    },
-    {
-      "basename": "CLion程序烧录——ST-Link",
-      "path": "CLion/CLion程序烧录——ST-Link.md"
-    },
-    {
-      "basename": "CLion程序包含路径进阶管理",
-      "path": "CLion/CLion程序包含路径进阶管理.md"
-    },
-    {
-      "basename": "CLion添加头文件搜索路径",
-      "path": "CLion/CLion添加头文件搜索路径.md"
-    },
-    {
-      "basename": "CLion添加源文件搜索路径",
-      "path": "CLion/CLion添加源文件搜索路径.md"
-    },
-    {
-      "basename": "file-20260729145742021",
-      "path": "无人机开发/assets/烧录配置——无线烧录/file-20260729145742021.png"
-    },
-    {
-      "basename": "无人机控制基础知识",
-      "path": "无人机开发/无人机控制基础知识.md"
-    },
-    {
-      "basename": "CMake起手式",
-      "path": "CMake/CMake起手式.md"
     }
   ],
   "omittedPaths": [],
