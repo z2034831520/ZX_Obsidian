@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "PID控制与参数整定",
+      "path": "无人机开发/PID控制与参数整定.md"
+    },
+    {
       "basename": "FreeRTOS知识索引",
       "path": "FreeRTOS/FreeRTOS知识索引.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "烧录配置——无线烧录",
       "path": "无人机开发/烧录配置——无线烧录.md"
-    },
-    {
-      "basename": "无人机主控MCU定时器信息",
-      "path": "无人机开发/无人机主控MCU定时器信息.md"
     }
   ],
   "omittedPaths": [],
