@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "包",
+      "path": "Java/包.md"
+    },
+    {
+      "basename": "static关键字",
+      "path": "Java/static关键字.md"
+    },
+    {
+      "basename": "Java继承",
+      "path": "Java/Java继承.md"
+    },
+    {
+      "basename": "继承构造方法的调用",
+      "path": "Java/继承构造方法的调用.md"
+    },
+    {
+      "basename": "覆写（overload）",
+      "path": "Java/覆写（overload）.md"
+    },
+    {
+      "basename": "Ubuntu系统使用技巧",
+      "path": "Ubuntu/Ubuntu系统使用技巧.md"
+    },
+    {
       "basename": "根分区介绍",
       "path": "Ubuntu/根分区介绍.md"
     },
@@ -153,10 +177,6 @@
       "path": "单片机/单片机知识索引.md"
     },
     {
-      "basename": "继承构造方法的调用",
-      "path": "Java/继承构造方法的调用.md"
-    },
-    {
       "basename": "PID控制与参数整定",
       "path": "无人机开发/PID控制与参数整定.md"
     },
@@ -179,26 +199,6 @@
     {
       "basename": "ROS2知识索引",
       "path": "ROS2/ROS2知识索引.md"
-    },
-    {
-      "basename": "功能包可执行文件的启动逻辑",
-      "path": "ROS2/功能包可执行文件的启动逻辑.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "UEFI介绍",
-      "path": "Ubuntu/UEFI介绍.md"
-    },
-    {
-      "basename": "交换分区",
-      "path": "Ubuntu/交换分区.md"
-    },
-    {
-      "basename": "那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录",
-      "path": "Ubuntu/那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录.md"
     }
   ],
   "omittedPaths": [],
