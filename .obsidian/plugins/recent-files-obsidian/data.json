@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "UEFI介绍",
-      "path": "Ubuntu/UEFI介绍.md"
+      "basename": "ROS2知识索引",
+      "path": "ROS2/ROS2知识索引.md"
+    },
+    {
+      "basename": "知识库索引",
+      "path": "知识库索引.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
     },
     {
       "basename": "Ubuntu24.04双系统安装实操",
       "path": "Ubuntu/Ubuntu24.04双系统安装实操.md"
+    },
+    {
+      "basename": "UEFI介绍",
+      "path": "Ubuntu/UEFI介绍.md"
     },
     {
       "basename": "用户分区",
@@ -67,10 +79,6 @@
     {
       "basename": "计算机系统概论",
       "path": "计算机组成原理/计算机系统概论.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "MID-360s点云图录制",
@@ -191,10 +199,6 @@
     {
       "basename": "F570无人机无线烧录介绍",
       "path": "无人机开发/F570无人机无线烧录介绍.md"
-    },
-    {
-      "basename": "总览",
-      "path": "无人机开发/总览.md"
     }
   ],
   "omittedPaths": [],
