@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "串口烧录流程解析",
+      "path": "单片机/串口烧录流程解析.md"
+    },
+    {
+      "basename": "计算机系统概论",
+      "path": "计算机组成原理/计算机系统概论.md"
+    },
+    {
+      "basename": "知识库索引",
+      "path": "知识库索引.md"
+    },
+    {
       "basename": "Python知识索引",
       "path": "Python/Python知识索引.md"
     },
@@ -11,10 +23,6 @@
     {
       "basename": "功能包可执行文件的启动逻辑",
       "path": "ROS2/功能包可执行文件的启动逻辑.md"
-    },
-    {
-      "basename": "知识库索引",
-      "path": "知识库索引.md"
     },
     {
       "basename": "README",
@@ -85,20 +93,12 @@
       "path": "计算机组成原理/系统总线.md"
     },
     {
-      "basename": "计算机系统概论",
-      "path": "计算机组成原理/计算机系统概论.md"
-    },
-    {
       "basename": "MID-360s点云图录制",
       "path": "MID-360s/MID-360s点云图录制.md"
     },
     {
       "basename": "MID-360s雷达操作手册",
       "path": "MID-360s/MID-360s雷达操作手册.md"
-    },
-    {
-      "basename": "抽样分布",
-      "path": "概率论期末复习/抽样分布.md"
     },
     {
       "basename": "OLED中文字符显示——基于CMake工程",
@@ -191,14 +191,6 @@
     {
       "basename": "无人机主控MCU定时器信息",
       "path": "无人机开发/无人机主控MCU定时器信息.md"
-    },
-    {
-      "basename": "硬件定时器 VS 软件定时器",
-      "path": "无人机开发/硬件定时器 VS 软件定时器.md"
-    },
-    {
-      "basename": "CLion基础开发——基于F570无人机",
-      "path": "无人机开发/CLion基础开发——基于F570无人机.md"
     }
   ],
   "omittedPaths": [],
