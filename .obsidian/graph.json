@@ -8,10 +8,17 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:",
+      "query": "path:C path:CMake  ",
       "color": {
         "a": 1,
         "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:ROS2 path:MID-360s path:",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
       }
     }
   ],
@@ -25,6 +32,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 2.1347934283510757,
-  "close": false
+  "scale": 0.29741078636226337,
+  "close": true
 }
