@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "FreeRTOS知识索引",
+      "path": "FreeRTOS/FreeRTOS知识索引.md"
+    },
+    {
+      "basename": "串口空闲中断",
+      "path": "单片机/串口空闲中断.md"
+    },
+    {
       "basename": "串口烧录流程解析",
       "path": "单片机/串口烧录流程解析.md"
     },
