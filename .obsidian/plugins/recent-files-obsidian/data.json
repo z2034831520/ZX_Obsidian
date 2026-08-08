@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "事件组与任务通知",
+      "path": "FreeRTOS/事件组与任务通知.md"
+    },
+    {
+      "basename": "中断与FreeRTOS API使用边界",
+      "path": "FreeRTOS/中断与FreeRTOS API使用边界.md"
+    },
+    {
+      "basename": "CLion开发FreeRTOS的基本配置",
+      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
+    },
+    {
+      "basename": "CLion使用教程——FreeRTOS",
+      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
+    },
+    {
       "basename": "双系统安装分区理论",
       "path": "Ubuntu/双系统安装分区理论.md"
     },
@@ -51,18 +67,6 @@
     {
       "basename": "知识库索引",
       "path": "知识库索引.md"
-    },
-    {
-      "basename": "中断与FreeRTOS API使用边界",
-      "path": "FreeRTOS/中断与FreeRTOS API使用边界.md"
-    },
-    {
-      "basename": "CLion开发FreeRTOS的基本配置",
-      "path": "FreeRTOS/CLion开发FreeRTOS的基本配置.md"
-    },
-    {
-      "basename": "CLion使用教程——FreeRTOS",
-      "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
     },
     {
       "basename": "FreeRTOS底层实现原理",
@@ -195,10 +199,6 @@
     {
       "basename": "交换分区",
       "path": "Ubuntu/交换分区.md"
-    },
-    {
-      "basename": "那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录",
-      "path": "Ubuntu/那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录.md"
     }
   ],
   "omittedPaths": [],
