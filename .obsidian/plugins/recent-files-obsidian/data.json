@@ -1,16 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Ubuntu24.04双系统安装教程",
-      "path": "Ubuntu/Ubuntu24.04双系统安装教程.md"
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "交换分区",
+      "path": "Ubuntu/交换分区.md"
+    },
+    {
+      "basename": "根分区介绍",
+      "path": "Ubuntu/根分区介绍.md"
     },
     {
       "basename": "那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录",
       "path": "Ubuntu/那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
+      "basename": "双系统安装实操",
+      "path": "Ubuntu/双系统安装实操.md"
+    },
+    {
+      "basename": "双系统安装分区理论",
+      "path": "Ubuntu/双系统安装分区理论.md"
+    },
+    {
+      "basename": "用户分区",
+      "path": "Ubuntu/用户分区.md"
+    },
+    {
+      "basename": "UEFI介绍",
+      "path": "Ubuntu/UEFI介绍.md"
     },
     {
       "basename": "MID-360s点云图录制",
@@ -179,26 +199,6 @@
     {
       "basename": "属性 VS 主键",
       "path": "数据库期末复习/属性 VS 主键.md"
-    },
-    {
-      "basename": "反范式设计",
-      "path": "数据库期末复习/反范式设计.md"
-    },
-    {
-      "basename": "第一范式",
-      "path": "数据库期末复习/第一范式.md"
-    },
-    {
-      "basename": "Sublime软件的使用",
-      "path": "Python/Sublime软件的使用.md"
-    },
-    {
-      "basename": "String字符串常用函数",
-      "path": "Python/String字符串常用函数.md"
-    },
-    {
-      "basename": "main函数的作用",
-      "path": "Python/main函数的作用.md"
     }
   ],
   "omittedPaths": [],
