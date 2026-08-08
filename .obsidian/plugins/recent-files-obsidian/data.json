@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "FreeRTOS命名规则",
+      "path": "FreeRTOS/FreeRTOS命名规则.md"
+    },
+    {
+      "basename": "FreeRTOS介绍",
+      "path": "FreeRTOS/FreeRTOS介绍.md"
+    },
+    {
       "basename": "Ubuntu24.04双系统安装教程",
       "path": "Ubuntu/Ubuntu24.04双系统安装教程.md"
     },
@@ -39,10 +47,6 @@
     {
       "basename": "OLED中文字符显示——基于CMake工程",
       "path": "FreeRTOS/OLED中文字符显示——基于CMake工程.md"
-    },
-    {
-      "basename": "FreeRTOS命名规则",
-      "path": "FreeRTOS/FreeRTOS命名规则.md"
     },
     {
       "basename": "CLion使用教程——FreeRTOS",
@@ -195,10 +199,6 @@
     {
       "basename": "String字符串常用函数",
       "path": "Python/String字符串常用函数.md"
-    },
-    {
-      "basename": "main函数的作用",
-      "path": "Python/main函数的作用.md"
     }
   ],
   "omittedPaths": [],
