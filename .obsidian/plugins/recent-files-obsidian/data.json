@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "小龙虾使用手册",
+      "path": "实操/小龙虾使用手册.md"
+    },
+    {
       "basename": "服务器创建过程",
       "path": "网络编程/服务器创建过程.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "AI飞书操作手册",
       "path": "实操/AI飞书操作手册.md"
-    },
-    {
-      "basename": "小龙虾使用手册",
-      "path": "实操/小龙虾使用手册.md"
     },
     {
       "basename": "字编址 VS 字节编址",
