@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "GPIO、EXTI与NVIC",
+      "path": "单片机/GPIO、EXTI与NVIC.md"
+    },
+    {
+      "basename": "单片机知识索引",
+      "path": "单片机/单片机知识索引.md"
+    },
+    {
+      "basename": "Bootloader与固件升级",
+      "path": "单片机/Bootloader与固件升级.md"
+    },
+    {
+      "basename": "状态机",
+      "path": "单片机/状态机.md"
+    },
+    {
+      "basename": "继承构造方法的调用",
+      "path": "Java/继承构造方法的调用.md"
+    },
+    {
       "basename": "PID控制与参数整定",
       "path": "无人机开发/PID控制与参数整定.md"
     },
@@ -179,26 +199,6 @@
     {
       "basename": "CMake",
       "path": "CMake/CMake.md"
-    },
-    {
-      "basename": "MAC地址和IP地址",
-      "path": "网络编程/MAC地址和IP地址.md"
-    },
-    {
-      "basename": "C10K问题",
-      "path": "网络编程/C10K问题.md"
-    },
-    {
-      "basename": "网络分层",
-      "path": "网络编程/网络分层.md"
-    },
-    {
-      "basename": "CLion项目蓝牙无线烧录移植",
-      "path": "无人机开发/CLion项目蓝牙无线烧录移植.md"
-    },
-    {
-      "basename": "烧录配置——无线烧录",
-      "path": "无人机开发/烧录配置——无线烧录.md"
     }
   ],
   "omittedPaths": [],
