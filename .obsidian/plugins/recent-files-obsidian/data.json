@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "双系统安装实操",
-      "path": "Ubuntu/双系统安装实操.md"
+      "basename": "UEFI介绍",
+      "path": "Ubuntu/UEFI介绍.md"
+    },
+    {
+      "basename": "Ubuntu24.04双系统安装实操",
+      "path": "Ubuntu/Ubuntu24.04双系统安装实操.md"
+    },
+    {
+      "basename": "用户分区",
+      "path": "Ubuntu/用户分区.md"
     },
     {
       "basename": "双系统安装分区理论",
@@ -63,14 +71,6 @@
     {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "用户分区",
-      "path": "Ubuntu/用户分区.md"
-    },
-    {
-      "basename": "UEFI介绍",
-      "path": "Ubuntu/UEFI介绍.md"
     },
     {
       "basename": "MID-360s点云图录制",
