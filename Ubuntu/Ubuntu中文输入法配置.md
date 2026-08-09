@@ -92,8 +92,9 @@ fcitx5-remote -r
 ```bash
 mkdir -p ~/.local/share/fcitx5/pinyin/dictionaries
 ```
-然后我们再将下载好的词库文件拷贝到其中，我将词库文件下载在了系统的下载文件夹下，大家结合shi ji
+然后我们再将下载好的词库文件拷贝到其中，我将词库文件下载在了系统的下载文件夹下，大家结合实际情况调整一下下载命令，以下命令仅作演示
 ```bash
 cp ~/下载/zhwiki-*.dict \
-  ~/.local/share/fcitx5/pinyin/dictionaries/
+~/.local/share/fcitx5/pinyin/dictionaries/
 ```
+拷贝完毕之后
