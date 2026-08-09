@@ -81,4 +81,8 @@ vim ~/.config/fcitx5/conf/classicui.conf
 fcitx5-remote -r
 ```
 命令来刷新输入法状态
-然后ni
+修改后的输入法`UI`如下图所示：
+![](assets/Ubuntu中文输入法配置/file-20260809205536503.png)
+
+### 词库配置
+修改完`UI`界面后我们还需要配置对应的词库，这样能减少我们打错字的
