@@ -21,7 +21,10 @@ sudo apt install fcitx5 fcitx5-chinese-addons fcitx5-frontend-gtk3 fcitx5-fronte
 im-config -n fcitx5
 ```
 配置玩默认输入法之后我们需要先进行最底层的配置，我们在终端中输入如下命令可以直接唤起`Fcitx5`的配置界面
-
+```bash
+fcitx5-configtool
+```
+在配置界面中我们需要将默认的几个选项都删除
 如果没有生效我们可以执行
 ```bash
 fcitx5-remote -r
