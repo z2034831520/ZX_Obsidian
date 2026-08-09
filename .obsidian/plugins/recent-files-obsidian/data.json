@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "UEFI介绍",
+      "path": "Ubuntu/UEFI介绍.md"
+    },
+    {
+      "basename": "Ubuntu24.04双系统安装实操",
+      "path": "Ubuntu/Ubuntu24.04双系统安装实操.md"
+    },
+    {
+      "basename": "用户分区",
+      "path": "Ubuntu/用户分区.md"
+    },
+    {
+      "basename": "双系统安装分区理论",
+      "path": "Ubuntu/双系统安装分区理论.md"
+    },
+    {
+      "basename": "那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录",
+      "path": "Ubuntu/那是一个不眠之夜：我的四次 Ubuntu 系统安装回忆录.md"
+    },
+    {
+      "basename": "交换分区",
+      "path": "Ubuntu/交换分区.md"
+    },
+    {
+      "basename": "根分区介绍",
+      "path": "Ubuntu/根分区介绍.md"
+    },
+    {
+      "basename": "OLED中文字符显示——基于CMake工程",
+      "path": "FreeRTOS/OLED中文字符显示——基于CMake工程.md"
+    },
+    {
+      "basename": "知识库索引",
+      "path": "知识库索引.md"
+    },
+    {
       "basename": "事件组与任务通知",
       "path": "FreeRTOS/事件组与任务通知.md"
     },
@@ -15,22 +51,6 @@
     {
       "basename": "CLion使用教程——FreeRTOS",
       "path": "FreeRTOS/CLion使用教程——FreeRTOS.md"
-    },
-    {
-      "basename": "双系统安装分区理论",
-      "path": "Ubuntu/双系统安装分区理论.md"
-    },
-    {
-      "basename": "根分区介绍",
-      "path": "Ubuntu/根分区介绍.md"
-    },
-    {
-      "basename": "用户分区",
-      "path": "Ubuntu/用户分区.md"
-    },
-    {
-      "basename": "Ubuntu24.04双系统安装实操",
-      "path": "Ubuntu/Ubuntu24.04双系统安装实操.md"
     },
     {
       "basename": "定时器服务任务",
@@ -53,20 +73,12 @@
       "path": "FreeRTOS/任务创建、删除与优先级.md"
     },
     {
-      "basename": "OLED中文字符显示——基于CMake工程",
-      "path": "FreeRTOS/OLED中文字符显示——基于CMake工程.md"
-    },
-    {
       "basename": "FreeRTOS知识索引",
       "path": "FreeRTOS/FreeRTOS知识索引.md"
     },
     {
       "basename": "FreeRTOS命名规则",
       "path": "FreeRTOS/FreeRTOS命名规则.md"
-    },
-    {
-      "basename": "知识库索引",
-      "path": "知识库索引.md"
     },
     {
       "basename": "FreeRTOS底层实现原理",
@@ -187,18 +199,6 @@
     {
       "basename": "功能包可执行文件的启动逻辑",
       "path": "ROS2/功能包可执行文件的启动逻辑.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "UEFI介绍",
-      "path": "Ubuntu/UEFI介绍.md"
-    },
-    {
-      "basename": "交换分区",
-      "path": "Ubuntu/交换分区.md"
     }
   ],
   "omittedPaths": [],
