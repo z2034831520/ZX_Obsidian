@@ -97,4 +97,4 @@ mkdir -p ~/.local/share/fcitx5/pinyin/dictionaries
 cp ~/下载/zhwiki-*.dict \
 ~/.local/share/fcitx5/pinyin/dictionaries/
 ```
-拷贝完毕之后
+拷贝完毕之后我们可以在图形化配置界面中查看是否成功
