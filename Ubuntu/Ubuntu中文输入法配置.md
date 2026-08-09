@@ -90,5 +90,10 @@ fcitx5-remote -r
 下载完成后我们可以直接在之前的输入法配置`UI`界面中进行导入，但是那样步骤太繁琐，且更容易失败。我更推荐手动添加
 我们先手动创建存放词库的文件夹
 ```bash
-
+mkdir -p ~/.local/share/fcitx5/pinyin/dictionaries
+```
+然后我们再将下载好的词库文件拷贝到其中，我将词库文件下载在了系统的下载文件夹下，大家结合shi ji
+```bash
+cp ~/下载/zhwiki-*.dict \
+  ~/.local/share/fcitx5/pinyin/dictionaries/
 ```
