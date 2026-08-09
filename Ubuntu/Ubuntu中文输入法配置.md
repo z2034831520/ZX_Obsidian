@@ -97,4 +97,7 @@ mkdir -p ~/.local/share/fcitx5/pinyin/dictionaries
 cp ~/下载/zhwiki-*.dict \
 ~/.local/share/fcitx5/pinyin/dictionaries/
 ```
-拷贝完毕之后我们可以在图形化配置界面中查看是否成功
+拷贝完毕之后我们可以在图形化配置界面中查看是否成功，我们先选中输入法，然后点击设置图标
+![](assets/Ubuntu中文输入法配置/file-20260809210540460.png)
+在接下来的界面中下拉dian ji
+![](assets/Ubuntu中文输入法配置/file-20260809210614252.png)
