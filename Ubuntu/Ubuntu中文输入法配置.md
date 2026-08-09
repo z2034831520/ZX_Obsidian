@@ -74,8 +74,11 @@ highlight.svg
 ```bash
 vim ~/.config/fcitx5/conf/classicui.conf
 ```
-如果没有生效我们可以执行
+我们需要修改图片中红色方框内的两项：
+![](assets/Ubuntu中文输入法配置/file-20260809205422547.png)
+修改完成后我们保存并退出，如果没有生效我们可以执行
 ```bash
 fcitx5-remote -r
 ```
 命令来刷新输入法状态
+然后ni
