@@ -25,6 +25,7 @@ im-config -n fcitx5
 fcitx5-configtool
 ```
 在配置界面中我们需要将默认的几个选项都删除
+![](assets/Ubuntu中文输入法配置/file-20260809195953106.png)
 如果没有生效我们可以执行
 ```bash
 fcitx5-remote -r
