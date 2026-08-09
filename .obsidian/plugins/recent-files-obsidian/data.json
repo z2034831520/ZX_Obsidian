@@ -5,6 +5,10 @@
       "path": "Ubuntu/Ubuntu中文输入法配置.md"
     },
     {
+      "basename": "FreeRTOS命名规则",
+      "path": "FreeRTOS/FreeRTOS命名规则.md"
+    },
+    {
       "basename": "UEFI介绍",
       "path": "Ubuntu/UEFI介绍.md"
     },
@@ -79,10 +83,6 @@
     {
       "basename": "FreeRTOS知识索引",
       "path": "FreeRTOS/FreeRTOS知识索引.md"
-    },
-    {
-      "basename": "FreeRTOS命名规则",
-      "path": "FreeRTOS/FreeRTOS命名规则.md"
     },
     {
       "basename": "FreeRTOS底层实现原理",
