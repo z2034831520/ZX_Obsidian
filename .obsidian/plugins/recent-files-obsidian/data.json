@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "安装CLion",
+      "path": "Ubuntu/安装CLion.md"
+    },
+    {
       "basename": "置顶应用的使用",
       "path": "Ubuntu/置顶应用的使用.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "UART、SPI、I2C和CAN",
       "path": "单片机/UART、SPI、I2C和CAN.md"
-    },
-    {
-      "basename": "GPIO、EXTI与NVIC",
-      "path": "单片机/GPIO、EXTI与NVIC.md"
     }
   ],
   "omittedPaths": [],
