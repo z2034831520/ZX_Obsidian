@@ -5,6 +5,18 @@
       "path": "Ubuntu/置顶应用的使用.md"
     },
     {
+      "basename": "创建C++版本功能包",
+      "path": "ROS2/创建C++版本功能包.md"
+    },
+    {
+      "basename": "创建Python版本功能包",
+      "path": "ROS2/创建Python版本功能包.md"
+    },
+    {
+      "basename": "编写Python版本节点",
+      "path": "ROS2/编写Python版本节点.md"
+    },
+    {
       "basename": "技术债",
       "path": "编程基本概念/技术债.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "GPIO、EXTI与NVIC",
       "path": "单片机/GPIO、EXTI与NVIC.md"
-    },
-    {
-      "basename": "单片机知识索引",
-      "path": "单片机/单片机知识索引.md"
-    },
-    {
-      "basename": "继承构造方法的调用",
-      "path": "Java/继承构造方法的调用.md"
-    },
-    {
-      "basename": "PID控制与参数整定",
-      "path": "无人机开发/PID控制与参数整定.md"
     }
   ],
   "omittedPaths": [],
