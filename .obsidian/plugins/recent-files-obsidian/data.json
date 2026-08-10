@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "技术债",
+      "path": "编程基本概念/技术债.md"
+    },
+    {
+      "basename": "开闭原则",
+      "path": "编程基本概念/开闭原则.md"
+    },
+    {
+      "basename": "错失恐惧症",
+      "path": "心理学定律/错失恐惧症.md"
+    },
+    {
       "basename": "Tilix软件快捷键",
       "path": "Ubuntu/Tilix软件快捷键.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "串口空闲中断",
       "path": "单片机/串口空闲中断.md"
-    },
-    {
-      "basename": "串口烧录流程解析",
-      "path": "单片机/串口烧录流程解析.md"
-    },
-    {
-      "basename": "计算机系统概论",
-      "path": "计算机组成原理/计算机系统概论.md"
-    },
-    {
-      "basename": "Python知识索引",
-      "path": "Python/Python知识索引.md"
     }
   ],
   "omittedPaths": [],
