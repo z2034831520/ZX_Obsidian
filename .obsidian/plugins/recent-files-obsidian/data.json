@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "置顶应用的使用",
+      "path": "Ubuntu/置顶应用的使用.md"
+    },
+    {
       "basename": "技术债",
       "path": "编程基本概念/技术债.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "PID控制与参数整定",
       "path": "无人机开发/PID控制与参数整定.md"
-    },
-    {
-      "basename": "串口空闲中断",
-      "path": "单片机/串口空闲中断.md"
     }
   ],
   "omittedPaths": [],
