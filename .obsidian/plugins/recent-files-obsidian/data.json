@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "conflict-files-obsidian-git",
+      "path": "conflict-files-obsidian-git.md"
+    },
+    {
       "basename": "包",
       "path": "Java/包.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Python知识索引",
       "path": "Python/Python知识索引.md"
-    },
-    {
-      "basename": "ROS2知识索引",
-      "path": "ROS2/ROS2知识索引.md"
     }
   ],
   "omittedPaths": [],
