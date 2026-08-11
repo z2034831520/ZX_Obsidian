@@ -1,5 +1,5 @@
 {
-  "uploadByClipSwitch": true,
+  "uploadByClipSwitch": false,
   "uploader": "PicGo",
   "uploadServer": "http://127.0.0.1:36677/upload",
   "deleteServer": "http://127.0.0.1:36677/delete",
@@ -318,6 +318,23 @@
       "id": "c5170d22-ecf0-458b-bae2-4b782da0b896",
       "createdAt": 1786441720011,
       "updatedAt": 1786441720011
+    },
+    {
+      "isEncrypted": 1,
+      "EncryptedData": "0b5b698d2701927ae74e02c477450cba:64a3c146fb0e402f567f7b92c429634c14c40be66ac0075bbb3435ccd4340de07f84ad17c0dd4a500785ff8726e6f220f3d0cd6c8b19ab8e0a3a540b9aceedc3ba3ae29e7d00a9424b7ab727034e4035772bc6c21c063349bd86561cc500aaee2de1798b6532a84d4b9452a481d220040ddf1ddd2011579be6c8740949523066b474ceeb8f74a769a11cbd2ce2004d00d30b8dc004237484a00a8d54ac60312841b2b224f31a8f3b2d2a1bdfbba3384e8bb2348ba05a602dc99a1ba7c60825bfdecb27ab1725b1297730d8118c0c04c7ae01c4e95789c86f8bb0a99d840893c30e235c802f3b541333db4e168acdadc4c8257852cba59e3050ccf47a85e77bcf4c540eb65ea14375145fb9aac44fba8ac41135ff1aefeb2a18cdf0e80b28f5182cc5d62def9fb555e390d8df31d2750628325ec168a15c8ba9e372f5e094fe1364e775ff328c35fdc6b7f0829682b38010346e1599547c39d61be6ca84d48f50178fcaa34beb0a02bbe0f5bdbaede9c4ed5a03bd4a331a875ba9f2c24a5c63b059b15541833e58eb23b30436eba342da85786087c8fc69d2764cc031c712f9c4ff483c81ed3c30b0cd193cb007fc8a0865540f257f1cbc4795ee1493fe3cdee09c076d1d613ccb694428adda2705586b83ed307fa16bc5860f6d7c2ceb2503e2a11c184710aa78de1edab949b15aa492a40da9724d6cbcc85d046bbbc0a6d70c8e8037eee310c16cebaf6b256d38417cd3070686b65b9e682dde2b1cef93ec4df8170a322dd238a9e79289994b5fd700e699e1b5d13db40a700b75f13070a0719bc9857f6acf8780d4dbccd40ed75a0d54301ed4a9a58a6c526a199fcc952f11877c4a01bc9b961a38a4b6d3769e7c55d977e56a884f6eff456a76886a2f88c520e15e8a6395ea8eefc19c7c223f5b496c8f7941f2a8c2e27ce68daa43c389085cf62e2781c49c2007d58b5f7d1cc5c4f583fe47a0dd9e50ea30f9187f5aaab040f143b0f5654485093c03a49ac93359e34089533ecfe11599557cae71cabadc4035f8f3fd1aa0c6f69cfa7f7d20dd0beec05f7f33634f9adcd7ab8ee8fd061ca74bd53185c5f49136589c3bffd9866a98495fb10b463bb28e4ef3fa31fb977821efcd462d19960ea3158ceb6e5a2bd6265d770d1d33b72c09dd22b23b8321ed58e6c3f22d95ae9fc25fdcd6ed0fafe3370d363333b9772fee7e7c330003ba1368d4893deaed88c6d4a39d82d34684d70decda3f2ac162eef40c41ce345ace5b",
+      "fileName": "architecture-style-reference-v1.png",
+      "width": 1672,
+      "height": 941,
+      "filePath": "E:\\GitHub\\ZX_Obsidian/杂谈/assets/个人架构图生成模板/architecture-style-reference-v1.png",
+      "extname": ".png",
+      "mimeType": "image/png",
+      "imgUrl": "https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/architecture-style-reference-v1.png",
+      "hash": "a5e25b3457579b4a6a09b870b3aa63c955a2fd64",
+      "type": "github",
+      "shortUrl": "",
+      "id": "3df7d00b-6dea-4f19-9fef-6eda4b57e25d",
+      "createdAt": 1786449560018,
+      "updatedAt": 1786449560018
     }
   ]
 }
