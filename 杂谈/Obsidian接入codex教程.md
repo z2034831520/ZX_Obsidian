@@ -21,4 +21,18 @@
 所以这次，我准备把之前落下的内容补回来：将自己的`Obsidian`本地笔记库接入`Codex`，通过`MCP`让`Codex`能够读取、查找和修改这些内容
 
 ## 实操
-了解了`AI`访问文件的底层协议之后接下来我们就要开始动手实操了。本次我们通过`Docker`来为`Codex`提供`MCP`服务，首先我们需要下载`docker desktop`
+了解了`AI`访问文件的底层协议之后接下来我们就要开始动手实操了。本次我们通过`Docker`来为`Codex`提供`MCP`服务，首先我们需要下载`docker desktop`，官网链接为[点击直达](https://www.docker.com/products/docker-desktop/)我们在官网中下载符合自己操作系统版本的软件即可。我们下载之后打开软件，在侧边栏中选择`MCP Toolkit`，然后在`Catalog`界面中搜索`obsidian`
+![](assets/Obsidian接入codex教程/file-20260811155425556.png)
+检索到目标之后我们把它添加到对应的配置文件中
+![](assets/Obsidian接入codex教程/file-20260811155557077.png)
+可以添加到新的配置中，也可以当场创建一个新的配置，然后将其添加进去。然后我们就可以回到`Profile`界面中选择对应的配置，由于我将`obsidian`的`MCP`放入了默认的配置中，因此我们直接点击进去即可
+![](assets/Obsidian接入codex教程/file-20260811155719675.png)
+点进去之后我们点击`Clients`右侧的加号
+![](assets/Obsidian接入codex教程/file-20260811155944370.png)
+在弹出的界面中选择你需要提供服务的客户端，并点击选项右侧的加号
+![](assets/Obsidian接入codex教程/file-20260811155917439.png)
+添加完毕之后我们点击`obsidian`右侧的齿轮图标，点击之后下面会弹出`Secrets`选项，如果你是第一次添加默认情况下这里应该空的，由于我添加过，所以这里显示已经又过了。如果你也曾经添加过但是失效了，可以点击红色的删除图标来清空一下，
+![](assets/Obsidian接入codex教程/file-20260811160143328.png)
+接下来我们只需要获取这个密钥就可以直接控制`obsidian`中的所有笔记了。
+
+想要获取这个密钥我们需要在`obsidian`中安装一下第三方插件
