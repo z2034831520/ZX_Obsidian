@@ -37,4 +37,6 @@
 
 想要获取这个密钥我们需要在`obsidian`中安装一下第三方插件，点击软件左下角的齿轮图标，然后选择第三方插件，然后点击浏览
 ![](assets/Obsidian接入codex教程/file-20260811160616575.png)
-扩展的名字是
+扩展的名字是`Local REST API with MCP`
+![](assets/Obsidian接入codex教程/file-20260811161011407.png)
+下载安装并启用之后即可
