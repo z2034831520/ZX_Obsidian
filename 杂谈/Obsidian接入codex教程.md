@@ -39,4 +39,9 @@
 ![](assets/Obsidian接入codex教程/file-20260811160616575.png)
 扩展的名字是`Local REST API with MCP`
 ![](assets/Obsidian接入codex教程/file-20260811161011407.png)
-下载安装并启用之后即可
+下载安装并启用之后我们需要在设置的侧边栏最底部找到该插件并点开
+![](assets/Obsidian接入codex教程/file-20260811161408285.png)
+点开之后我们将`API key`复制粘贴到`docker desktop`中即可
+
+## 使用
+随后你就可以打开电脑上的`codex`问他能不能访问到`obsidian`中的笔记，如果可以那就大功告成了
