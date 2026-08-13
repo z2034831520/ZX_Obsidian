@@ -96,100 +96,11 @@ void BuzzerMusic_SetTone(uint16_t frequency_hz)
   __HAL_TIM_SET_COMPARE(&htim1, BUZZER_TIMER_CHANNEL, (period_counts * BUZZER_VOLUME_PERCENT) / 100U);  
 }
 ```
-其它的
+
 ### 迁移《晴天》乐谱
+其实底层的驱动编写并不困难，真正让人感到头疼的是如何将音乐转换成可以被无源蜂鸣器播放的形式，在本次项目中我采取的是将歌曲拆分成一个个音符，然后通过结构体保存每个音符的信息。
 
-“晴天”工程中的乐谱没有直接保存音符频率，而是保存了原 TIM2 使用的 PSC 参数和时值。当前项目继续使用两个等长数组保存这些数据：
-
-~~~c
-static const uint16_t sunny_prescalers[] =
-{
-  /* 原工程中的 PSC 数据 */
-};
-
-static const uint16_t sunny_time_units[] =
-{
-  /* 每个音符对应的时值 */
-};
-~~~
-
-这两个数组通过同一个 `index` 组合出一个完整音符。音调和节奏在程序中的协同关系如下图所示：
-
-![晴天乐谱数据结构](file:///D:/STM32%20Projects/C8T6/Base/Docs/assets/buzzer-music-article/score-data-structure.svg)
-
-`sunny_prescalers[index]` 经过 `SunnyFrequencyFromPrescaler()` 得到 `frequency_hz`，决定蜂鸣器播放的音高；`sunny_time_units[index]` 经过 `SunnyDurationMs()` 得到 `duration_ms`，决定这个音保持多久。项目还通过静态断言检查两个数组长度：
-
-~~~c
-_Static_assert(
-    ARRAY_SIZE(sunny_prescalers) ==
-    ARRAY_SIZE(sunny_time_units),
-    "Sunny score arrays must have the same length");
-~~~
-
-### 把旧PSC转换为频率
-
-原工程使用 `72 MHz` 定时器时钟，并把 ARR 固定为 99，因此原输出频率为：
-
-~~~text
-频率 = 72,000,000 ÷ (PSC + 1) ÷ (99 + 1)
-     = 720,000 ÷ (PSC + 1)
-~~~
-
-当前项目使用下面的函数还原频率，并将旋律整体升高两个八度：
-
-~~~c
-static uint16_t SunnyFrequencyFromPrescaler(uint16_t prescaler)
-{
-  uint32_t divisor;
-  uint32_t frequency_hz;
-
-  if (prescaler == SUNNY_REST_PRESCALER)
-  {
-    return BUZZER_MUSIC_REST;
-  }
-
-  divisor = (uint32_t)prescaler + 1U;
-  frequency_hz =
-      (SUNNY_TIMER_FACTOR_HZ + (divisor / 2U)) / divisor;
-  frequency_hz <<= SUNNY_OCTAVE_SHIFT;
-
-  return (uint16_t)frequency_hz;
-}
-~~~
-
-`SUNNY_OCTAVE_SHIFT` 设置为 2，左移两位相当于把频率乘以 4。以 PSC=1635 为例：
-
-~~~text
-原频率 = 720,000 ÷ (1635 + 1) ≈ 440 Hz
-升高两个八度后：440 × 4 ≈ 1760 Hz
-当前 TIM1 的 ARR：1,000,000 ÷ 1760 - 1 ≈ 567
-~~~
-
-旧 PSC 到当前 TIM1 参数的完整转换关系如下图所示，公式继续保留在正文中，图中主要观察数据流向：
-
-![旧工程PSC到当前TIM1参数的转换](file:///D:/STM32%20Projects/C8T6/Base/Docs/assets/buzzer-music-article/psc-conversion.svg)
-
-PSC 为 30 时表示休止符。程序会让蜂鸣器保持静音，但仍然保留该休止符对应的时间。
-
-### 把时值转换为毫秒
-
-旧工程中的时值通过下面的函数转换：
-
-~~~c
-static uint32_t SunnyDurationMs(uint16_t time_unit)
-{
-  return ((uint32_t)time_unit / 25U) * 180U;
-}
-~~~
-
-| 原时值 | 播放时间 |
-|---:|---:|
-| 25 | 180 ms |
-| 50 | 360 ms |
-| 75 | 540 ms |
-| 100 | 720 ms |
-
-播放时使用相同下标读取音调和时值，再依次设置 PWM、保持音符、停止输出并加入默认 `5 ms` 间隔。
+播放每个音符的时候我们只需要把握好音调、持续时间和与下一个音符之间的间隔即可。
 
 ## 在main中启动PWM
 
