@@ -53,33 +53,13 @@ PWM频率 = 1,000,000 ÷ 250
 所以初始化参数对应的基础频率为`4Khz`
 
 
-后续播放不同音调时根据音符频率动态修改自动重装载器的值：
+后续需要播放不同音调时根据音符频率动态修改自动重装载器的值：
 ~~~text
 ARR = 1,000,000 ÷ 音符频率 - 1
 ~~~
 
-例如输出 `4000Hz`频率的方波型号时，自动重装载器的值等于`249`，这也就是`TIM1`初始化时将 `Period`设置为`250 - 1` 的原因
-
+配置的几个参数之间的关系如下图所示
 ![](assets/STM32无源蜂鸣器播放音乐——基于TIM1与FreeRTOS/file-20260813150632168.png)
-## 项目文件结构
-
-蜂鸣器功能在项目中被拆分成程序入口、音乐功能模块和定时器输出三层。各文件之间的依赖和控制关系如下图所示：
-
-![蜂鸣器音乐播放项目结构](file:///D:/STM32%20Projects/C8T6/Base/Docs/assets/buzzer-music-article/project-structure.svg)
-
-其中，`main.c` 负责初始化 TIM1、启动 PWM 和启动 FreeRTOS 调度器；`freertos.c` 在默认任务中调用歌曲播放接口；`buzzer_songs.c` 保存并遍历《晴天》乐谱；`buzzer_music.c` 根据频率设置 ARR 和 CCR。最后由 `tim.c` 配置的 `TIM1_CH1` 从 `PA8` 输出 PWM，驱动无源蜂鸣器发声。
-
-头文件 `buzzer_songs.h` 和 `buzzer_music.h` 只负责向其它文件公开接口。以后增加新的歌曲时，主要修改歌曲数据和播放入口，不需要重新编写 TIM1 的底层控制代码。
-
-## 音乐播放调用流程
-
-当前程序从上电到逐个播放音符的真实调用关系如下图所示：
-
-![无源蜂鸣器音乐播放调用流程](file:///D:/STM32%20Projects/C8T6/Base/Docs/assets/buzzer-music-article/call-flow.svg)
-
-`main()` 先调用 `MX_TIM1_Init()` 完成 TIM1 配置，再通过 `HAL_TIM_PWM_Start()` 启动 PWM。执行 `osKernelStart()` 后，FreeRTOS 进入 `StartDefaultTask()`，先调用 `BuzzerMusic_Init()` 保持静音，然后在循环中执行 `BuzzerSongs_PlaySunny()`。
-
-歌曲函数按照同一个数组下标读取 PSC 和时值，分别调用 `SunnyFrequencyFromPrescaler()` 与 `SunnyDurationMs()` 完成换算。如果当前数据是休止符，程序直接保持静音；否则调用 `BuzzerMusic_SetTone()` 设置频率，再用 `osDelay()` 保持音符时长，最后通过 `BuzzerMusic_Stop()` 停止当前音符并继续处理下一项。
 
 ## 编写蜂鸣器底层驱动
 
