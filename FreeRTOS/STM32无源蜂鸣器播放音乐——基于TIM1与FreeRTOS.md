@@ -14,17 +14,10 @@ updated: 2026-08-12
 
 ## 配置PA8和TIM1
 
-当前蜂鸣器的 I/O 引脚连接到 `PA8`，而 `PA8` 可以复用为 `TIM1_CH1`，因此首先需要把该引脚配置为定时器 PWM 输出。
-
-在 `tim.c` 中，`PA8` 的配置如下：
-
-~~~c
-GPIO_InitStruct.Pin = GPIO_PIN_8;
-GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-~~~
-
+当前蜂鸣器的`I/O`引脚连接到 `PA8`，`PA8`可以复用为`TIM`的输出通道一，我们在配置界面中点击`PA8`引脚就可以配置引脚模式信息了
+![](assets/STM32无源蜂鸣器播放音乐——基于TIM1与FreeRTOS/file-20260813085825440.png)
+将`PA8`配置为`TIM1_CH1`之后就可以配置对应的参数信息了
+![](assets/STM32无源蜂鸣器播放音乐——基于TIM1与FreeRTOS/file-20260813085645952.png)
 由于蜂鸣器模块采用低电平触发，TIM1 通道需要配置为低有效：
 
 ~~~c
