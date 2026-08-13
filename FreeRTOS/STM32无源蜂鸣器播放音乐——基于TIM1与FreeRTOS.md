@@ -19,25 +19,10 @@ updated: 2026-08-12
 将`PA8`配置为`TIM1_CH1`之后就可以配置对应的参数信息了
 ![](assets/STM32无源蜂鸣器播放音乐——基于TIM1与FreeRTOS/file-20260813085645952.png)
 由于蜂鸣器模块采用低电平触发，TIM1 通道需要配置为低有效：
-
-~~~c
-sConfigOC.OCMode = TIM_OCMODE_PWM1;
-sConfigOC.Pulse = 0;
-sConfigOC.OCPolarity = TIM_OCPOLARITY_LOW;
-~~~
+![](assets/STM32无源蜂鸣器播放音乐——基于TIM1与FreeRTOS/file-20260813104422683.png)
 
 TIM1 当前使用的基础参数为：
-
-~~~c
-htim1.Init.Prescaler = 72 - 1;
-htim1.Init.Period = 250 - 1;
-~~~
-
-系统时钟为 `72 MHz`，PSC 设置为 71 后，定时器计数频率为：
-
-~~~text
-72 MHz ÷ (71 + 1) = 1 MHz
-~~~
+系统时钟为 `72 MHz`，预分频值设置为 71 后，对应的定时器计数频率为：`72 MHz ÷ (71 + 1) = 1 MHz`
 
 定时器每计数一次需要 `1 μs`。后续播放不同音调时不再修改 PSC，而是根据音符频率动态修改 ARR：
 
