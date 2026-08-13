@@ -5,9 +5,9 @@
 
 ## 解决方案
 搜狗输入法想必大家都不陌生，作为国内知名度较高的一款输入法在很多中国用户会选择在`Windows`使用搜狗输入法。其实搜狗输入法也是有`Linux`版本的，但是有点古早，对于较新版本的`ubunut`系统兼容性可能不是很好
-![](assets/Ubuntu中文输入法配置/file-20260809174657136.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809174657136.png)
 官网上看从`ubuntu16.04`支持到`ubunut20.10`，对于我们现在使用的`24.04`版本来说有点古老。因此我们在这里会更倾向于用另一款较新的输入法框架：`Fcitx`(`Free Chinese input Toy for X`)，这是`Linux`下最著名的输入法框架之一，在`Ubuntu24.04`中如果我们在系统安装时选择了中文作为系统语言，并且勾选了下载默认集合等选项，系统同样会为我们自动下载`Fcitx5`输入法框架
-![](assets/Ubuntu中文输入法配置/file-20260809175345436.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809175345436.png)
 该输入法框架的中文输入体验就比`ibus`要好很多了，且可扩展性也比较强，我们可以配置它的外观界面以及词库等，正是由于这些可定制化的特性使得该输入法的上限变的很高，在本期内容我就会向你展示如何在`Ubuntu24.04`下配置一套操作体验极好的中文输入法
 
 ## 实操
@@ -27,13 +27,13 @@ im-config -n fcitx5
 fcitx5-configtool
 ```
 在配置界面中我们需要将左侧面板中原先默认的几个选项都删除，删除方法很简单双击目标选项栏即可删除，将默认选项全部删除完毕之后我们接下来还需要添加图中红色方框内的选项
-![](assets/Ubuntu中文输入法配置/file-20260809195953106.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809195953106.png)
 在选择之前我们需要取消勾选底部的仅显示当前语言选项，否则我们就只能看到部分选项
-![](assets/Ubuntu中文输入法配置/file-20260809201537464.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809201537464.png)
 我们需要选择的选项为以下两个，其中第一个是键盘布局，第二个是输入法
-![](assets/Ubuntu中文输入法配置/file-20260809201826230.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809201826230.png)
 配置完成之后我们应该就可以实现中英文切换了，全局选项中的选项大多都不需要二次设置，除非你自己有特殊的习惯或需求
-![](assets/Ubuntu中文输入法配置/file-20260809202422132.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809202422132.png)
 如果不出意外的话现在你已经能够通过`shift`按键来切换中英文了
 
 ### UI配置
@@ -75,18 +75,18 @@ highlight.svg
 vim ~/.config/fcitx5/conf/classicui.conf
 ```
 我们需要修改图片中红色方框内的两项：
-![](assets/Ubuntu中文输入法配置/file-20260809205422547.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809205422547.png)
 修改完成后我们保存并退出，如果没有生效我们可以执行
 ```bash
 fcitx5-remote -r
 ```
 命令来刷新输入法状态
 修改后的输入法`UI`如下图所示：
-![](assets/Ubuntu中文输入法配置/file-20260809205536503.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809205536503.png)
 
 ### 词库配置
 修改完`UI`界面后我们还需要配置对应的词库，这样能提高我们的打字效率，首先我们需要去获得词库。这里我推荐使用维基百科提供的中文词库，我们可以在`GitHub`上下载词库[下载链接，点击直达](https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases)，在下载界面中我们选择文件类型为`.dict`的文件
-![](assets/Ubuntu中文输入法配置/file-20260809205918360.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809205918360.png)
 下载完成后我们可以直接在之前的输入法配置`UI`界面中进行导入，但是那样步骤太繁琐，且更容易失败。我更推荐手动添加
 我们先手动创建存放词库的文件夹
 ```bash
@@ -98,11 +98,11 @@ cp ~/下载/zhwiki-*.dict \
 ~/.local/share/fcitx5/pinyin/dictionaries/
 ```
 拷贝完毕之后我们可以在图形化配置界面中查看是否成功，我们先选中输入法，然后点击设置图标
-![](assets/Ubuntu中文输入法配置/file-20260809210540460.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809210540460.png)
 在接下来的界面中下拉点击管理词库旁边的齿轮
-![](assets/Ubuntu中文输入法配置/file-20260809210614252.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809210614252.png)
 不出意外的话我们就能看到刚才手动添加的词库了
-![](assets/Ubuntu中文输入法配置/file-20260809210723156.png)=
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260809210723156.png)=
 到此配置就结束了
 
 ## 总结

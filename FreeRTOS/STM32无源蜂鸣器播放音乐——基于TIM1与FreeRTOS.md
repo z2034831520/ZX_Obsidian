@@ -1,11 +1,3 @@
----
-source: ai-generated
-style_id: zhou-writing-style-v1
-style_version: "1.3"
-ai_operation: substantive-rewrite
-updated: 2026-08-13
----
-
 # STM32无源蜂鸣器播放《晴天》——基于TIM1与FreeRTOS
 
 ## 引言
@@ -113,12 +105,46 @@ typedef struct
 然后创建一个结构体数组来保存每一个音符的信息方便我们后续遍历并播放
 `static const SunnyNote sunny_score[]`
 由于数组内容过长这里就先只展示部分信息
-播放每个音符的时候我们只需要把握好音调、持续时间和与下一个音符之间的间隔即可。
+接下来在音乐播放函数中调用之前编写好的底层驱动函数来播放对应的音符信息
+```c
+// 开始循环遍历  
+for (index = 0U; index < ARRAY_SIZE(sunny_score); index++)  
+{  
+  // 读取音符信息，准备播放  
+  uint16_t frequency_hz = sunny_score[index].frequency_hz;  
+  uint16_t duration_ms = sunny_score[index].duration_ms;  
+  uint32_t gap_ms = SUNNY_DEFAULT_GAP_MS;  
+  
+  if (frequency_hz == BUZZER_MUSIC_REST)  
+  {  
+    BuzzerMusic_Stop();  
+  }  
+  else  
+  {  
+    BuzzerMusic_SetTone(frequency_hz);  
+  }  
+  
+  if (duration_ms > 0U)  
+  {  
+    osDelay(duration_ms);  
+  }  
+  BuzzerMusic_Stop();  
+  
+  //特定音符之间取消间隔  
+  if ((index == 49U) || (index == 67U) || (index == 178U))  
+  {  
+    gap_ms = 0U;  
+  }  
+  if (gap_ms > 0U)  
+  {  
+    osDelay(gap_ms);  
+  }  
+}
+```
+播放每个音符的时候我们只需要把握好音调、持续时间和与下一个音符之间的间隔即可
 
 ## 在main中启动PWM
-
-完成 TIM1 初始化后，还需要在 `main.c` 中启动 PWM：
-
+最后记得在`main`函数中启动`PWM`输出
 ~~~c
 MX_GPIO_Init();
 MX_TIM1_Init();
@@ -129,19 +155,13 @@ if (HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1) != HAL_OK)
 }
 ~~~
 
-`MX_TIM1_Init()` 只负责配置定时器。执行 `HAL_TIM_PWM_Start()` 后，`TIM1_CH1` 才会真正开始向 `PA8` 输出 PWM。
-
-## 在FreeRTOS任务中播放音乐
-
-在 `freertos.c` 中包含音乐驱动头文件：
-
+## 调用音乐播放函数
+我们可以自行选择音乐播放函数的调用位置，这里我选择在 `freertos.c` 中的任务里调用对应的音乐播放函数，首先包含音乐驱动头文件：
 ~~~c
 #include "buzzer_music.h"
 #include "buzzer_songs.h"
 ~~~
-
 然后在默认任务中初始化蜂鸣器并播放《晴天》：
-
 ~~~c
 void StartDefaultTask(void *argument)
 {
@@ -153,60 +173,216 @@ void StartDefaultTask(void *argument)
   }
 }
 ~~~
-
-当前程序把 `BuzzerSongs_PlaySunny()` 放在无限循环中，因此一首歌曲播放结束后会重新开始。播放过程中使用的 `osDelay()` 只会阻塞当前默认任务，FreeRTOS 仍然可以调度其他已经就绪的任务运行。
-
 ## 调整蜂鸣器响度
 
-当前项目通过 `BUZZER_VOLUME_PERCENT` 控制 PWM 的有效占空比：
-
+当前项目通过`buzzer_music.c`文件中的宏定义`BUZZER_VOLUME_PERCENT`来控制`PWM`的有效占空比：
 ~~~c
 #define BUZZER_VOLUME_PERCENT 10U
 ~~~
-
 声音太大时，可以把这个值调小，例如：
-
 ~~~c
 #define BUZZER_VOLUME_PERCENT 5U
 ~~~
 
-修改后，CCR 会按照新的比例重新计算：
+## 源代码展示
+`buzzer_music.c`:
+```c
+#include "buzzer_music.h"  
+  
+#include "tim.h"  
+  
+// 定时器输出通道  
+#define BUZZER_TIMER_CHANNEL          TIM_CHANNEL_1  
+// TIM的计数频率  
+#define BUZZER_COUNTER_CLOCK_HZ       1000000U  
+//最大计数值  
+#define BUZZER_MAX_PERIOD_COUNTS      65536U  
+//播放音量大小值，百分比  
+#define BUZZER_VOLUME_PERCENT         2U  
+  
+// 初始化蜂鸣器模块，默认为静音状态  
+void BuzzerMusic_Init(void)  
+{  
+  BuzzerMusic_Stop();  
+}  
+  
+// 根据目标频率配置TIM1 PWM，以输出指定音调  
+void BuzzerMusic_SetTone(uint16_t frequency_hz)  
+{  
+  uint32_t period_counts;  
+  
+  // 如果频率值为0那么直接停止输出  
+  if (frequency_hz == BUZZER_MUSIC_REST)  
+  {  
+    BuzzerMusic_Stop();  
+    return;  
+  }  
+  
+  //计算自动重装载器的值  
+  period_counts = BUZZER_COUNTER_CLOCK_HZ / frequency_hz;  
+  
+  // 越界检查  
+  if ((period_counts < 2U) || (period_counts > BUZZER_MAX_PERIOD_COUNTS))  
+  {  
+    BuzzerMusic_Stop();  
+    return;  
+  }  
+  
+  // 将对应值写入重装载寄存器和比较寄存器中  
+  __HAL_TIM_SET_AUTORELOAD(&htim1, period_counts - 1U);  
+  __HAL_TIM_SET_COMPARE(&htim1, BUZZER_TIMER_CHANNEL, (period_counts * BUZZER_VOLUME_PERCENT) / 100U);  
+}  
+  
+// 将PWM有效占空比清零，使低电平触发蜂鸣器停止发声  
+void BuzzerMusic_Stop(void)  
+{  
+  // 将捕获比较寄存器中的值设置为0，无源蜂鸣器停止发声  
+  __HAL_TIM_SET_COMPARE(&htim1, BUZZER_TIMER_CHANNEL, 0U);  
+}
+```
 
-~~~text
-CCR = period_counts × BUZZER_VOLUME_PERCENT ÷ 100
-~~~
+`buzzer_music.h`:
+```c
+#ifndef BUZZER_MUSIC_H  
+#define BUZZER_MUSIC_H  
+  
+#include <stdint.h>  
+  
+#define BUZZER_MUSIC_REST  0U  
+  
+void BuzzerMusic_Init(void);  
+void BuzzerMusic_SetTone(uint16_t frequency_hz);  
+void BuzzerMusic_Stop(void);  
+  
+#endif /* BUZZER_MUSIC_H */
+```
 
-占空比设置得过小后，部分音调可能无法稳定发声，因此每次修改后都要重新播放整首歌曲进行确认。
+`buzzer_songs.c`:
+```c
+#include "buzzer_songs.h"  
+  
+#include <stddef.h>  
+#include <stdint.h>  
+  
+#include "buzzer_music.h"  
+#include "cmsis_os2.h"  
+  
+// 宏函数作用是获取数组长度  
+#define ARRAY_SIZE(array)              (sizeof(array) / sizeof((array)[0]))  
+// 默认音符停顿时间  
+#define SUNNY_DEFAULT_GAP_MS           5U  
+  
+// 音符结构体，保存一个音符的音调和持续时间信息  
+typedef struct  
+{  
+  //音调  
+  uint16_t frequency_hz;  
+  //持续时间  
+  uint16_t duration_ms;  
+} SunnyNote;  
+  
+// 《晴天》乐谱：每项依次表示音调频率和持续时间，频率为0时表示休止  
+static const SunnyNote sunny_score[] =  
+{  
+  {1760U, 360U}, {2092U, 360U}, {3136U, 360U}, {2092U, 360U}, {1396U, 360U},  
+  {1568U, 180U}, {1760U, 180U}, {3136U, 360U}, {2092U, 360U}, {2092U, 360U},  
+  {1568U, 360U}, {3136U, 360U}, {2092U, 360U}, {2092U, 360U}, {3136U, 360U},  
+  {1976U, 360U}, {3136U, 360U}, {1760U, 360U}, {2092U, 360U}, {3136U, 360U},  
+  {2092U, 360U}, {1396U, 360U}, {1568U, 180U}, {1760U, 180U}, {3136U, 360U},  
+  {2092U, 360U}, {2092U, 360U}, {1568U, 360U}, {3136U, 360U}, {2092U, 360U},  
+  {2092U, 360U}, {3136U, 360U}, {1568U, 180U}, {2092U, 180U}, {3136U, 360U},  
+  {0U, 360U}, {3136U, 360U}, {3136U, 360U}, {2092U, 360U}, {2092U, 720U},  
+  {2348U, 360U}, {2636U, 360U}, {0U, 360U}, {3136U, 360U}, {3136U, 360U},  
+  {2092U, 360U}, {2092U, 360U}, {2348U, 180U}, {2636U, 180U}, {2348U, 180U},  
+  {2092U, 180U}, {1568U, 360U}, {0U, 360U}, {3136U, 360U}, {3136U, 360U},  
+  {2092U, 360U}, {2092U, 720U}, {2348U, 360U}, {2636U, 360U}, {0U, 360U},  
+  {2636U, 720U}, {2348U, 180U}, {2636U, 180U}, {2792U, 180U}, {2636U, 180U},  
+  {2348U, 180U}, {2792U, 180U}, {2636U, 180U}, {2348U, 180U}, {2092U, 360U},  
+  {1568U, 360U}, {2092U, 360U}, {2092U, 360U}, {2636U, 360U}, {2792U, 360U},  
+  {2636U, 360U}, {2348U, 360U}, {2092U, 180U}, {2348U, 180U}, {2636U, 360U},  
+  {2636U, 360U}, {2636U, 360U}, {2636U, 360U}, {2348U, 180U}, {2636U, 180U},  
+  {2348U, 360U}, {2092U, 720U}, {1568U, 360U}, {2092U, 360U}, {2348U, 360U},  
+  {2636U, 360U}, {2792U, 360U}, {2636U, 360U}, {2348U, 360U}, {2092U, 180U},  
+  {2348U, 180U}, {2636U, 360U}, {2636U, 360U}, {2636U, 360U}, {2636U, 360U},  
+  {2348U, 180U}, {2636U, 180U}, {2348U, 360U}, {2092U, 540U}, {0U, 2880U},  
+  {2092U, 180U}, {2092U, 180U}, {2092U, 180U}, {2092U, 180U}, {1760U, 360U},  
+  {1976U, 360U}, {2092U, 360U}, {3136U, 360U}, {2792U, 360U}, {2636U, 360U},  
+  {2092U, 360U}, {2092U, 900U}, {0U, 360U}, {2092U, 180U}, {2092U, 180U},  
+  {2092U, 180U}, {2092U, 180U}, {2636U, 360U}, {2092U, 360U}, {1760U, 360U},  
+  {1976U, 360U}, {2092U, 360U}, {3136U, 360U}, {2792U, 360U}, {2636U, 360U},  
+  {2092U, 360U}, {2348U, 900U}, {2636U, 360U}, {2348U, 360U}, {2792U, 360U},  
+  {2636U, 720U}, {2092U, 360U}, {3136U, 360U}, {3952U, 360U}, {4188U, 360U},  
+  {3952U, 360U}, {3136U, 360U}, {2092U, 360U}, {0U, 360U}, {2092U, 360U},  
+  {3520U, 360U}, {3520U, 360U}, {0U, 360U}, {3520U, 360U}, {3136U, 360U},  
+  {3136U, 360U}, {0U, 360U}, {3136U, 360U}, {2792U, 360U}, {2636U, 360U},  
+  {2348U, 360U}, {2636U, 360U}, {2792U, 360U}, {2636U, 900U}, {0U, 540U},  
+  {2636U, 360U}, {2792U, 360U}, {3136U, 360U}, {2636U, 360U}, {0U, 360U},  
+  {2792U, 360U}, {3136U, 360U}, {3952U, 360U}, {4700U, 360U}, {3952U, 360U},  
+  {4188U, 360U}, {4188U, 900U}, {0U, 360U}, {4188U, 360U}, {4188U, 360U},  
+  {3136U, 360U}, {3136U, 360U}, {3520U, 360U}, {3136U, 360U}, {2792U, 360U},  
+  {2348U, 360U}, {2636U, 360U}, {2792U, 360U}, {3136U, 360U}, {3520U, 360U},  
+  {2092U, 360U}, {3520U, 540U}, {3952U, 180U}, {3952U, 720U}, {2636U, 360U},  
+  {2348U, 360U}, {2792U, 360U}, {2636U, 360U}, {0U, 360U}, {2092U, 360U},  
+  {3136U, 360U}, {3952U, 360U}, {4188U, 360U}, {3952U, 360U}, {3136U, 360U},  
+  {2092U, 360U}, {0U, 360U}, {2092U, 360U}, {3520U, 360U}, {3520U, 360U},  
+  {0U, 360U}, {3520U, 360U}, {3136U, 360U}, {3136U, 360U}, {0U, 360U},  
+  {3136U, 360U}, {2792U, 360U}, {2636U, 360U}, {2348U, 360U}, {2636U, 360U},  
+  {2792U, 360U}, {2636U, 1080U}, {0U, 360U}, {2636U, 360U}, {2792U, 360U},  
+  {3136U, 360U}, {2636U, 360U}, {0U, 360U}, {2792U, 360U}, {3136U, 360U},  
+  {3952U, 360U}, {4700U, 360U}, {3952U, 360U}, {4188U, 360U}, {4188U, 900U},  
+  {0U, 360U}, {2092U, 360U}, {4188U, 360U}, {3136U, 360U}, {3136U, 360U},  
+  {3520U, 360U}, {3136U, 360U}, {2792U, 360U}, {1760U, 360U}, {1976U, 360U},  
+  {2092U, 360U}, {2348U, 360U}, {2636U, 360U}, {2348U, 720U}, {0U, 0U},  
+  {2636U, 360U}, {2092U, 1440U}  
+};  
+  
+// 遍历迁移后的音调和时值数据，完整播放《晴天》旋律  
+void BuzzerSongs_PlaySunny(void)  
+{  
+  size_t index;  
+  
+  // 开始循环遍历  
+  for (index = 0U; index < ARRAY_SIZE(sunny_score); index++)  
+  {  
+    // 读取音符信息，准备播放  
+    uint16_t frequency_hz = sunny_score[index].frequency_hz;  
+    uint16_t duration_ms = sunny_score[index].duration_ms;  
+    uint32_t gap_ms = SUNNY_DEFAULT_GAP_MS;  
+  
+    if (frequency_hz == BUZZER_MUSIC_REST)  
+    {  
+      BuzzerMusic_Stop();  
+    }  
+    else  
+    {  
+      BuzzerMusic_SetTone(frequency_hz);  
+    }  
+  
+    if (duration_ms > 0U)  
+    {  
+      osDelay(duration_ms);  
+    }  
+    BuzzerMusic_Stop();  
+  
+    //特定音符之间取消间隔  
+    if ((index == 49U) || (index == 67U) || (index == 178U))  
+    {  
+      gap_ms = 0U;  
+    }  
+    if (gap_ms > 0U)  
+    {  
+      osDelay(gap_ms);  
+    }  
+  }  
+}
+```
 
-## 增加一首新歌曲
-
-如果新歌曲直接使用音符频率和毫秒时长，可以定义一个 `BuzzerMusicNote` 数组：
-
-~~~c
-static const BuzzerMusicNote song[] =
-{
-  {262U, 300U},
-  {294U, 300U},
-  {330U, 300U},
-  {0U,   150U},
-  {392U, 600U}
-};
-~~~
-
-其中频率为 0 的音符表示休止符。播放时调用：
-
-~~~c
-BuzzerMusic_Play(song, sizeof(song) / sizeof(song[0]));
-~~~
-
-如果新乐谱使用公共频率表和音符索引，则可以调用 `BuzzerMusic_PlayIndexed()`，这样不需要为每个音符重复保存频率。
-
-## 编译和播放验证
-
-完成代码接入后重新编译并烧录程序。上电后的播放和验证过程如下图所示：
-
-![编译烧录后的播放验证流程](file:///D:/STM32%20Projects/C8T6/Base/Docs/assets/buzzer-music-article/playback-verification.svg)
-
-程序先初始化 TIM1 和蜂鸣器，然后按照乐谱顺序读取当前音符、设置 ARR 与 CCR，并通过 `osDelay()` 保持对应时长。当前音符结束后继续读取下一项，一首歌曲播放完毕后，默认任务中的无限循环会再次从头调用 `BuzzerSongs_PlaySunny()`。
-
-能够从蜂鸣器中听到连续且节奏正常的《晴天》旋律，就说明 `PA8`、`TIM1_CH1`、底层音乐驱动、乐谱数据和 FreeRTOS 播放任务已经连接完成。
+`buzzer_songs.h`:
+```c
+#ifndef BUZZER_SONGS_H  
+#define BUZZER_SONGS_H  
+  
+void BuzzerSongs_PlaySunny(void);  
+  
+#endif /* BUZZER_SONGS_H */
+```
