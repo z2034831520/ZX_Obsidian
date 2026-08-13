@@ -61,10 +61,43 @@ ARR = 1,000,000 ÷ 音符频率 - 1
 配置的几个参数之间的关系如下图所示
 ![](assets/STM32无源蜂鸣器播放音乐——基于TIM1与FreeRTOS/file-20260813150632168.png)
 
-## 编写蜂鸣器底层驱动
-首先我们需要编写蜂鸣器的底层驱动，即控制蜂鸣器发出不同音调，不同响度的声音。我们将其命名为`buzzer_music.c`，在该文件中我们
+## 代码讲解
+接下来我会讲解一下部分核心代码是如何编写的，如果想要直接看完整的源代码可以跳转到源代码展示部分
 
-## 迁移《晴天》乐谱
+播放音乐部分的代码我们分为两块进行编写，分别是底层的蜂鸣器驱动以及歌曲的曲谱播放，其中底层驱动代码位于`buzzer_music.c`和`buzzer_music.h`中，音乐播放部分代码位于`buzzer_songs.c`和`buzzer_songs.h`中
+### 编写蜂鸣器底层驱动
+
+首先我们需要编写蜂鸣器的底层驱动，即控制蜂鸣器发出不同音调，不同响度的声音。我们将其命名为`buzzer_music.c`，在该文件中我们主要实现了`BuzzerMusic_SetTone`函数，该函数可以实现根据我们传入的频率信息进行计算，然后将计算出的结果写入指定的寄存器中，以此来实现输出指定的音调
+```c
+// 根据目标频率配置TIM1 PWM，以输出指定音调  
+void BuzzerMusic_SetTone(uint16_t frequency_hz)  
+{  
+  uint32_t period_counts;  
+  
+  // 如果频率值为0那么直接停止输出  
+  if (frequency_hz == BUZZER_MUSIC_REST)  
+  {  
+    BuzzerMusic_Stop();  
+    return;  
+  }  
+  
+  //计算自动重装载器的值  
+  period_counts = BUZZER_COUNTER_CLOCK_HZ / frequency_hz;  
+  
+  // 越界检查  
+  if ((period_counts < 2U) || (period_counts > BUZZER_MAX_PERIOD_COUNTS))  
+  {  
+    BuzzerMusic_Stop();  
+    return;  
+  }  
+  
+  // 将对应值写入重装载寄存器和比较寄存器中  
+  __HAL_TIM_SET_AUTORELOAD(&htim1, period_counts - 1U);  
+  __HAL_TIM_SET_COMPARE(&htim1, BUZZER_TIMER_CHANNEL, (period_counts * BUZZER_VOLUME_PERCENT) / 100U);  
+}
+```
+其它的
+### 迁移《晴天》乐谱
 
 “晴天”工程中的乐谱没有直接保存音符频率，而是保存了原 TIM2 使用的 PSC 参数和时值。当前项目继续使用两个等长数组保存这些数据：
 
