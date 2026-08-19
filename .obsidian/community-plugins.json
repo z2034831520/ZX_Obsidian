@@ -14,5 +14,6 @@
   "obsidian-excalidraw-plugin",
   "oz-clear-unused-images",
   "obsidian-local-rest-api",
-  "3d-graph"
+  "3d-graph",
+  "obsidian-image-auto-upload-plugin"
 ]
