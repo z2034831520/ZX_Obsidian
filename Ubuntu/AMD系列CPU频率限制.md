@@ -21,4 +21,25 @@ cpupower frequency-info
 
 修改之后可以尝试同时打开多个软件，观察一下`CPU`的温度变化和风扇的转速变化。等到调整到一个你感觉比较合适的参数时就可以将参数持久化了
 
-当然你也可以到此为止，以后每次使用前都执行一下修改频率的命令。但是我觉得这样做并不是很符合正常的操作习惯，我们不应该每次将对应的频率由高调低，应为绝大多数情况下电脑都是处于正常工作的状态，并不会长时间持续性的运行及其消耗电脑性能的任务，因此我们在大多数情况下应该让`CPU`处于一个低功耗的状态下。所以我还是建议将`CPU`频率限制固定一下，等我们在高性能需求场景下再将`CPU`的频率限制解除
+当然你也可以到此为止，以后每次使用前都手动降频。但是这样做显然不符合正常的操作习惯，仔细想想绝大多数情况下电脑都都在处理轻度任务，并不会长时间的满载运行，因此更合理的逻辑应该是反过来的，把低频率设置为电脑的默认状态，只有在高性能要求的场景下再去手动解锁
+
+### 设置默认频率上限
+首先我们需要创建一个系统任务，命令如下：
+```bash
+sudo nano /etc/systemd/system/cpu-frequency-cap.service
+```
+
+然后在其中写入对应的配置信息
+```bash
+[Unit]
+Description=Limit CPU maximum frequency to 4.8 GHz
+After=power-profiles-daemon.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/cpupower frequency-set --max 4.8GHz
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+```
