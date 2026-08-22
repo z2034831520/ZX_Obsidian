@@ -43,3 +43,4 @@ RemainAfterExit=yes
 [Install]
 WantedBy=multi-user.target
 ```
+这里可以根据自己的实际需求修改频率参数
