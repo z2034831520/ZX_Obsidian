@@ -66,9 +66,13 @@ cat /sys/devices/system/cpu/cpufreq/policy*/scaling_max_freq \
 ### 取消默认频率设置
 如果后续你不需要限制睿频，那么也可以直接删除对应的服务，我们可以连续执行如下几条命令
 ```bash
+# 停止任务
 sudo systemctl disable --now cpu-frequency-cap.service
+# 删除任务
 sudo rm /etc/systemd/system/cpu-frequency-cap.service
+# 重新加载
 sudo systemctl daemon-reload
+# 重新设置频率值
 sudo cpupower frequency-set --max 5535547kHz
 ```
 上面命令中的最大睿频值需要根据你使用的`CPU`型号进行调整
