@@ -32,15 +32,43 @@ sudo nano /etc/systemd/system/cpu-frequency-cap.service
 然后在其中写入对应的配置信息
 ```bash
 [Unit]
-Description=Limit CPU maximum frequency to 4.8 GHz
+Description=Limit CPU maximum frequency to 4.4 GHz
 After=power-profiles-daemon.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/cpupower frequency-set --max 4.8GHz
+ExecStart=/usr/bin/cpupower frequency-set --max 4.4GHz
 RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
 ```
 这里可以根据自己的实际需求修改频率参数
+
+保存之后我们还需要去启动服务
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now cpu-frequency-cap.service
+```
+通过这两条命令可以启动刚才创建的服务
+
+然后我们可以检查一下服务是否生效
+```bash
+# 检查任务状态
+systemctl status cpu-frequency-cap.service
+
+# 查看CPU频率
+cat /sys/devices/system/cpu/cpufreq/policy*/scaling_max_freq \
+  | sort -nu
+```
+第一条命令之后之后应该能看到绿色的`active`字样，表示服务已经正常启动，第二条命令执行之后应该显示出当前`CPU`的最大睿频，例如按照我刚才的配置，执行命令后显示的最大睿频就是`4400000`，即`4.4GHz`
+
+### 取消默认频率设置
+如果后续你不需要限制睿频，那么也可以直接删除对应的服务，我们可以连续执行如下几条命令
+```bash
+sudo systemctl disable --now cpu-frequency-cap.service
+sudo rm /etc/systemd/system/cpu-frequency-cap.service
+sudo systemctl daemon-reload
+sudo cpupower frequency-set --max 5535547kHz
+```
+上面命令中的最大睿频值需要根据你使用的`CPU`型号进行调整
