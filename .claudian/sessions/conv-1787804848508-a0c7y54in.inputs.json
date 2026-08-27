@@ -69,7 +69,36 @@
       "canonicalText": "现在我已经在高等数学文件夹下创建了真题库文件夹，并在其中放置了26年数一的真题pdf文件，从其中抽取几道有关极限的题目进行讲解，并将讲解的内容放入一个新的文件中，新文件放入新创建的习题讲解文件夹中，",
       "images": [],
       "contentDigest": "87f4e0cfae9d1e25ff6ea3fdbd200c7bf25d8b5b165d3597165bd6af53df03fe",
-      "providerUserMessageId": "01a04224-c8d5-7920-97eb-431bc78ad170"
+      "providerUserMessageId": "01a04224-c8d5-7920-97eb-431bc78ad170",
+      "providerAssistantMessageId": "msg_09bd132711be2ee1016a8fe9b08ce887d086ab08c81af5775a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787816992715-no36ce8",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1787816992711-vdwleyg",
+      "timestamp": 1787816992711,
+      "rawDisplayText": "我希望能够定制你讲解题目时的大致思路与讲解风格，你推荐我怎么做",
+      "canonicalText": "我希望能够定制你讲解题目时的大致思路与讲解风格，你推荐我怎么做",
+      "images": [],
+      "contentDigest": "b6ec915b53480d7f80e51945fc55c0de85cd1144e82c72149e3b2dfef7ac9e82",
+      "providerUserMessageId": "01a04232-6493-74b2-8f6e-74401211b731",
+      "providerAssistantMessageId": "msg_09bd132711be2ee1016a8fec81420487d0b56e7cc62aa324f5"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787817455385-lwqvy9n",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1787817455379-pbxqfj7",
+      "timestamp": 1787817455379,
+      "rawDisplayText": "目标分数：120\n当前数学基础：20\n默认讲解模式：详细\n是否先让我独立思考：是\n是否需要一题多解：需要\n计算步骤希望多详细：给出完整详细的过程\n是否需要直观或图像解释：需要\n每次配套几道练习：需要\n练习是否立即提供答案：不\n其他不喜欢的讲解方式：简略的讲解方式",
+      "canonicalText": "目标分数：120\n当前数学基础：20\n默认讲解模式：详细\n是否先让我独立思考：是\n是否需要一题多解：需要\n计算步骤希望多详细：给出完整详细的过程\n是否需要直观或图像解释：需要\n每次配套几道练习：需要\n练习是否立即提供答案：不\n其他不喜欢的讲解方式：简略的讲解方式",
+      "images": [],
+      "contentDigest": "1bc8c15a643dda03b5523c7fadc36e1ccf139ebe587b74906de718c59ac59ef0",
+      "providerUserMessageId": "01a04239-8803-7642-9366-1660b75c1988",
+      "providerAssistantMessageId": "msg_09bd132711be2ee1016a8fef035c0887d0945098daf1e72d47"
     }
   ]
 }
