@@ -29,6 +29,34 @@
       "contentDigest": "5559e2a17ceac034e9c28ed857603b3b93d617c484ea45b96ace5b4240828535",
       "providerUserMessageId": "01a04180-194d-7ac1-b321-c3294f26250e",
       "providerAssistantMessageId": "msg_09bd132711be2ee1016a8fbeaa995c87d08578a3ccd3e8ee4b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787814872734-1flmxo7",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1787814872715-8m4kd7f",
+      "timestamp": 1787814872715,
+      "rawDisplayText": "现在我希望你能够创建一个新的文件夹，文件夹名称为高等数学，后续我会在其中进行高等数学的学习，我准备考研",
+      "canonicalText": "现在我希望你能够创建一个新的文件夹，文件夹名称为高等数学，后续我会在其中进行高等数学的学习，我准备考研",
+      "images": [],
+      "contentDigest": "1d8708383e3958d155fc768312e453ab1289f2f395b27bea97741de8b3237ef7",
+      "providerUserMessageId": "01a04212-42e6-7431-a2a4-0f3e2c877786",
+      "providerAssistantMessageId": "msg_09bd132711be2ee1016a8fe405914487d0a243e2dfa9d45742"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787815018915-qwdvtbc",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1787815018911-f54dxz9",
+      "timestamp": 1787815018911,
+      "rawDisplayText": "我现在希望能够获取往年的考研数学数一的真题，你有什么渠道推荐，我想放入高等数学文件夹下，用于日后知识点的匹配练习，即每次讲解完对应的知识点后可以从题库中为我找出对应的题目作为练习",
+      "canonicalText": "我现在希望能够获取往年的考研数学数一的真题，你有什么渠道推荐，我想放入高等数学文件夹下，用于日后知识点的匹配练习，即每次讲解完对应的知识点后可以从题库中为我找出对应的题目作为练习",
+      "images": [],
+      "contentDigest": "a267a976d75ed495529244073075f08350b222bc218475c58ef271dcdfbf9c7e",
+      "providerUserMessageId": "01a04214-47a0-7022-826b-416d5c979b76",
+      "providerAssistantMessageId": "msg_09bd132711be2ee1016a8fe4aa1e0487d0b46a0e79cbb7c3df"
     }
   ]
 }
