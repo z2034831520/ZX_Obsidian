@@ -1,0 +1,27 @@
+{
+  "id": "conv-1787804848508-a0c7y54in",
+  "providerId": "codex",
+  "title": "分析当前笔记内容",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787804848519,
+  "lastActivityAt": 1787805343763,
+  "sessionId": "01a04179-25f6-7be1-bd1c-007216ebeab5",
+  "selectedModel": "gpt-5.6-terra",
+  "providerState": {
+    "threadId": "01a04179-25f6-7be1-bd1c-007216ebeab5",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "C:\\Users\\zhou\\.codex\\sessions\\2026\\08\\27\\rollout-2026-08-27T12-27-33-01a04179-25f6-7be1-bd1c-007216ebeab5.jsonl",
+    "transcriptRootPath": "C:\\Users\\zhou\\.codex\\sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "usage": {
+    "inputTokens": 57445,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 56064,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 57445,
+    "percentage": 22,
+    "model": "gpt-5.6-terra"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787804848508-a0c7y54in",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787804848554-hpzw64n",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787804848502-e97butk",
+      "timestamp": 1787804848502,
+      "rawDisplayText": "分析一下当前内笔记内容",
+      "canonicalText": "分析一下当前内笔记内容",
+      "images": [],
+      "contentDigest": "e961f50bdbab79ac29db829ac4ae73f7b39106618f46604cb98e4f00f822e94d",
+      "providerUserMessageId": "01a04179-275c-7930-bfc5-fc501cc5c830",
+      "providerAssistantMessageId": "msg_09bd132711be2ee1016a8fbdfff47087d08080c686454f4860"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787805309215-j1nv2os",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787805309212-kdc3dw9",
+      "timestamp": 1787805309212,
+      "rawDisplayText": "如何为文章添加标签",
+      "canonicalText": "如何为文章添加标签",
+      "images": [],
+      "contentDigest": "5559e2a17ceac034e9c28ed857603b3b93d617c484ea45b96ace5b4240828535",
+      "providerUserMessageId": "01a04180-194d-7ac1-b321-c3294f26250e",
+      "providerAssistantMessageId": "msg_09bd132711be2ee1016a8fbeaa995c87d08578a3ccd3e8ee4b"
+    }
+  ]
+}
