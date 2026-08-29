@@ -4,9 +4,9 @@
   "title": "分析当前笔记内容",
   "titleGenerationStatus": "success",
   "createdAt": 1787804848519,
-  "lastActivityAt": 1787817722703,
+  "lastActivityAt": 1788004870786,
   "sessionId": "01a04179-25f6-7be1-bd1c-007216ebeab5",
-  "selectedModel": "gpt-5.6-sol",
+  "selectedModel": "gpt-5.6-terra",
   "providerState": {
     "threadId": "01a04179-25f6-7be1-bd1c-007216ebeab5",
     "nativeConversationContextEstablished": true,

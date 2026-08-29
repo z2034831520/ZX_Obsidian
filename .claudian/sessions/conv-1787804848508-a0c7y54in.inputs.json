@@ -99,6 +99,19 @@
       "contentDigest": "1bc8c15a643dda03b5523c7fadc36e1ccf139ebe587b74906de718c59ac59ef0",
       "providerUserMessageId": "01a04239-6f27-7951-9612-42708ac02f9b",
       "providerAssistantMessageId": "msg_09bd132711be2ee1016a8fef035c0887d0945098daf1e72d47"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788004870804-mn67giy",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1788004870786-tlkcgtu",
+      "timestamp": 1788004870786,
+      "rawDisplayText": "分析当前笔记为什么无法正常显示图片等内容了",
+      "canonicalText": "分析当前笔记为什么无法正常显示图片等内容了",
+      "images": [],
+      "contentDigest": "67d7bc20f6db4836bc5e1d87ba4efeaa66e024a9a5cf616e09493a2f6ea76338",
+      "providerUserMessageId": "01a04d65-4a43-7aa0-b5aa-d258bf0b7cd6"
     }
   ]
 }
