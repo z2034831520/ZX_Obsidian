@@ -111,7 +111,8 @@
       "canonicalText": "分析当前笔记为什么无法正常显示图片等内容了",
       "images": [],
       "contentDigest": "67d7bc20f6db4836bc5e1d87ba4efeaa66e024a9a5cf616e09493a2f6ea76338",
-      "providerUserMessageId": "01a04d65-4a43-7aa0-b5aa-d258bf0b7cd6"
+      "providerUserMessageId": "01a04d65-3d4d-73e1-a087-607c7a0fe07c",
+      "providerAssistantMessageId": "msg_09bd132711be2ee1016a92ca8cd51c87d0b7666e5ffe3df5d6"
     }
   ]
 }
