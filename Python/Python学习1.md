@@ -13,3 +13,13 @@ print(f"设备温度为{temp_float + 1}")
 ```bash
 设备温度为{temp_float + 1}
 ```
+
+## type获取变量类型
+在`Python`中可以通过`type`函数来直接获取变量类型信息。如我们可以通过如下语句直接输出变量的类型信息
+```python
+print(f"设备编号对应变量类型为{type(ID_float)}")
+```
+输出结果为
+```bash
+设备编号对应变量类型为<class 'float'>
+```
