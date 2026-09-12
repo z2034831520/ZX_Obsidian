@@ -3,7 +3,11 @@ title: Bootloader与固件升级
 aliases:
   - Bootloader 与固件升级
 type: knowledge
-tags: [单片机, STM32, Bootloader, 固件升级]
+tags:
+  - 单片机
+  - STM32
+  - Bootloader
+  - 固件升级
 status: draft
 created: 2026-08-08
 updated: 2026-08-08
