@@ -69,3 +69,11 @@ int main()
 ## python
 如果之前你在电脑中安装`python`解释器时将其安装在了默认目录下那么你就不需要修改对应的插件配置，直接点击对应的`run`选项就可以看到对应的运行结果了。否则就需要像配置C语言解释器那样将你电脑中真正的`python`解释器路径更新一下，更新之后就能正常使用了
 ![[../Pasted image 20261010214421.png]]
+## Java
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
