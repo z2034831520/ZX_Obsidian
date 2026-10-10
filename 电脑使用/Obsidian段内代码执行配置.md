@@ -34,4 +34,6 @@ conda activate cling-lab
 where cling
 cling --help
 ```
-指令执行完毕之后我们复制以下`where cling`指令的运行结果，该指令的输出结果是
+指令执行完毕之后我们复制以下`where cling`指令的运行结果，该指令的输出结果是`cling.exe`程序的安装路径
+
+随后我们在插件的配置界面中将对应的路径输入`Cling`
