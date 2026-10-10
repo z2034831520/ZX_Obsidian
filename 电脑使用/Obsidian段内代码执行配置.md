@@ -25,3 +25,13 @@
 在下载界面中对应的程序安装路径我们可以自定义，只要后续进行配置时能找到程序的安装路径即可
 ![[../Pasted image 20261010211101.png]]
 在图示配置界面中我们可以保持图中所示配置，第一个和第四个选项勾选与否影响不大，第一个选项是创建启动图标，最后一个选项是减少空间占用
+
+安装完成之后我们在开始界面中搜索`Miniforge`
+![[../Pasted image 20261010213314.png]]打开之后我们在其中执行以下四条指令
+```bash
+conda create -n cling-lab -c conda-forge cling
+conda activate cling-lab
+where cling
+cling --help
+```
+指令执行完毕之后我们复制以下`where cling`指令的运行结果，该指令的输出结果是
