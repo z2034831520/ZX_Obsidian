@@ -16,5 +16,7 @@
   "obsidian-local-rest-api",
   "3d-graph",
   "obsidian-image-auto-upload-plugin",
-  "realclaudian"
+  "realclaudian",
+  "templater-obsidian",
+  "dataview"
 ]
