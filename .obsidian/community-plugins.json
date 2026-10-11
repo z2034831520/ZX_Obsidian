@@ -18,5 +18,6 @@
   "obsidian-image-auto-upload-plugin",
   "realclaudian",
   "templater-obsidian",
-  "dataview"
+  "dataview",
+  "advanced-rename-and-delete-handler"
 ]
