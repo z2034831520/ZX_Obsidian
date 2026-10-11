@@ -79,6 +79,9 @@ public class Main {
 }
 ```
 
+
+## JavaScript
+对于JavaScript代码也是同理，如果你的电脑中已经安装了对应的Node.js环境，那么插件在运行代码的时候就会自动寻找到对应的运行环境，让代码直接运行，示例代码如下，点击run选项即可直接运行
 ```javascript
 function main() {
     console.log("Hello, World!");
@@ -86,3 +89,6 @@ function main() {
 
 main();
 ```
+
+## 总结
+至此就介绍完了如何在obsidian软件中运行段内代码，希望这个功能能够改善你的笔记阅读和编写体验
