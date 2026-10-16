@@ -21,8 +21,12 @@ ARP协议时TCP/IP协议簇中的核心协议，它的根本作用是将网络�
 简单了解了`ARP`协议的相关内容之后接下来我们就可以开始进行实验了，本次实验借助的是`WireShark`软件，如果没有下载过那么可以到软件官网中下载，[官网链接](https://www.wireshark.org/download.html)
 
 ### 查询ARP缓存
-首先我们需要在电脑的终端中执行以下两条命令
+首先我们需要在电脑的终端中执行以下命令来查询当前网卡信息
 ```powershell
 Get-NetIPConfiguration -InterfaceAlias WLAN
-arp -a -N 10.70.178.64
 ```
+该指令的运行结果为
+![](assets/ARP协议网络实验/file-20261016083035581.png)
+结合命令运行的结果我们不难发现，当前网卡的`IPv4`地址为`10.70.178.64`，然后我们就可以执行
+
+![](assets/ARP协议网络实验/file-20261016083206915.png)
