@@ -99,6 +99,7 @@ deno --version
 ## 会员高清视频下载
 如果你在某些视频平台上充值了会员的话那么你就可以下载会员专属的画质等级，例如在B站中会员就可以下载`1080P`60帧的视频，在Youtube上会员至高可以下载4K画质的视频。接下来我会介绍一下如何下载会员专属的高画质视频
 
-首先我们需要在浏览器中下载对应的插件
+首先我们需要在浏览器中下载对应的插件，插件的下载地址为[下载链接，点击直达](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)，这个
+
 ## 总结
 当然该工具的功能不止于此，它还有更多强大的功能，大家可以到项目简介中自行了解
