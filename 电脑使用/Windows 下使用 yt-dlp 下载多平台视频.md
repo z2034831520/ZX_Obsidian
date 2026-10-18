@@ -99,7 +99,15 @@ deno --version
 ## 会员高清视频下载
 如果你在某些视频平台上充值了会员的话那么你就可以下载会员专属的画质等级，例如在B站中会员就可以下载`1080P`60帧的视频，在Youtube上会员至高可以下载4K画质的视频。接下来我会介绍一下如何下载会员专属的高画质视频
 
-首先我们需要在浏览器中下载对应的插件，插件的下载地址为[下载链接，点击直达](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)，这个插件的作用是将你的登录状态导出，然后才能下载对应高画质和高帧率的视频。我们安装好插件之后需要在浏览器中打开对应的视频网站，这里以B站为例，我们登录完成之后在网站中搜索自己想要下载的视频，搜索完成之后
+首先我们需要在浏览器中下载对应的插件，插件的下载地址为[下载链接，点击直达](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)，这个插件的作用是将你的登录状态导出，然后才能下载对应高画质和高帧率的视频。我们安装好插件之后需要在浏览器中打开对应的视频网站，这里以B站为例，我们登录完成之后在网站中搜索自己想要下载的视频，搜索完成之后保持当前的登录状态不变，点击我们之前安装好的插件
+![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20261018081612746.png)
+在插件提供的选项之中点击`Export`选项，将视频对应的链接信息导出即可，导出的文件格式是`.txt`，我们将导出的`.txt`文件放置到常用文件夹下，这里我选择将文件放置到`D:\Video Download\Bilibili`文件夹下，在该文件夹中我们将刚才导出的文件重命名为`bilibili-cookies.txt`，然后我们在终端中运行下面的指令查看当前视频支持哪些下载格式
+```cmd
+yt-dlp --cookies "D:\Video Download\Bilibili\bilibili-cookies.txt" -F "https://www.bilibili.com/video/BV1CJbc6JExi"
+```
+指令运行结果如下图所示
+![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20261018082129001.png)
+结合图示输出我们不难发现，在下面的三个视频格式中出现了`1920x1080`60帧的视频格式选项，这就说明我们的账号信息生效了，然后我们就可以执行下载指令来下载对应的高帧率视频了
 
 ## 总结
 当然该工具的功能不止于此，它还有更多强大的功能，大家可以到项目简介中自行了解
