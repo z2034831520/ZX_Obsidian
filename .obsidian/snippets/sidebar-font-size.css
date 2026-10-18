@@ -1,0 +1,6 @@
+/* Larger file and folder names in Obsidian's file explorer. */
+.nav-files-container .nav-file-title,
+.nav-files-container .nav-folder-title {
+  font-size: 17px;
+  line-height: 1.4;
+}

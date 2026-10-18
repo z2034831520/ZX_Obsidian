@@ -3,7 +3,8 @@
   "baseFontSize": 25,
   "cssTheme": "AnuPpuccin",
   "enabledCssSnippets": [
-    "extended-colorschemes"
+    "extended-colorschemes",
+    "sidebar-font-size"
   ],
   "theme": "obsidian"
 }
