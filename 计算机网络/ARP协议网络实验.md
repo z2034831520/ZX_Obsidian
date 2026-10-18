@@ -1,6 +1,6 @@
 ## 引言
 ARP协议时TCP/IP协议簇中的核心协议，它的根本作用是将网络层的逻辑地址映射为链路层的物理`MAC`地址
-在以太网中数据包的实际物理传输依赖于网卡的MAC地址，当设备需要与局域网中的另一台设备通信时，即便知道对面的IP地址，如果没有对应的MAC地址，那么网卡还是无法封装并传递数据，因此ARP协议就是来解决这个问题的
+在以太网中数据包的实际物理传输依赖于网卡的`MAC`地址，当设备需要与局域网中的另一台设备通信时，即便知道对面的`IP`地址，如果没有对应的`MAC`地址，那么网卡还是无法封装并传递数据，因此`ARP`协议就是来解决这个问题的
 
 ## ARP协议简介
 当主机A需要向主机B发送数据时，ARP的运行机制如下：
@@ -17,6 +17,8 @@ ARP协议时TCP/IP协议簇中的核心协议，它的根本作用是将网络�
 	主机A收到单播应答后，将`IP_B`和`MAC_B`的映射关系写入自己的动态`ARP`缓存表中，随后开始发送真正的有效数据帧
 上面介绍的是目标主机和当前主机位于同一个局域网内的情况，如果目标主机与当前主机并不在同一个局域网下，那么主机A还会将对应的数据发送到默认网关，然后路由器再进行路由转发，本次实验中源主机和目的主机都在同一个局域网下
 
+
+
 ## 实验
 简单了解了`ARP`协议的相关内容之后接下来我们就可以开始进行实验了，本次实验借助的是`WireShark`软件，如果没有下载过那么可以到软件官网中下载，[官网链接](https://www.wireshark.org/download.html)
 
@@ -26,24 +28,24 @@ ARP协议时TCP/IP协议簇中的核心协议，它的根本作用是将网络�
 Get-NetIPConfiguration -InterfaceAlias WLAN
 ```
 该指令的运行结果为
-![](assets/ARP协议网络实验/file-20261016083035581.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261016083035581.png)
 结合命令运行的结果我们不难发现，当前网卡的`IPv4`地址为`10.70.178.64`，然后我们就可以执行下面的命令来查询到当前网卡的`ARP`缓存信息
 ```powershell
 arp -a -N 10.70.178.64
 ```
 命令的运行结果如下：
-![](assets/ARP协议网络实验/file-20261016083206915.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261016083206915.png)
 输出了一条动态的ARP记录之后我们就可以进行抓包操作了
 
 ### 软件抓包
 接下来我们打开`WireShark`软件，在界面中点击捕获，然后再点击选项
-![](assets/ARP协议网络实验/file-20261016084455382.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261016084455382.png)
 在接下来弹出的内容我我们选择`WLAN`，核对地址和我们刚才通过命令查看的地址一致之后我们就可以点击开始选项进行抓包
-![](assets/ARP协议网络实验/file-20261016084531884.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261016084531884.png)
 接下来我们需要在软件的顶部过滤栏中输入过滤条件`arp or icmp`这条指令会过滤其它信息，只保留`ARP`指令和`ICMP`协议的数据协议内容
-![](assets/ARP协议网络实验/file-20261016084718722.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261016084718722.png)
 过滤生效之后软件内抓到的信息如下
-![](assets/ARP协议网络实验/file-20261018091256097.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261018091256097.png)
 图中出现了两条`ARP`数据报，根据数据报发送的信息我们不看出默认网关在询问谁拥有 `10.70.178.64`？然后下一条数据报就将`10.70.178.64`对应的`MAC`地址回复给了网关
 随后我们删除当前电脑中的`ARP`记录，让电脑本地的网卡重新建立`ARP`记录表
 删除`WLAN`的`ARP`记录的命令是：
@@ -59,7 +61,7 @@ arp -a 10.68.0.1 -N 10.70.178.64
 
 ### 抓包结果分析
 当我们停止抓包之后接下来就要进行数据帧的分析了，我们在wires hark软件中就可以看到对应的抓包信息
-![](assets/ARP协议网络实验/file-20261018092742630.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261018092742630.png)
 根据图中的信息我们不难发现，刚才执行的几条指令已经生效了，我们刚才删除了`WLAN`的`ARP`记录，因此在抓包中我们抓到了`48607`的`WLAN`在询问默认网关的`MAC`地址，随后`48608`数据报中网关将自己的`MAC`地址发送给了`WLAN`，接下来的`51418、51419`就是我们执行`ping`指令之后返回的结果
 接下来我们将框内的过滤内容更换为
 ```txt
@@ -67,8 +69,8 @@ frame.number == 48607 || frame.number == 48608 || frame.number == 51418 || frame
 ```
 执行之后就只剩下上面介绍过的这几个数据报了
 接下来我们就展开分析一下这两个数据报的内容
-![](assets/ARP协议网络实验/file-20261018094410053.png)
-![](assets/ARP协议网络实验/file-20261018094442406.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261018094410053.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261018094442406.png)
 两张图中展示了关键字段，我们可以对比一下
 
 | 字段                | ARP请求（48607）                          | ARP应答（48608）                          |
@@ -84,10 +86,12 @@ frame.number == 48607 || frame.number == 48608 || frame.number == 51418 || frame
 arp -a 10.68.0.1 -N 10.70.178.64
 ```
 执行指令后的输出结果为
-![](assets/ARP协议网络实验/file-20261018095240375.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261018095240375.png)
 终端输出显示，删除网关缓存之后，ping一发一收、0%丢包；最终ARP表再次出现`10.68.0.1 → dc-ef-80-9d-46-d9` 的动态映射，当电脑想要把数据发给默认网关时，他就会把当前ARP映射中保存的`MAC`地址当成本地帧的目的地址
 
 ## 总结
 我们在实验中的操作，映射到底层的内容如下图所示
-![](assets/ARP协议网络实验/file-20261018101051875.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261018101051875.png)
 在本次实验中我们如果没有建立ARP缓存，那么ICMP的ping通信是无法到达目标目标网关的，但是实际使用过程中并不会出现`ping`失效的问题，因为系统会在底层为我们完成前置步骤，系统发现`ping`指令的`ICMP`请求失败之后就会发出`ARP`请求，记录`IP->MAC`映射，用网关MAC封装并发出`ICMP`请求，再等待`ping`回复
+
+当我们在网络层发送数据的时候只需要知道目的主机的`IP`地址即可，但是在数据链路层的帧在发送时需要知道目的主机的`MAC`地址，因此`ARP`协议是连接网络层和数据链路层的重要协议
