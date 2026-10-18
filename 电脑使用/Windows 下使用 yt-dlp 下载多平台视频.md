@@ -115,5 +115,12 @@ yt-dlp --cookies "D:\Video Download\Bilibili\bilibili-cookies.txt" -F "https://w
 yt-dlp --cookies "D:\Video Download\Bilibili\bilibili-cookies.txt" --no-playlist -f "30116+30280" --merge-output-format mp4 "https://www.bilibili.com/video/BV1CJbc6JExi"
 ```
 为了保证视听体验，我们选择了`H.264`格式的视频文件和最高码率的音频文件
+指令的选项作用为
+- `yt-dlp`：启动下载工具
+- `--cookies "D:\...\bilibili-cookies.txt"`：读取我们导出的B站登录凭据，以获取账号权限来下载高帧率视频
+- `--no-playlist`：只下载当前视频，不下载整个合集
+- `-f "30116+30280`：执行下载`30116`视频流和`30280`音频流；`+`表示把两个流整合在一起
+- `--merge-output-format mp4`：下载后用`FFmpeg`将视频和音频合并成一个`MP4`文件
+
 ## 总结
 当然该工具的功能不止于此，它还有更多强大的功能，大家可以到项目简介中自行了解
