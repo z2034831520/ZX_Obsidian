@@ -11,7 +11,7 @@
 #### 源程序下载
 首先我们需要下载对应的可执行文件，可执行文件的下载链接为：[下载链接，点击跳转](https://github.com/yt-dlp/yt-dlp/releases)
 我们在下载界面中选择适合自己当前操作系统的版本
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20260826204149264%203.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260826204149264%203.png)
 如果你也是`Windows`那么也可以选择下载红框中的`.exe`可执行文件
 
 #### ffmpeg配置
@@ -20,24 +20,24 @@
 ##### 下载压缩包
 首先我们需要在`ffmpeg`官网下载对应的压缩包，下载链接为[下载链接，点击直达](https://www.gyan.dev/ffmpeg/builds/#release-builds)
 
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20260826204149264%202.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260826204149264%202.png)
 在下载界面中我们点击左侧的`release builds`，然后下载红框中的版本即可，下载完成之后我们在压缩包中找到`bin`目录下的两个可执行文件，如红框中所示
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20260826204149264%201.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260826204149264%201.png)
 
 #### 可执行文件放置
 接下来我们可以自行选择一个目录，然后将我们下载好的`yt-dlp.exe`可执行文件和`ffmpeg`中的两个可执行文件放到同一个目录下
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20260826204149264.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260826204149264.png)
 
 ### 环境变量配置
 接下来我们需要配置一下对应的全局变量，以实现可以在任意目录下使用并下载`yt-dlp.exe`，我们按下键盘上的`WIN + R`快捷键，然后在弹出的窗口中输入`sysdm.cpl`
 在随后弹出的窗口中点击**高级**，然后点击**环境变量**，找到**用户环境变量**，点击`Path`，点击**编辑**
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20260826204149263%203.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260826204149263%203.png)
 随后我们新建一个环境变量，并将之前存放可执行文件的路径填入其中即可
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20260826204149263%202.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260826204149263%202.png)
 
 #### 环境验证
 配置完上述这些之后我们还需要进行一下简单的验证，我们打开终端输入`Get-Command yt-dlp`和`yt-dlp --version`，如果出现下图类似输出说明配置成功，可以正常使用
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20260826204149263%201.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260826204149263%201.png)
 
 ### 使用操作
 配置完成之后使用起来就很简单了，下面是常用的命令，日常使用主要围绕这些命令展开
@@ -68,7 +68,7 @@ yt-dlp -vU "视频链接"
 ```
 
 我们在存放下载视频的文件夹下打开终端
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20260826204149263.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260826204149263.png)
 打开终端之后即可通过命令来下载目标视频
 下载视频的命令格式为
 ```bash
@@ -76,16 +76,16 @@ yt-dlp [OPTIONS] [--] URL [URL...]
 ```
 
 这里我们随便从`B站`上找一个视频，然后复制视频的链接地址
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20260826204149262%202.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260826204149262%202.png)
 复制完成之后我们即可在终端中通过命令直接下载视频
 下载视频的命令为：
 ```bash
 yt-dlp -t mp4 "https://www.bilibili.com/video/BV1RTNp6eEjv?t=2.8"
 ```
 命令中的`-t mp4`是将下载后的视频转成`.mp4`格式，视频链接要放到双引号中，输入命令并回车之后视频就会开始下载
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20260826204149262%201.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260826204149262%201.png)
 下载完成后我们就能在指定目录下看到下载好的视频了
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20260826204149262.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20260826204149262.png)
 
 ### 注意事项
 如果你想要下载`YouTube`上的视频，那么建议下载一下`Deno`否则可能会出现下载失败或者画质降低的情况，下载的命令如下：
@@ -100,13 +100,13 @@ deno --version
 如果你在某些视频平台上充值了会员的话那么你就可以下载会员专属的画质等级，例如在B站中会员就可以下载`1080P`60帧的视频，在Youtube上会员至高可以下载4K画质的视频。接下来我会介绍一下如何下载会员专属的高画质视频
 
 首先我们需要在浏览器中下载对应的插件，插件的下载地址为[下载链接，点击直达](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)，这个插件的作用是将你的登录状态导出，然后才能下载对应高画质和高帧率的视频。我们安装好插件之后需要在浏览器中打开对应的视频网站，这里以B站为例，我们登录完成之后在网站中搜索自己想要下载的视频，搜索完成之后保持当前的登录状态不变，点击我们之前安装好的插件
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20261018081612746.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261018081612746.png)
 在插件提供的选项之中点击`Export`选项，将视频对应的链接信息导出即可，导出的文件格式是`.txt`，我们将导出的`.txt`文件放置到常用文件夹下，这里我选择将文件放置到`D:\Video Download\Bilibili`文件夹下，在该文件夹中我们将刚才导出的文件重命名为`bilibili-cookies.txt`，然后我们在终端中运行下面的指令查看当前视频支持哪些下载格式
 ```cmd
 yt-dlp --cookies "D:\Video Download\Bilibili\bilibili-cookies.txt" -F "https://www.bilibili.com/video/BV1CJbc6JExi"
 ```
 指令运行结果如下图所示
-![](assets/Windows%20下使用%20yt-dlp%20下载多平台视频/file-20261018082129001.png)
+![](https://cdn.jsdelivr.net/gh/z2034831520/obsidian-image-bed@main/images/file-20261018082129001.png)
 结合图示输出我们不难发现，在下面的三个视频格式中出现了`1920x1080`60帧的视频格式选项，这就说明我们的账号信息生效了，然后我们就可以执行下载指令来下载对应的高帧率视频了
 这里需要额外说明的一点是，在输出结果中我们不难发现，几乎所有的视频画质都支持三种格式可供下载，分别是`avc1`、`hvc1`、`av01`三种格式，这三种格式对应的视频编码格式分别为`H.264`、`H.265`以及`AV1`，处于兼容性考虑我们选择下载`H.264`格式的视频，如果你想要压缩文件体积也可以尝试下载其它格式的视频，但是兼容性可能会下降
 由于B站上的视频在下载时音频和视频文件是分开的，所以最上面的三个可下载内容是音频文件，其中三个音频文件从上到下码率依次递增，从文件体积我们也不难看出。所以大家也可以结合自己的实际需求进行选择
