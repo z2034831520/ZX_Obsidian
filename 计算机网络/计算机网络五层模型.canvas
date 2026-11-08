@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"e0d9306b91114557","type":"group","x":0,"y":0,"width":1230,"height":330,"color":"6","label":"5 · 应用层"},
+		{"id":"0058384110994bac","type":"group","x":0,"y":380,"width":1230,"height":330,"color":"5","label":"4 · 传输层"},
+		{"id":"ff04f45b8c7c44cd","type":"group","x":0,"y":760,"width":1230,"height":330,"color":"4","label":"3 · 网络层"},
+		{"id":"65606999cbe9453a","type":"group","x":0,"y":1140,"width":1230,"height":330,"color":"3","label":"2 · 数据链路层"},
+		{"id":"c689372afa664234","type":"group","x":0,"y":1520,"width":1230,"height":330,"color":"2","label":"1 · 物理层"},
+		{"id":"2f9f9e8cbc0d40db","type":"text","text":"# 计算机网络五层模型\n\n向下观察发送时的分层关系；箭头表示相邻层依赖，不代表每次通信只沿单一方向。点击右侧文件卡片查看原笔记。\n\n参考：[[计算机网络/计算机网络学习索引|课程索引]] · [[计算机网络/计算机网络七层网络模型|七层模型对照]]","x":0,"y":-240,"width":1230,"height":180},
+		{"id":"5952cb8e3f5541db","type":"text","text":"## 应用层\n\n面向应用进程提供网络服务。\n示例：HTTP、DNS。\n\n当前尚无独立应用层笔记；右侧引用已有七层模型中的应用层小节。","x":40,"y":60,"width":340,"height":210,"color":"6"},
+		{"id":"5bdedf2da65f4664","type":"file","file":"计算机网络/计算机网络七层网络模型.md","subpath":"#应用层（第七层）","x":440,"y":60,"width":740,"height":210},
+		{"id":"9be51fbd2526449a","type":"text","text":"## 传输层\n\n提供端到端进程通信。\n关键内容：端口、TCP、UDP、可靠传输。","x":40,"y":440,"width":340,"height":210,"color":"5"},
+		{"id":"7376f31fe3f34a4a","type":"file","file":"计算机网络/传输层.md","x":440,"y":440,"width":740,"height":210},
+		{"id":"9645954f26ce47f7","type":"text","text":"## 网络层\n\n负责跨网络寻址与路由转发。\n关键内容：IP、路由、子网、ICMP。","x":40,"y":820,"width":340,"height":210,"color":"4"},
+		{"id":"9ead18064dc24daf","type":"file","file":"计算机网络/网络层.md","x":440,"y":820,"width":350,"height":210},
+		{"id":"df1814a91b6a49de","type":"file","file":"计算机网络/ARP协议网络实验.md","x":830,"y":820,"width":350,"height":210},
+		{"id":"c5e4244a2389475c","type":"text","text":"## 数据链路层\n\n负责相邻节点间的帧传输。\n关键内容：成帧、MAC、CRC、介质访问控制。","x":40,"y":1200,"width":340,"height":210,"color":"3"},
+		{"id":"9c6661fe11ea4c85","type":"file","file":"计算机网络/数据链路层.md","x":440,"y":1200,"width":740,"height":210},
+		{"id":"aefd23e7ff6d4487","type":"text","text":"## 物理层\n\n在物理介质上传送比特信号。\n关键内容：编码、信道、复用、接口。","x":40,"y":1580,"width":340,"height":210,"color":"2"},
+		{"id":"ca94a66046fa459e","type":"file","file":"计算机网络/物理层.md","x":440,"y":1580,"width":740,"height":210}
+	],
+	"edges":[
+		{"id":"42d0bed7d90f451c","fromNode":"5952cb8e3f5541db","fromSide":"right","toNode":"5bdedf2da65f4664","toSide":"left","label":"相关笔记"},
+		{"id":"bbd4a75e63c446bf","fromNode":"9be51fbd2526449a","fromSide":"right","toNode":"7376f31fe3f34a4a","toSide":"left","label":"相关笔记"},
+		{"id":"a467e6b1619c4da2","fromNode":"9645954f26ce47f7","fromSide":"right","toNode":"9ead18064dc24daf","toSide":"left","label":"相关笔记"},
+		{"id":"fe4b524b400c41c2","fromNode":"9645954f26ce47f7","fromSide":"right","toNode":"df1814a91b6a49de","toSide":"left","label":"ARP 跨层关联"},
+		{"id":"9fdf361cb40147c6","fromNode":"c5e4244a2389475c","fromSide":"right","toNode":"9c6661fe11ea4c85","toSide":"left","label":"相关笔记"},
+		{"id":"eaffe1e390844361","fromNode":"aefd23e7ff6d4487","fromSide":"right","toNode":"ca94a66046fa459e","toSide":"left","label":"相关笔记"},
+		{"id":"b5611fd39f374393","fromNode":"5952cb8e3f5541db","fromSide":"bottom","toNode":"9be51fbd2526449a","toSide":"top","label":"依赖下层服务"},
+		{"id":"69daccc2badf4e7e","fromNode":"9be51fbd2526449a","fromSide":"bottom","toNode":"9645954f26ce47f7","toSide":"top","label":"依赖下层服务"},
+		{"id":"0f0c5621fac2446d","fromNode":"9645954f26ce47f7","fromSide":"bottom","toNode":"c5e4244a2389475c","toSide":"top","label":"依赖下层服务"},
+		{"id":"4e570bf4168b4943","fromNode":"c5e4244a2389475c","fromSide":"bottom","toNode":"aefd23e7ff6d4487","toSide":"top","label":"依赖下层服务"}
+	]
+}
