@@ -6,5 +6,6 @@
     "extended-colorschemes",
     "sidebar-font-size"
   ],
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "showRibbon": true
 }
